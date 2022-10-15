@@ -43,7 +43,7 @@
 
     <div class="pages">
         <div class="page-1">
-            <div class="header"></div>
+
         </div>
 
         <div class="page-2">
@@ -51,10 +51,6 @@
         </div>
 
         <div class="page-3">
-            
-        </div>
-
-        <div class="footer">
             
         </div>
     </div>
