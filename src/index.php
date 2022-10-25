@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +8,21 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel = "icon" type = "image/png" href = "assets/favicon.png">
     <title>projet SGBD : Jeux</title>
+    <?php
+        /*$login = 'jelkarchi';
+        $db_pwd = 'jelkarchiSGBD';
+        Creation de l'objet qui gere la connexion: 
+        $conn = oci_connect($login, $db_pwd, 'oracle/oracle');
+        if (!$conn) {
+            echo 'hi';
+            $e = oci_error();
+            trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+        }*/
+    ?>
 </head>
 <body>
+
+
     <div class="navbar">
         <div>
             <button class="menu-button" onclick="activateNavbar();" title="Menu"></button>
@@ -16,31 +30,33 @@
 
         <div class="utilities-links">
             <div class="home-link">
-                <a href="index.php" class="text-link">Home</a> 
+                <a href="index.php" class="text-link">Accueil</a> 
             </div>
 
             <div class="consult-link">
-                <a href="consult.php" class="text-link">Consult</a> 
+                <a href="consult.php" class="text-link">Consulter</a> 
             </div>
 
             <div class="statistics-link">
-                <a href="statistics.php" class="text-link">Statistics</a> 
+                <a href="statistics.php" class="text-link">Statistiques</a> 
             </div>
 
             <div class="modify-link">
-                <a href="modify.php" class="text-link">Modify</a> 
+                <a href="modify.php" class="text-link">Modifier</a> 
             </div>
 
             <div class="about-link">
-                <a href="about.php" class="text-link">About</a> 
+                <a href="about.php" class="text-link">À propos</a> 
             </div>
 
         </div>
 
         <a class="github-link" href="https://github.com/daJster/project_SGBD" title="Github">
         </a>
-    </div>
 
+        <div class="blur-screen"></div>
+    </div>
+    
     <div class="pages">
         <div class="page-1">
             <div class="header"></div>

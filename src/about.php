@@ -39,6 +39,8 @@
 
         <a class="github-link" href="https://github.com/daJster/project_SGBD" title="Github">
         </a>
+
+        <div class="blur-screen"></div>
     </div>
 
     <div class="pages">
