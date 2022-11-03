@@ -72,7 +72,12 @@
         </div>
 
         <div class="footer">
-            
+            <div class="main-text">
+                Made with ❤️ by Jad Elkarchi
+            </div> 
+            <div class="secondary-text">
+                Website built using only: Vanilla JS, CSS, HTML, PHP, SQL
+            </div>
         </div>
     </div>
 </body>
