@@ -49,58 +49,61 @@
         <div class="blur-screen"></div>
     </div>
 
-    <div  class="sections-actions">
-        <div class="add-action" >
-            <div class="icon" style="background-image: url(./assets/addIcon.png)"></div>
-            <div class="text">Ajouter</div>
-        </div>
-
-        <div class="modify-action" >
-            <div class="icon" style="background-image: url(./assets/modifyIcon.png)"></div>
-            <div class="text">Modifier</div>
-        </div>
-
-        <div class="delete-action" >
-            <div class="icon" style="background-image: url(./assets/deleteIcon.png)"></div>
-            <div class="text">Supprimer</div>
-        </div>
-    </div>
-
-    <div class="sections-objects">
-        <div class="game-object" >
-            <div class="icon" style="background-image: url(./assets/gameIcon.png)"></div>
-            <div class="text">Jeux</div>
-        </div>
-
-        <div class="player-object" >
-            <div class="icon" style="background-image: url(./assets/playerIcon.png)"></div>
-            <div class="text">Joueurs</div>
-        </div>
-
-        <div class="comment-object" >
-            <div class="icon" style="background-image: url(./assets/commentIcon.png)"></div>
-            <div class="text">Commentaires</div>
-        </div>
-    </div>
-
-
-    <div class="form-wrapper">
-        <div class="form-game">
-            <div class="form-add-game">
-
+    <div class="sections-wrapper">
+        <div  class="sections-actions">
+            <div class="add-action" >
+                <div class="icon" style="background-image: url(./assets/addIcon.png)"></div>
+                <div class="text">Ajouter</div>
             </div>
 
-            <div class="form-modify-game">
-                
+            <div class="modify-action" >
+                <div class="icon" style="background-image: url(./assets/modifyIcon.png)"></div>
+                <div class="text">Modifier</div>
             </div>
 
-            <div class="form-delete-game">
-                
+            <div class="delete-action" >
+                <div class="icon" style="background-image: url(./assets/deleteIcon.png)"></div>
+                <div class="text">Supprimer</div>
+            </div>
+        </div>
+
+        <div class="sections-objects">
+            <div class="game-object" >
+                <div class="icon" style="background-image: url(./assets/gameIcon.png)"></div>
+                <div class="text">Jeux</div>
+            </div>
+
+            <div class="player-object" >
+                <div class="icon" style="background-image: url(./assets/playerIcon.png)"></div>
+                <div class="text">Joueurs</div>
+            </div>
+
+            <div class="comment-object" >
+                <div class="icon" style="background-image: url(./assets/commentIcon.png)"></div>
+                <div class="text">Commentaires</div>
+            </div>
+        </div>
+
+
+        <div class="form-wrapper">
+            <div class="form-game">
+                <div class="form-add-game">
+
+                </div>
+
+                <div class="form-modify-game">
+                    
+                </div>
+
+                <div class="form-delete-game">
+                    
+                </div>
             </div>
         </div>
     </div>
 
     <button class="cancel-button">Annuler</button>
+
 </body>
 
 

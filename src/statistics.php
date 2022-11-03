@@ -45,15 +45,49 @@
 
     <div class="pages">
         <div class="page-1">
+            <div class="stats-title-page">Statistiques</div>
+            <div class="stats-wrap">
+                <div class="title-grid">Les joueurs classés selon le nombre de jeux qu'ils ont notés</div>
+                <div class="stats-grid" style="margin-top: 50px;">
 
+                </div>
+            </div>
         </div>
 
         <div class="page-2">
+            <div class="stats-wrap">
+                <div class="title-grid">la liste des commentaires les plus récents</div>
+                <button class="choose-button">Nombre de commentaires</button>
 
+                <div class="choose-bar">
+                    <button class="test-bar">5</button>
+                    <button class="test-bar">10</button>
+                    <button class="test-bar">15</button>
+                    <button class="test-bar">20</button>
+                </div>
+
+                <div class="stats-grid">
+
+                </div>
+            </div>
         </div>
 
         <div class="page-3">
-            
+            <div class="stats-wrap">
+                <div class="title-grid">Le commentaire qui laisse le moins indifférent <br> (celui qui a reçu le plus de jugement)</div>
+                <div class="stats-grid" style="margin-top: 90px;">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-4">
+            <div class="stats-wrap">
+                <div class="title-grid">Les commentaires classés selon leurs indices de confiance</div>
+                <div class="stats-grid" style="margin-top: 50px;">
+
+                </div>
+            </div>
         </div>
     </div>
 </body>

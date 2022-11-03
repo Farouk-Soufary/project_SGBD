@@ -9,15 +9,16 @@
     <link rel = "icon" type = "image/png" href = "assets/favicon.png">
     <title>projet SGBD : Jeux</title>
     <?php
-        /*$login = 'jelkarchi';
-        $db_pwd = 'jelkarchiSGBD';
-        Creation de l'objet qui gere la connexion: 
-        $conn = oci_connect($login, $db_pwd, 'oracle/oracle');
+        $login = 'root';
+        $db_pwd = '';
+        // Creation de l'objet qui gere la connexion: 
+        $conn = new mysqli("localhost", $login, $db_pwd, "test");
         if (!$conn) {
             echo 'hi';
             $e = oci_error();
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-        }*/
+        }
+
     ?>
 </head>
 <body>
@@ -59,7 +60,7 @@
     
     <div class="pages">
         <div class="page-1">
-            <div class="header"></div>
+            <div class="index-title-page">SGBD projet : Jeux</div>
         </div>
 
         <div class="page-2">

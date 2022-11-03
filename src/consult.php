@@ -45,15 +45,58 @@
 
     <div class="pages">
         <div class="page-1">
+            <div class="consult-title-page">Consultation</div>
+            <div class="consult-wrap">
+                <div class="title-grid">Jeux critiqués disponibles dans le thème 'THEME' (classés par mécaniques)</div>
+                <button class="choose-button">Choix du thème</button>
 
+                <div class="choose-bar">
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                </div>
+
+                <div class="consult-grid">
+
+                </div>
+            </div>
         </div>
 
         <div class="page-2">
+            <div class="consult-wrap">
+                <div class="title-grid">Commentaires d'un des jeux préférés du joueur 'PLAYER'</div>
+                <button class="choose-button">Choix du joueur</button>
+                
+                <div class="choose-bar">
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                </div>
 
+                <div class="consult-grid">
+
+                </div>
+            </div>
         </div>
 
         <div class="page-3">
-            
+            <div class="consult-wrap">
+                <div class="title-grid">Joueurs qui ont appréciés le commentaire 'ID' de 'PLAYER'</div>
+                <button class="choose-button">Choix du commentaire</button>
+                
+                <div class="choose-bar">
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                    <button class="test-bar">jad</button>
+                </div>
+
+                <div class="consult-grid">
+
+                </div>
+            </div>
         </div>
     </div>
 </body>
