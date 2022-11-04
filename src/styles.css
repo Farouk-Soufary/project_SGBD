@@ -137,11 +137,11 @@ a{
 }
 
 .page-2{
-    background-color: burlywood;
+    background-color: rgb(40, 54, 61);
 }
 
 .page-3{
-    background-color: crimson;
+    background-color: rgb(118, 13, 34);
 }
 
 .page-4{
@@ -265,10 +265,10 @@ a{
 }
 
 .modify-action, .player-object {
-    background-color: burlywood;
+    background-color:  rgb(40, 54, 61);
 }
 .delete-action, .comment-object {
-    background-color: crimson;
+    background-color:  rgb(118, 13, 34);
 }
 
 .add-action > .text, .delete-action > .text, .modify-action > .text, .game-object > .text, .player-object > .text, .comment-object > .text {
@@ -334,7 +334,7 @@ a{
 
 
 
-/*! CONSULT PHP CSS */
+/*! CONSULT/STATS PHP CSS */
 
 .consult-wrap, .stats-wrap {
     position: absolute;
@@ -367,12 +367,15 @@ a{
     border: none;
     cursor: pointer;
     transition: .2s ease-out;
-    background-color: grey;
+    background-color: rgb(189, 188, 188, .5);
+    backdrop-filter: blur(20px);
     color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .choose-button:hover{
-    background-color: white;
+    background-color: rgb(255, 255, 255, .5);
 }
 
 .choose-bar {
@@ -383,7 +386,7 @@ a{
     overflow-y: scroll;
     z-index: 1;
     visibility: hidden;
-    transform: translateY(-30px);
+    transform: translateY(-10px);
     transition: .3s ease-in-out;
     opacity: 0;
     background-color: blueviolet;
@@ -410,7 +413,10 @@ a{
     margin-left: 5vw;
     height: 600px;
     width: 50vw;
-    background-color: yellowgreen;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(155, 155, 155, .3);
+    backdrop-filter: blur(20px);
 }
 
 .consult-title-page, .stats-title-page, .about-title-page, .index-title-page{
@@ -424,3 +430,38 @@ a{
     font-weight: 700;
 }
 
+/*! PARAGRAPH STYLING INDEX PHP */
+
+.paragraph{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(55, 55, 55, .5);
+    width: 70vw;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.title{
+    color: rgb(1, 255, 119);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content{
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.scheme-links{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0px;
+}
