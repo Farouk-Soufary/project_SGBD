@@ -1,0 +1,14 @@
+drop table if exists JEUX                ; -- cascade constraints;
+drop table if exists JOUEURS             ; -- cascade constraints;
+drop table if exists NOTES               ; -- cascade constraints;
+drop table if exists ROLES               ; -- cascade constraints;
+drop table if exists EXTENSIONS          ; -- cascade constraints;
+drop table if exists MECANIQUES          ; -- cascade constraints;
+drop table if exists THEMES              ; -- cascade constraints;
+drop table if exists CONTRIBUTEURS       ; -- cascade constraints;
+drop table if exists JUGEMENTS           ; -- cascade constraints;
+drop table if exists JEUX_MECANIQUES     ; -- cascade constraints;
+drop table if exists JEUX_THEMES         ; -- cascade constraints;
+drop table if exists JOUEURS_MECANIQUES  ; -- cascade constraints;
+drop table if exists JOUEURS_THEMES      ; -- cascade constraints;
+drop table if exists PARTICIPATIONS      ; -- cascade constraints;
