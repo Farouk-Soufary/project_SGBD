@@ -19,6 +19,24 @@
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
         }
 
+        $result = $conn->query("SELECT * FROM player");
+
+        echo "Result set order...\n";
+        foreach ($result as $row) {
+            echo $row['pseudonym'];
+            echo "\n";
+        }
+
+        // $login = 'root';
+        // $db_pwd = '';
+        // /* Creation de l'objet qui gere la connexion: */
+        // $conn = oci_connect($login, $db_pwd, 'localhost');
+        // if (!$conn) {
+        //     echo 'hi';
+        //     $e = oci_error();
+        //     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+        // }
+
     ?>
 </head>
 <body>
