@@ -151,7 +151,7 @@ insert into NOTES values ( 89, 'She had never appreciated radio news shows.', 4-
 insert into NOTES values ( 90, 'Actions speak louder than words.', 18-2-2011, 12, 16, 'Tzolk: The Mayan Calendar', 11christopher) ;
 insert into NOTES values ( 91, 'He was trained to do this.', 21-7-2013, 12, 22, 'The Crew: The Quest for Planet Nine', 15donald) ;
 insert into NOTES values ( 92, 'He opens the door.', 14-8-2018, 0, 27, 'Mechs vs. Minions', 40dennis) ;
-insert into NOTES values ( 93, 'You can bring it back if you do not like it.', 14-12-2022, 4, 16, 'Underwater Cities', 4michael) ;
+insert into NOTES values ( 93, 'You can bring it back if you do no  t like it.', 14-12-2022, 4, 16, 'Underwater Cities', 4michael) ;
 insert into NOTES values ( 94, 'Tom is really tall.', 16-9-2016, 14, 30, 'Star Wars: Imperial Assault', 43peter) ;
 insert into NOTES values ( 95, 'he is easily offended.', 13-8-2015, 16, 17, 'Clans of Caledonia', 28jose) ;
 insert into NOTES values ( 96, 'He drives more carefully than you do.', 10-9-2022, 7, 8, 'Anachrony', 42patrick) ;
