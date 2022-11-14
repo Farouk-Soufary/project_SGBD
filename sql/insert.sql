@@ -2,7 +2,7 @@
 --    creation des donnees
 -- ============================================================
 
---JEUX
+-- JEUX
 insert into JEUX values ( 'Gloomhaven','Soren Yang','2017-5-8',120,'PLATFORM',4,1 );
 insert into JEUX values ( 'Pandemic Legacy  1','Stacy Hail','2015-9-6',60,'PUZZLE',4,0 );
 insert into JEUX values ( 'Brass Birmingham','Justin Parkes','2018-11-19',120,'COOPERATION',4,0 );
@@ -199,7 +199,7 @@ insert into MECANIQUES values ( 'Majorité' ) ;
 insert into MECANIQUES values ( 'Deck-building' ) ;
 insert into MECANIQUES values ( 'Draft' ) ;
 
---CONTRIBUTEURS
+-- CONTRIBUTEURS
 insert into CONTRIBUTEURS values ( 1, 'Doris', 'Reynolds' );
 insert into CONTRIBUTEURS values ( 2, 'Cian', 'Greenaway' );
 insert into CONTRIBUTEURS values ( 3, 'Asiya', 'Searle' );  
@@ -352,7 +352,7 @@ insert into ROLES values ( 'Nemesis', 97, 'AUTEUR' );
 insert into ROLES values ( 'OrlÃ©ans', 49, 'ILLUSTRATEUR' );
 insert into ROLES values ( 'OrlÃ©ans', 99, 'AUTEUR' );
 
---EXTENSIONS
+-- EXTENSIONS
 insert into EXTENSIONS values ( 'Pandemic Legacy', 'Pandemic Legacy  1' );
 insert into EXTENSIONS values ( 'Brass', 'Brass Birmingham' );
 insert into EXTENSIONS values ( 'Twilight Imperium', 'Twilight Imperium Fourth Edition' );
@@ -371,7 +371,7 @@ insert into EXTENSIONS values ( 'The Crew', 'The Crew The Quest for Planet Nine'
 insert into EXTENSIONS values ( 'Star Wars', 'Star Wars Imperial Assault' );
 insert into EXTENSIONS values ( 'Through the Ages', 'Through the Ages A Story of Civilization' );
 
---JUGEMENTS
+-- JUGEMENTS
 insert into JUGEMENTS values ( 35, '1james', 'PERTINENT' );
 insert into JUGEMENTS values ( 57, '1james', 'PERTINENT' );
 insert into JUGEMENTS values ( 3, '1james', 'IMPERTINENT' );
@@ -445,11 +445,9 @@ insert into JUGEMENTS values ( 12, '8charles', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 58, '8charles', 'PERTINENT' );
 insert into JUGEMENTS values ( 79, '8charles', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 9, '9joseph', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 95, '9joseph', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 21, '9joseph', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 74, '9joseph', 'PERTINENT' );
 insert into JUGEMENTS values ( 34, '9joseph', 'PERTINENT' );
-insert into JUGEMENTS values ( 54, '9joseph', 'PERTINENT' );
 insert into JUGEMENTS values ( 54, '9joseph', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 95, '9joseph', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 85, '9joseph', 'PERTINENT' );
@@ -504,13 +502,11 @@ insert into JUGEMENTS values ( 8, '15donald', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 81, '15donald', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 65, '15donald', 'PERTINENT' );
 insert into JUGEMENTS values ( 36, '15donald', 'PERTINENT' );
-insert into JUGEMENTS values ( 8, '15donald', 'PERTINENT' );
 insert into JUGEMENTS values ( 68, '15donald', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 59, '15donald', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 5, '16george', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 49, '16george', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 39, '16george', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 5, '16george', 'PERTINENT' );
 insert into JUGEMENTS values ( 88, '16george', 'PERTINENT' );
 insert into JUGEMENTS values ( 40, '16george', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 67, '16george', 'PERTINENT' );
@@ -539,7 +535,6 @@ insert into JUGEMENTS values ( 39, '19edward', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 76, '19edward', 'PERTINENT' );
 insert into JUGEMENTS values ( 34, '19edward', 'PERTINENT' );
 insert into JUGEMENTS values ( 80, '19edward', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 39, '19edward', 'PERTINENT' );
 insert into JUGEMENTS values ( 23, '19edward', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 10, '19edward', 'PERTINENT' );
 insert into JUGEMENTS values ( 96, '19edward', 'IMPERTINENT' );
@@ -599,13 +594,11 @@ insert into JUGEMENTS values ( 47, '25matthew', 'PERTINENT' );
 insert into JUGEMENTS values ( 27, '25matthew', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 99, '26gary', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 97, '26gary', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 99, '26gary', 'PERTINENT' );
 insert into JUGEMENTS values ( 19, '26gary', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 83, '26gary', 'PERTINENT' );
 insert into JUGEMENTS values ( 74, '26gary', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 46, '26gary', 'PERTINENT' );
 insert into JUGEMENTS values ( 1, '26gary', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 74, '26gary', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 97, '27timothy', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 85, '27timothy', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 44, '27timothy', 'PERTINENT' );
@@ -620,7 +613,6 @@ insert into JUGEMENTS values ( 11, '28jose', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 19, '28jose', 'PERTINENT' );
 insert into JUGEMENTS values ( 41, '28jose', 'PERTINENT' );
 insert into JUGEMENTS values ( 28, '28jose', 'PERTINENT' );
-insert into JUGEMENTS values ( 41, '28jose', 'PERTINENT' );
 insert into JUGEMENTS values ( 81, '28jose', 'PERTINENT' );
 insert into JUGEMENTS values ( 38, '28jose', 'PERTINENT' );
 insert into JUGEMENTS values ( 94, '28jose', 'IMPERTINENT' );
@@ -636,12 +628,10 @@ insert into JUGEMENTS values ( 57, '29larry', 'PERTINENT' );
 insert into JUGEMENTS values ( 45, '30jeffrey', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 78, '30jeffrey', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 47, '30jeffrey', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 78, '30jeffrey', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 54, '30jeffrey', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 10, '30jeffrey', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 0, '30jeffrey', 'PERTINENT' );
 insert into JUGEMENTS values ( 75, '30jeffrey', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 10, '30jeffrey', 'PERTINENT' );
 insert into JUGEMENTS values ( 53, '31frank', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 54, '31frank', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 33, '31frank', 'PERTINENT' );
@@ -702,7 +692,6 @@ insert into JUGEMENTS values ( 11, '37gregory', 'PERTINENT' );
 insert into JUGEMENTS values ( 59, '37gregory', 'PERTINENT' );
 insert into JUGEMENTS values ( 27, '37gregory', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 24, '37gregory', 'PERTINENT' );
-insert into JUGEMENTS values ( 24, '37gregory', 'PERTINENT' );
 insert into JUGEMENTS values ( 90, '37gregory', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 83, '37gregory', 'PERTINENT' );
 insert into JUGEMENTS values ( 92, '38joshua', 'PERTINENT' );
@@ -730,7 +719,6 @@ insert into JUGEMENTS values ( 65, '40dennis', 'PERTINENT' );
 insert into JUGEMENTS values ( 1, '40dennis', 'PERTINENT' );
 insert into JUGEMENTS values ( 50, '40dennis', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 69, '40dennis', 'PERTINENT' );
-insert into JUGEMENTS values ( 65, '40dennis', 'PERTINENT' );
 insert into JUGEMENTS values ( 10, '40dennis', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 47, '41walter', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 58, '41walter', 'IMPERTINENT' );
@@ -803,7 +791,6 @@ insert into JUGEMENTS values ( 23, '48arthur', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 0, '48arthur', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 88, '48arthur', 'PERTINENT' );
 insert into JUGEMENTS values ( 75, '48arthur', 'IMPERTINENT' );
-insert into JUGEMENTS values ( 87, '48arthur', 'PERTINENT' );
 insert into JUGEMENTS values ( 3, '49ryan', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 46, '49ryan', 'PERTINENT' );
 insert into JUGEMENTS values ( 68, '49ryan', 'PERTINENT' );
@@ -814,7 +801,7 @@ insert into JUGEMENTS values ( 28, '49ryan', 'PERTINENT' );
 insert into JUGEMENTS values ( 81, '49ryan', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 53, '49ryan', 'IMPERTINENT' );
 
---PARTICIPATIONS
+-- PARTICIPATIONS
 insert into PARTICIPATIONS values ( 'Gloomhaven', '12daniel' );
 insert into PARTICIPATIONS values ( 'Gloomhaven', '29larry' );
 insert into PARTICIPATIONS values ( 'Gloomhaven', '31frank' );
@@ -1170,8 +1157,6 @@ insert into JOUEURS_THEMES values ( '10thomas', 'Antiquité ') ;
 insert into JOUEURS_THEMES values ( '11christopher', 'Espace') ;
 insert into JOUEURS_THEMES values ( '12daniel', 'Mytholoie') ;
 insert into JOUEURS_THEMES values ( '13paul', 'Aventure') ;
-insert into JOUEURS_THEMES values ( '14mark', 'Antiquité ') ;
-insert into JOUEURS_THEMES values ( '15donald', 'Connaissances') ;
 insert into JOUEURS_THEMES values ( '16george', 'Fanstastique ') ;
 insert into JOUEURS_THEMES values ( '17kenneth', 'Merveilleux') ;
 insert into JOUEURS_THEMES values ( '18steven', 'Fanstastique') ;
@@ -1180,7 +1165,6 @@ insert into JOUEURS_THEMES values ( '20brian', 'Mathematiques');
 insert into JOUEURS_THEMES values ( '36raymond', 'Abstrait') ;
 insert into JOUEURS_THEMES values ( '37gregory', 'Construction') ;
 insert into JOUEURS_THEMES values ( '38joshua', 'Enfant') ;
-insert into JOUEURS_THEMES values ( '39jerry', 'Enquete') ;
 insert into JOUEURS_THEMES values ( '40dennis', 'Construction') ;
 insert into JOUEURS_THEMES values ( '41walter', 'Enquete') ;
 insert into JOUEURS_THEMES values ( '42patrick', 'Construction') ;
@@ -1251,7 +1235,6 @@ insert into JOUEURS_MECANIQUES values ( '15donald','Draft') ;
 insert into JOUEURS_MECANIQUES values ( '16george','Enigmes') ;
 insert into JOUEURS_MECANIQUES values ( '17kenneth','Déduction') ;
 insert into JOUEURS_MECANIQUES values ( '18steven','Pari') ;
-insert into JOUEURS_MECANIQUES values ( '19edward','Majorité ') ;
 insert into JOUEURS_MECANIQUES values ( '20brian','Enigmes') ;
 insert into JOUEURS_MECANIQUES values ( '21ronald','Draft') ;
 insert into JOUEURS_MECANIQUES values ( '22anthony','Enigmes') ;

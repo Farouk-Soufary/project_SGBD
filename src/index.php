@@ -11,17 +11,33 @@
     <?php
         $login = 'root';
         $db_pwd = '';
-        $db_name = 'mysql';
-        // Creation de l'objet qui gere la connexion: 
-        $conn = new mysqli("localhost", $login, $db_pwd, $db_name);
-        $db = new PDO("mysql:host=127.0.0.1;dbname=mysql;charset=utf8mb4", 'root', '');
-        if (!$conn) {
-            echo 'hi';
+        $db = new PDO("mysql:host=127.0.0.1;dbname=mysql;charset=utf8mb4", $login, $db_pwd);
+        if (!$db) {
             $e = oci_error();
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
         }
 
-        $result = $db->query(file_get_contents('../sql/drop.sql'));
+        $cr_query = file_get_contents('../sql/create.sql');
+        $ins_query = file_get_contents('../sql/insert.sql');
+        $drp_query = file_get_contents('../sql/drop.sql');
+        $result = $db->exec($cr_query.$ins_query);
+        
+        $sql_q1 = "SELECT NOM_JEU, EDITEUR, DATE_PARUTION FROM JEUX";
+        $result = $db->query($sql_q1); // doesn't work
+
+        while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+            echo "NOM_JEU: \t" . $row["NOM_JEU"] . " - EDITEUR: \t" . $row["EDITEUR"] . " - DATE_PARUTION: \t" . $row["DATE_PARUTION"] . "<br>";
+        }
+
+        $sql_q2 = "SELECT PSEUDONYME, NOM_JOUEUR, ADRESSE_MAIL FROM JOUEURS";
+        echo $sql_q2;
+        $result = $db->query($sql_q2);
+
+        while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+            echo "PSEUDONYME: \t" . $row["PSEUDONYME"] . " - NOM_JOUEUR: \t" . $row["NOM_JOUEUR"] . " - ADRESSE_MAIL: \t" . $row["ADRESSE_MAIL"] . "<br>";
+        }
+
+        $result = $db->exec($drp_query);
     ?>
 </head>
 <body>
@@ -92,7 +108,7 @@
                         <img src="./assets/scheme-concept.png" style="height:300px">
                     </a>
 
-                    <a class="scheme-link-two" href="./assets/scheme-concept.pdf">
+                    <a class="scheme-link-two" href="./assets/scheme-relation.pdf">
                         <div class="scheme-relation title" style="color: whitesmoke;" >Relationel</div>
                         <img src="./assets/scheme-relation.png" style="height:320px">
                     </a>
