@@ -48,7 +48,7 @@
             <div class="stats-title-page">Statistiques</div>
             <div class="stats-wrap">
                 <div class="title-grid">Les joueurs classés selon le nombre de jeux qu'ils ont notés</div>
-                <div class="stats-grid" style="margin-top: 50px; border-radius: 20px;" >
+                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh;" >
 
                 </div>
             </div>
@@ -75,7 +75,7 @@
         <div class="page-3">
             <div class="stats-wrap">
                 <div class="title-grid">Le commentaire qui laisse le moins indifférent <br> (celui qui a reçu le plus de jugement)</div>
-                <div class="stats-grid" style="margin-top: 90px; border-radius: 20px;">
+                <div class="stats-grid" style="margin-top: 9vh; border-radius: 2vh;">
 
                 </div>
             </div>
@@ -84,7 +84,7 @@
         <div class="page-4">
             <div class="stats-wrap">
                 <div class="title-grid">Les commentaires classés selon leurs indices de confiance</div>
-                <div class="stats-grid" style="margin-top: 50px; border-radius: 20px;">
+                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh;">
 
                 </div>
             </div>

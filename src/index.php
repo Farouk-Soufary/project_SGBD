@@ -25,17 +25,16 @@
         $sql_q1 = "SELECT NOM_JEU, EDITEUR, DATE_PARUTION FROM JEUX";
         $result = $db->query($sql_q1); // doesn't work
 
-        while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-            echo "NOM_JEU: \t" . $row["NOM_JEU"] . " - EDITEUR: \t" . $row["EDITEUR"] . " - DATE_PARUTION: \t" . $row["DATE_PARUTION"] . "<br>";
-        }
+        // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+        //     echo "NOM_JEU: \t" . $row["NOM_JEU"] . " - EDITEUR: \t" . $row["EDITEUR"] . " - DATE_PARUTION: \t" . $row["DATE_PARUTION"] . "<br>";
+        // }
 
         $sql_q2 = "SELECT PSEUDONYME, NOM_JOUEUR, ADRESSE_MAIL FROM JOUEURS";
-        echo $sql_q2;
         $result = $db->query($sql_q2);
 
-        while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-            echo "PSEUDONYME: \t" . $row["PSEUDONYME"] . " - NOM_JOUEUR: \t" . $row["NOM_JOUEUR"] . " - ADRESSE_MAIL: \t" . $row["ADRESSE_MAIL"] . "<br>";
-        }
+        // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+        //     echo "PSEUDONYME: \t" . $row["PSEUDONYME"] . " - NOM_JOUEUR: \t" . $row["NOM_JOUEUR"] . " - ADRESSE_MAIL: \t" . $row["ADRESSE_MAIL"] . "<br>";
+        // }
 
         $result = $db->exec($drp_query);
     ?>
@@ -51,6 +50,10 @@
         <div class="utilities-links">
             <div class="home-link">
                 <a href="index.php" class="text-link">Accueil</a> 
+            </div>
+
+            <div class="consult-link">
+                <a href="consult.php" class="text-link">DataBase</a> 
             </div>
 
             <div class="consult-link">
@@ -104,13 +107,13 @@
                 <div class="content"></div>
                 <div class="scheme-links">
                     <a class="scheme-link-one" href="./assets/scheme-concept.pdf">
-                        <div class="scheme-concept title" style="color: whitesmoke;">Conceptuel</div>
-                        <img src="./assets/scheme-concept.png" style="height:300px">
+                        <div class="scheme-concept title" style="color: whitesmoke; font-size: 5vh;">Conceptuel</div>
+                        <img src="./assets/scheme-concept.png" style="height: 31vh;">
                     </a>
 
                     <a class="scheme-link-two" href="./assets/scheme-relation.pdf">
-                        <div class="scheme-relation title" style="color: whitesmoke;" >Relationel</div>
-                        <img src="./assets/scheme-relation.png" style="height:320px">
+                        <div class="scheme-relation title" style="color: whitesmoke; font-size: 5vh;" >Relationel</div>
+                        <img src="./assets/scheme-relation.png" style="height: 32vh;">
                     </a>
                 </div>
 
