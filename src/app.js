@@ -80,6 +80,17 @@ function CreateEventListenersConsult(){
 function CreateEventListenersStats(){
 }
 
+function showTable(n){
+    for (let i = 1; i <= 6; i++){
+        document.querySelector(`.page-${i}`).style.zIndex = "-1";
+        document.querySelector(`.page-${i}`).childNodes[1].childNodes[1].classList.remove("isActive");
+    }
+    const DOMelement = document.querySelector(`.page-${n}`);
+    DOMelement.style.zIndex = "1";
+    DOMelement.childNodes[1].childNodes[1].classList.add("isActive");
+}
+
+
 CreateEventListenersModify();
 CreateEventListenersConsult();
 CreateEventListenersStats();

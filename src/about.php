@@ -24,6 +24,10 @@
             <div class="home-link">
                 <a href="index.php" class="text-link">Accueil</a> 
             </div>
+            
+            <div class="consult-link">
+                <a href="database.php" class="text-link">DataBase</a> 
+            </div>
 
             <div class="consult-link">
                 <a href="consult.php" class="text-link">Consulter</a> 

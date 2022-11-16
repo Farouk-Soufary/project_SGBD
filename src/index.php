@@ -55,7 +55,7 @@
             </div>
 
             <div class="consult-link">
-                <a href="consult.php" class="text-link">DataBase</a> 
+                <a href="database.php" class="text-link">DataBase</a> 
             </div>
 
             <div class="consult-link">
