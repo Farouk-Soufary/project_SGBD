@@ -9,7 +9,7 @@
     <link rel = "icon" type = "image/png" href = "assets/favicon.png">
     <title>projet SGBD : Jeux</title>
     <?php
-        $login = 'root';
+      	$login = 'root';
         $db_pwd = '';
         $db = new PDO("mysql:host=127.0.0.1;dbname=mysql;charset=utf8mb4", $login, $db_pwd);
         if (!$db) {
@@ -20,9 +20,9 @@
         $cr_query = file_get_contents('../sql/create.sql');
         $ins_query = file_get_contents('../sql/insert.sql');
         $drp_query = file_get_contents('../sql/drop.sql');
-        $result = $db->exec($cr_query.$ins_query);
-        
-        $sql_q1 = "SELECT NOM_JEU, EDITEUR, DATE_PARUTION FROM JEUX";
+        //$result = mysqli_query($db, $cr_query);
+        	
+       	/*$sql_q1 = "SELECT NOM_JEU, EDITEUR, DATE_PARUTION FROM JEUX";
         $result = $db->query($sql_q1); // doesn't work
 
         // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
@@ -36,7 +36,7 @@
         //     echo "PSEUDONYME: \t" . $row["PSEUDONYME"] . " - NOM_JOUEUR: \t" . $row["NOM_JOUEUR"] . " - ADRESSE_MAIL: \t" . $row["ADRESSE_MAIL"] . "<br>";
         // }
 
-        $result = $db->exec($drp_query);
+        $result = $db->exec($drp_query);*/
     ?>
 </head>
 <body>

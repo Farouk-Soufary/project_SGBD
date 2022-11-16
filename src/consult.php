@@ -51,10 +51,21 @@
                 <button class="choose-button">Choix du thème</button>
 
                 <div class="choose-bar">
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
+		    <?php
+		     $db = new PDO(
+		     'mysql:host=localhost;dbname=mysql;charset=utf8',
+		     'root',
+		     ''
+		     );
+		    $rs = $db->prepare('SELECT * FROM THEMES');
+		    $rs->execute();
+		    $themes = $rs->fetchAll();
+		    foreach ($themes as $theme) {
+		    ?>
+		    <button class="test-bar"><?php echo $theme['NOM_THEME']; ?></button>
+		    <?php
+		     }
+		     ?>
                 </div>
 
                 <div class="consult-grid">
@@ -69,12 +80,22 @@
                 <button class="choose-button">Choix du joueur</button>
                 
                 <div class="choose-bar">
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
-                </div>
-
+                <?php
+		        $db = new PDO(
+                'mysql:host=localhost;dbname=mysql;charset=utf8',
+                'root',
+                ''
+                );
+                $rs = $db->prepare('SELECT * FROM JOUEURS');
+                $rs->execute();
+                $joueurs = $rs->fetchAll();
+                foreach ($joueurs as $joueur) {
+                ?>
+                <button class="test-bar"><?php echo $joueur['NOM_JOUEUR']; ?></button>
+                <?php
+                }
+                ?>
+              	</div>
                 <div class="consult-grid">
 
                 </div>
@@ -87,10 +108,21 @@
                 <button class="choose-button">Choix du commentaire</button>
                 
                 <div class="choose-bar">
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
-                    <button class="test-bar">jad</button>
+                    <?php
+                    $db = new PDO(
+                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                    'root',
+                    ''
+                    );
+                    $rs = $db->prepare('SELECT * FROM NOTES');
+                    $rs->execute();
+                    $notes = $rs->fetchAll();
+                    foreach ($notes as $note) {
+                    ?>
+                    <button class="test-bar"><?php echo $note['COMMENTAIRE']; ?></button>
+                    <?php
+                    }
+                    ?>    
                 </div>
 
                 <div class="consult-grid">
