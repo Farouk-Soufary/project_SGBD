@@ -1,3 +1,4 @@
+
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -52,6 +53,10 @@ insert into JEUX values ( 'Anachrony','Fiona Sweeney','2017-7-13',120,'ACTION',4
 insert into JEUX values ( 'Le Havre','Maci Woodward','2008-7-10',150,'ACTION',5,1 );
 insert into JEUX values ( 'Too Many Bones','Kathryn Reyna','2017-5-18',120,'SURVIVAL',4,1 );
 insert into JEUX values ( 'Through the Ages A Story of Civilization','Marlene Beech','2006-3-18',120,'ACTION',4,0 );
+
+-- ============================================================
+--    creation des donnees
+-- ============================================================
 
 -- JOUEURS
 insert into JOUEURS values ( '1james', 'H', 'james', 'h1@gmail.com') ;
@@ -134,7 +139,7 @@ insert into NOTES values ( 71, 'Italians eat a large meal twice a day.', '2013-4
 insert into NOTES values ( 72, 'Plenty of sleep is healthful.', '2020-6-13', 5, 20, 'Arkham Horror The Card Game', '13paul') ;
 insert into NOTES values ( 73, 'These dogs are so sweet.', '2012-10-15', 19, 12, 'Viticulture Essential Edition', '19edward') ;
 insert into NOTES values ( 74, 'This should not be a big deal.', '2004-1-8', 10, 21, 'Nemesis', '17kenneth') ;
-insert into NOTES values ( 75, 'I want to plug my ears.', '2006-1-8', 19, 7, 'Orléans', '30jeffrey') ;
+insert into NOTES values ( 75, 'I want to plug my ears.', '2006-1-8', 19, 7, 'Root', '30jeffrey') ;
 insert into NOTES values ( 76, 'I want to have a pink bed this year.', '2020-5-11', 12, 30, 'Mage Knight Board Game', '37gregory') ;
 insert into NOTES values ( 77, 'I think I should shoot him.', '2007-8-17', 17, 16, 'Root', '25matthew') ;
 insert into NOTES values ( 78, 'The planet had not yet been discovered.', '2018-1-21', 8, 23, 'Puerto Rico', '22anthony') ;
@@ -159,8 +164,6 @@ insert into NOTES values ( 96, 'He drives more carefully than you do.', '2014-7-
 insert into NOTES values ( 97, 'Welcome to the big leagues.', '2011-4-12', 2, 11, 'Le Havre', '12daniel') ;
 insert into NOTES values ( 98, 'He said the telegram had arrived at noon.', '2002-10-14', 17, 13, 'Too Many Bones', '21ronald') ;
 insert into NOTES values ( 99, 'Rosa likes tea better than coffee.', '2004-8-3', 19, 5, 'Through the Ages A Story of Civilization', '29larry') ;
-insert into NOTES values ( 100, 'He found my lecture very interesting.', '2000-12-3', 14, 28, 'Azul', '45douglas') ;
-
 
 -- ============================================================
 --    creation des donnees
@@ -198,6 +201,10 @@ insert into MECANIQUES values ( 'Déduction' ) ;
 insert into MECANIQUES values ( 'Majorité' ) ;
 insert into MECANIQUES values ( 'Deck-building' ) ;
 insert into MECANIQUES values ( 'Draft' ) ;
+
+-- ============================================================
+--    creation des donnees
+-- ============================================================
 
 -- CONTRIBUTEURS
 insert into CONTRIBUTEURS values ( 1, 'Doris', 'Reynolds' );
@@ -1015,7 +1022,7 @@ insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', 
 -- JEUX_THEMES
 
 
-insert into JEUX_THEMES values ( 'Gloomhaven', 'Antiquité ') ;
+insert into JEUX_THEMES values ( 'Gloomhaven', 'Antiquité') ;
 insert into JEUX_THEMES values ( 'Pandemic Legacy  1', 'Espace') ;
 insert into JEUX_THEMES values ( 'Brass Birmingham', 'Enquete') ;
 insert into JEUX_THEMES values ( 'Terraforming Mars', 'Connaissances') ;
