@@ -66,14 +66,29 @@
 		    $themes = $rs->fetchAll();
 		    foreach ($themes as $theme) {
 		    ?>
-		    <button class="test-bar"><?php echo $theme['NOM_THEME']; ?></button>
+            <form action="" method="post">
+		    <button class="test-bar" name="Theme" type="submit" ><?php echo $theme['NOM_THEME']; ?></button>
+            </form>  
 		    <?php
 		     }
 		     ?>
                 </div>
 
-                <div class="consult-grid">
-
+                <div class="consult-grid" style="overflow-y: scroll;">
+                    <?php
+                    if ($_SERVER['REQUEST_METHOD'] === "POST") {
+                        if (isset($_POST["Theme"])) {
+                               $rs = $db->prepare('SELECT * FROM THEMES');
+                               $rs->execute();
+                               $themes = $rs->fetchAll();
+                               foreach ($themes as $theme) {
+                               ?>
+                               <button class="test-bar" ><?php echo $theme['NOM_THEME']; ?></button>
+                               <?php
+                                }
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -95,13 +110,28 @@
                 $joueurs = $rs->fetchAll();
                 foreach ($joueurs as $joueur) {
                 ?>
-                <button class="test-bar"><?php echo $joueur['NOM_JOUEUR']; ?></button>
+                <form  action="" method="post">
+                <button class="test-bar" type=submit name="Player"><?php echo $joueur['NOM_JOUEUR']; ?></button>
+                </form>
                 <?php
                 }
                 ?>
               	</div>
-                <div class="consult-grid">
-
+                <div class="consult-grid" style="overflow-y: scroll;">
+                <?php
+                    if ($_SERVER['REQUEST_METHOD'] === "POST") {
+                        if (isset($_POST["Player"])) {
+                               $rs = $db->prepare('SELECT * FROM JOUEURS');
+                               $rs->execute();
+                               $themes = $rs->fetchAll();
+                               foreach ($themes as $theme) {
+                               ?>
+                               <button class="test-bar" ><?php echo $theme['NOM_JOUEUR']; ?></button>
+                               <?php
+                                }
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
