@@ -163,7 +163,7 @@ a{
 
 .button-table:hover, .button-table.isActive{
     opacity: 1;
-    box-shadow:  0 0 .2vh .3vh rgb(0, 0, 0, .2);
+    box-shadow:  0 0 3vh .3vh rgb(0, 0, 0, .2);
     color: yellowgreen;
 }
 
@@ -194,7 +194,7 @@ a{
 }
 
 .page-6{
-    background-color: rgb(13, 122, 80);
+    background-color: rgb(0, 109, 109);
 }
 
 .footer{
@@ -204,7 +204,7 @@ a{
 .footer > .main-text{
     color: whitesmoke;
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 2vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     margin-top: 20px;
@@ -362,7 +362,7 @@ a{
 }
 
 .cancel-button:hover{
-    box-shadow: 0px 0px .3vh .3vh rgb(255, 255, 255, .6);
+    box-shadow: 0px 0px 3vh .3vh rgb(255, 255, 255, .6);
 }
 
 .cancel-button.isActive{
@@ -478,7 +478,7 @@ a{
     width: 80vw;
     border-bottom-left-radius: 2vh;
     border-bottom-right-radius: 2vh;
-    background-color: rgb(255, 255, 255, .4);
+    background-color:  rgb(255, 255, 255, .6);
     backdrop-filter: blur(20px);
 }
 

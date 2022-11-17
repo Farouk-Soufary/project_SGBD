@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
     <link rel = "icon" type = "image/png" href = "assets/favicon.png">
-    <title>projet SGBD : Jeux</title>
+    <title>Consultation</title>
 </head>
 <body>
     <div class="navbar">
@@ -40,6 +40,12 @@
             </div>
 
         </div>
+
+        <a class="logo" href="https://moodle.bordeaux-inp.fr/pluginfile.php/226190/mod_resource/content/2/projet_SGBD_jeux.pdf" style="height: 8vh; width: 9vw; cursor: pointer; position: absolute; left: 1vh; bottom: 1vh;">
+            <img src="assets/favicon.png" style="height: 8vh; position: absolute;">
+            <div style="position: absolute; color: white; font-family: montserrat; left: 3.8vw; top: 1.5vh; font-weight: 800; font-size: 3vh;">SGBD</div>
+            <div style="position: absolute; color: white; font-family: montserrat; left: 3.8vw; top: 4.3vh; font-weight: 800; font-size: 2vh;">projet</div>
+        </a>
 
         <a class="github-link" href="https://github.com/daJster/project_SGBD" title="Github">
         </a>

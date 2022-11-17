@@ -7,38 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
     <link rel = "icon" type = "image/png" href = "assets/favicon.png">
-    <title>projet SGBD : Jeux</title>
+    <title>projet SGBD</title>
     <?php
-      	$login = 'root';
-        $db_pwd = '';
-        $db = new PDO("mysql:host=127.0.0.1;dbname=mysql;charset=utf8mb4", $login, $db_pwd);
-        if (!$db) {
-            $e = oci_error();
-            trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-        }
+      	// $login = 'root';
+        // $db_pwd = '';
+        // $db = new PDO("mysql:host=127.0.0.1;dbname=mysql;charset=utf8mb4", $login, $db_pwd);
+        // if (!$db) {
+        //     $e = oci_error();
+        //     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+        // }
 
-        $cr_query = file_get_contents('../sql/create.sql');
-        $ins_query = file_get_contents('../sql/insert.sql');
-        $drp_query = file_get_contents('../sql/drop.sql');
-        // $result = mysqli_query($db, $cr_query);
+        // $cr_query = file_get_contents('../sql/create.sql');
+        // $ins_query = file_get_contents('../sql/insert.sql');
+        // $drp_query = file_get_contents('../sql/drop.sql');
+        // // $result = mysqli_query($db, $cr_query);
         
-        $result = $db->exec($cr_query.$ins_query);
+        // $result = $db->exec($cr_query.$ins_query);
 
-       	$sql_q1 = "SELECT NOM_JEU, EDITEUR, DATE_PARUTION FROM JEUX";
-        $result = $db->query($sql_q1); // doesn't work
+       	// $sql_q1 = "SELECT NOM_JEU, EDITEUR, DATE_PARUTION FROM JEUX";
+        // $result = $db->query($sql_q1); // doesn't work
 
-        // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        //     echo "NOM_JEU: \t" . $row["NOM_JEU"] . " - EDITEUR: \t" . $row["EDITEUR"] . " - DATE_PARUTION: \t" . $row["DATE_PARUTION"] . "<br>";
-        // }
+        // // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+        // //     echo "NOM_JEU: \t" . $row["NOM_JEU"] . " - EDITEUR: \t" . $row["EDITEUR"] . " - DATE_PARUTION: \t" . $row["DATE_PARUTION"] . "<br>";
+        // // }
 
-        $sql_q2 = "SELECT PSEUDONYME, NOM_JOUEUR, ADRESSE_MAIL FROM JOUEURS";
-        $result = $db->query($sql_q2);
+        // $sql_q2 = "SELECT PSEUDONYME, NOM_JOUEUR, ADRESSE_MAIL FROM JOUEURS";
+        // $result = $db->query($sql_q2);
 
-        // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        //     echo "PSEUDONYME: \t" . $row["PSEUDONYME"] . " - NOM_JOUEUR: \t" . $row["NOM_JOUEUR"] . " - ADRESSE_MAIL: \t" . $row["ADRESSE_MAIL"] . "<br>";
-        // }
+        // // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+        // //     echo "PSEUDONYME: \t" . $row["PSEUDONYME"] . " - NOM_JOUEUR: \t" . $row["NOM_JOUEUR"] . " - ADRESSE_MAIL: \t" . $row["ADRESSE_MAIL"] . "<br>";
+        // // }
 
-        // $result = $db->exec($drp_query);
+        // // $result = $db->exec($drp_query);
     ?>
 </head>
 <body>
@@ -76,15 +76,27 @@
 
         </div>
 
+        <a class="logo" href="https://moodle.bordeaux-inp.fr/pluginfile.php/226190/mod_resource/content/2/projet_SGBD_jeux.pdf" style="height: 8vh; width: 9vw; cursor: pointer; position: absolute; left: 1vh; bottom: 1vh;">
+            <img src="assets/favicon.png" style="height: 8vh; position: absolute;">
+            <div style="position: absolute; color: white; font-family: montserrat; left: 3.8vw; top: 1.5vh; font-weight: 800; font-size: 3vh;">SGBD</div>
+            <div style="position: absolute; color: white; font-family: montserrat; left: 3.8vw; top: 4.3vh; font-weight: 800; font-size: 2vh;">projet</div>
+        </a>
+
         <a class="github-link" href="https://github.com/daJster/project_SGBD" title="Github">
         </a>
 
         <div class="blur-screen"></div>
     </div>
     
+    <a class="logo" href="https://moodle.bordeaux-inp.fr/pluginfile.php/226190/mod_resource/content/2/projet_SGBD_jeux.pdf" style="height: 8vh; width: 9vw; margin-left: 10vh; cursor: pointer; position: absolute; left: 0;">
+            <img src="assets/favicon.png" style="height: 8vh; position: absolute;">
+            <div style="position: absolute; color: white; font-family: montserrat; left: 3.8vw; top: 1.5vh; font-weight: 800; font-size: 3vh;">SGBD</div>
+            <div style="position: absolute; color: white; font-family: montserrat; left: 3.8vw; top: 4.3vh; font-weight: 800; font-size: 2vh;">projet</div>
+    </a>
+
     <div class="pages">
         <div class="page-1">
-            <div class="index-title-page">SGBD projet : Jeux</div>
+            <div class="index-title-page">Jeux</div>
             <div class="paragraph">
                 <div class="title">Présentation du projet</div>
                 <div class="content">
@@ -149,7 +161,7 @@
 
         <div class="footer">
             <div class="main-text">
-                Made with ❤️ by Jad Elkarchi
+                Made with ❤️ by Jad 
             </div> 
             <div class="secondary-text">
                 Website built using only: Vanilla JS, CSS, HTML, PHP, SQL
