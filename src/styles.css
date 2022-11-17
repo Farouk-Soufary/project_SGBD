@@ -110,15 +110,15 @@ a{
 /*! WEBKIT SCROLL BAR DECO **/
 
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 2vh;
 }
 
 ::-webkit-scrollbar-track{
-    background: rgb(108, 108, 108);
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb{
-    border-radius: 6px;
+    border-radius: 6vh;
     background-color: rgb(120,169,255,.6);
 }
 
@@ -194,7 +194,7 @@ a{
 }
 
 .page-6{
-    background-color: rgb(43, 122, 120);
+    background-color: rgb(13, 122, 80);
 }
 
 .footer{
@@ -419,8 +419,7 @@ a{
     background-color: rgb(189, 188, 188, .5);
     backdrop-filter: blur(20px);
     color: black;
-    border-top-left-radius: 2vh;
-    border-top-right-radius: 2vh;
+    border-radius: 2vh;
 }
 
 .choose-button:hover{
@@ -438,7 +437,7 @@ a{
     transform: translateY(-10px);
     transition: .3s ease-in-out;
     opacity: 0;
-    background-color: blueviolet;
+    background-color: transparent;
     grid-template-rows: auto;
     row-gap: 0;
 }
@@ -454,19 +453,32 @@ a{
     width: 50vw;
     font-size: 2vh;
     cursor: pointer;
+    border: 1px solid rgb(55, 128, 130);
+    background-color: rgb(255, 255, 255, .6);
+    border-radius: .5vh;
+    color: black;
+    font-weight: 700;
+    transition: .1s ease-in-out;
 }
+
+.test-bar:hover{
+    background-color:  rgb(55, 128, 130);
+    color: yellowgreen;
+}
+
 
 .consult-grid, .stats-grid {
     z-index: -1;
     display: inline-block;
     position: absolute;
     left: 0;
-    margin-left: 5vw;
-    height: 60vh;
-    width: 50vw;
+    margin: 1vh;
+    margin-left: -8vw;
+    height: 70vh;
+    width: 80vw;
     border-bottom-left-radius: 2vh;
     border-bottom-right-radius: 2vh;
-    background-color: rgb(155, 155, 155, .3);
+    background-color: rgb(255, 255, 255, .4);
     backdrop-filter: blur(20px);
 }
 

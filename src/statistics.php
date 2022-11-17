@@ -52,14 +52,14 @@
             <div class="stats-title-page">Statistiques</div>
             <div class="stats-wrap">
                 <div class="title-grid">Les joueurs classés selon le nombre de jeux qu'ils ont notés</div>
-                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh; overflow-y: scroll;" >
-                <table style="width:100%">
+                <div class="stats-grid" style="margin-top: 6vh; border-radius-bottom: 2vh; overflow-y: scroll;  overflow-x: hidden; font-size: 2vh;" >
+                <table style="width:100%;">
                             <tr>
-                                <th style="width:5%">nb</th>
-                                <th style="width:20%">Pseudonyme</th>
-                                <th style="width:20%">Nom</th>
-                                <th style="width:20%">Prenom</th>
-                                <th style="width:20%">Adresse mail</th>
+                                <th style="width:5%;">nb</th>
+                                <th style="width:20%;">Pseudonyme</th>
+                                <th style="width:20%;">Nom</th>
+                                <th style="width:20%;">Prenom</th>
+                                <th style="width:20%;">Adresse mail</th>
                             </tr>
                 </table>
                 <?php
@@ -76,13 +76,13 @@
                    $themes = $rs->fetchAll();
                    foreach ($themes as $theme) {
                    ?>
-                        <table style="width:100%">
+                        <table style="width:100%;">
                             <tr>
-                                <td style="width:5%"><?php echo $theme['NB'];?></td >
-                                <td style="width:20%"><?php echo $theme['PSEUDONYME'];?></td>
-                                <td style="width:20%"><?php echo $theme['NOM_JOUEUR'];?></td>
-                                <td style="width:20%"><?php echo $theme['PRENOM_JOUEUR'];?></td>
-                                <td style="width:20%"><?php echo $theme['ADRESSE_MAIL'];?></td>
+                                <td style="width:5%;"><?php echo $theme['NB'];?></td >
+                                <td style="width:20%;"><?php echo $theme['PSEUDONYME'];?></td>
+                                <td style="width:20%;"><?php echo $theme['NOM_JOUEUR'];?></td>
+                                <td style="width:20%;"><?php echo $theme['PRENOM_JOUEUR'];?></td>
+                                <td style="width:20%;"><?php echo $theme['ADRESSE_MAIL'];?></td>
                             </tr>
                    </table>
                    <?php
@@ -106,14 +106,14 @@
                 </form>
                 </div>
 
-                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh; overflow-y: scroll;" >
-                    <table style="width:100%">
+                <div class="stats-grid" style="border-radius-bottom: 2vh; overflow-y: scroll; overflow-x: hidden; font-size: 2vh;" >
+                    <table style="width:100%;">
                         <tr>
-                                <th style="width:5%">ID</th>
-                                <th style="width:20%">Commentaire</th>
-                                <th style="width:20%">Date</th>
-                                <th style="width:15%">Note</th>
-                                <th style="width:20%">Nom du jeu</th>
+                                <th style="width:5%;">ID</th>
+                                <th style="width:20%;">Commentaire</th>
+                                <th style="width:20%;">Date</th>
+                                <th style="width:15%;">Note</th>
+                                <th style="width:20%;">Nom du jeu</th>
                         </tr>
                     </table>
                     <?php
@@ -140,13 +140,13 @@
                             $themes = $rs->fetchAll();
                             foreach ($themes as $theme) {
                             ?>
-                                    <table style="width:100%">
+                                    <table style="width:100%;">
                                         <tr>
-                                            <td style="width:5%"><?php echo $theme['ID_NOTE'];?></td >
-                                            <td style="width:20%"><?php echo $theme['COMMENTAIRE'];?></td>
-                                            <td style="width:20%"><?php echo $theme['DATE_NOTE'];?></td>
-                                            <td style="width:15%"><?php echo $theme['VALEUR'];?></td>
-                                            <td style="width:20%"><?php echo $theme['NOM_JEU'];?></td>
+                                            <td style="width:5%;"><?php echo $theme['ID_NOTE'];?></td >
+                                            <td style="width:20%;"><?php echo $theme['COMMENTAIRE'];?></td>
+                                            <td style="width:20%;"><?php echo $theme['DATE_NOTE'];?></td>
+                                            <td style="width:15%;"><?php echo $theme['VALEUR'];?></td>
+                                            <td style="width:20%;"><?php echo $theme['NOM_JEU'];?></td>
                                         </tr>
                             </table>
                             <?php
@@ -160,13 +160,13 @@
         <div class="page-3">
             <div class="stats-wrap">
                 <div class="title-grid">Le commentaire qui laisse le moins indifférent <br> (celui qui a reçu le plus de jugement)</div>
-                <div class="stats-grid" style="margin-top: 9vh; border-radius: 2vh; overflow-y: scroll;">
-                <table style="width:100%">
+                <div class="stats-grid" style="margin-top: 9vh; border-radius-bottom: 2vh; overflow-y: scroll;  overflow-x: hidden; font-size: 2vh;">
+                <table style="width:100%;">
                             <tr>
-                                <th style="width:5%">nb</th>
-                                <th style="width:20%">Commentaire</th>
-                                <th style="width:20%">Date</th>
-                                <th style="width:20%">Note</th>
+                                <th style="width:5%;">nb</th>
+                                <th style="width:20%;">Commentaire</th>
+                                <th style="width:20%;">Date</th>
+                                <th style="width:20%;">Note</th>
                             </tr>
                 </table>
                 <?php
@@ -183,12 +183,12 @@
                    $themes = $rs->fetchAll();
                    foreach ($themes as $theme) {
                    ?>
-                        <table style="width:100%">
+                        <table style="width:100%;">
                             <tr>
-                                <td style="width:5%"><?php echo $theme['NB'];?></td >
-                                <td style="width:20%"><?php echo $theme['COMMENTAIRE'];?></td>
-                                <td style="width:20%"><?php echo $theme['DATE_NOTE'];?></td>
-                                <td style="width:20%"><?php echo $theme['VALEUR'];?></td>
+                                <td style="width:5%;"><?php echo $theme['NB'];?></td >
+                                <td style="width:20%;"><?php echo $theme['COMMENTAIRE'];?></td>
+                                <td style="width:20%;"><?php echo $theme['DATE_NOTE'];?></td>
+                                <td style="width:20%;"><?php echo $theme['VALEUR'];?></td>
                             </tr>
                    </table>
                    <?php
@@ -201,7 +201,7 @@
         <div class="page-4">
             <div class="stats-wrap">
                 <div class="title-grid">Les commentaires classés selon leurs indices de confiance</div>
-                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh;">
+                <div class="stats-grid" style="margin-top: 6vh; border-radius-bottom: 2vh;  overflow-y: scroll; overflow-x: hidden; font-size: 2vh;">
                 </div>
             </div>
         </div>
