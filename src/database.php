@@ -271,11 +271,13 @@
                         <tr>
                             <th style="width:10%;">ID</th>
                             <th style="width:10%;">Nom </th>
-                            <th style="width:10%;">Prenom</th>
+                            <th style="width:10%;">Prénom</th>
+                            <th style="width:10%;">Rôle</th>
                         </tr>
                     </table>
                     <?php
-                        $rs = $db->prepare('SELECT * FROM CONTRIBUTEURS');
+                        $rs = $db->prepare('SELECT * FROM CONTRIBUTEURS, ROLES
+                                            WHERE CONTRIBUTEURS.ID_CONTRIBUTEUR = ROLES.ID_CONTRIBUTEUR');
                         $rs->execute();
                         $contributors = $rs->fetchAll();
                         foreach ($contributors as $contributor) {
@@ -285,7 +287,7 @@
                                     <td style="width:10%;"><?php echo $contributor['ID_CONTRIBUTEUR'];?></td >
                                     <td style="width:10%;"><?php echo $contributor['NOM_CONTRIBUTEUR'];?></td >
                                     <td style="width:10%;"><?php echo $contributor['PRENOM_CONTRIBUTEUR'];?></td >
-                                    
+                                    <td style="width:10%;"><?php echo $contributor['ROLE_CONTRIBUTEUR'];?></td >
                                 </tr>
                     </table>
                         <?php
