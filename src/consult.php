@@ -159,14 +159,41 @@
                     $notes = $rs->fetchAll();
                     foreach ($notes as $note) {
                     ?>
-                    <button class="test-bar"><?php echo $note['COMMENTAIRE']; ?></button>
+                    <form  action="" method="post">
+                    <button class="test-bar" type=submit name="<?php echo $note['ID_NOTE']; ?>"><?php echo $note['ID_NOTE']; ?></button>
                     <?php
                     }
                     ?>    
                 </div>
 
-                <div class="consult-grid">
-
+                <div class="consult-grid" style="overflow-y: scroll;">
+                <?php
+                    if ($_SERVER['REQUEST_METHOD'] === "POST") {
+                        $rs = $db->prepare('SELECT * FROM NOTES');
+                        $rs->execute();
+                        $notes = $rs->fetchAll();
+                        foreach ($notes as $note) {
+                            if (isset($_POST[$note['ID_NOTE']])) {
+                                $id = $note['ID_NOTE'];
+                                $rs = $db->prepare('SELECT * FROM NOTES N, JUGEMENTS J
+                                                        WHERE J.AVIS =:avis
+                                                        AND J.ID_NOTE=:note1
+                                                        AND N.ID_NOTE=:note2');
+                                $av = 'PERTINENT';
+                                $rs->bindParam('avis',$av,PDO::PARAM_STR);
+                                $rs->bindParam('note1',$id,PDO::PARAM_INT);
+                                $rs->bindParam('note2',$id,PDO::PARAM_INT);
+                                $rs->execute();
+                                $rows = $rs->fetchAll();
+                                foreach ($rows as $row) {
+                                ?>
+                                <button class="test-bar" ><?php echo $row['PSEUDONYME']; ?></button>
+                                <?php
+                                    }
+                            }
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
