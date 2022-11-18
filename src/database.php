@@ -26,25 +26,9 @@
         $cr_query = file_get_contents('../sql/create.sql');
         $ins_query = file_get_contents('../sql/insert.sql');
         $drp_query = file_get_contents('../sql/drop.sql');
-        // $result = mysqli_query($db, $cr_query);
-        
-        $result = $db->exec($cr_query.$ins_query);
-
-       	$sql_q1 = "SELECT NOM_JEU, EDITEUR, DATE_PARUTION FROM JEUX";
-        $result = $db->query($sql_q1); // doesn't work
-
-        // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        //     echo "NOM_JEU: \t" . $row["NOM_JEU"] . " - EDITEUR: \t" . $row["EDITEUR"] . " - DATE_PARUTION: \t" . $row["DATE_PARUTION"] . "<br>";
-        // }
-
-        $sql_q2 = "SELECT PSEUDONYME, NOM_JOUEUR, ADRESSE_MAIL FROM JOUEURS";
-        $result = $db->query($sql_q2);
-
-        // while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        //     echo "PSEUDONYME: \t" . $row["PSEUDONYME"] . " - NOM_JOUEUR: \t" . $row["NOM_JOUEUR"] . " - ADRESSE_MAIL: \t" . $row["ADRESSE_MAIL"] . "<br>";
-        // }
-
-        // $result = $db->exec($drp_query);
+        $db->exec($drp_query);
+        $db->exec($cr_query);
+        $db->exec($ins_query);
     ?>
 </head>
 <body>

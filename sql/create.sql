@@ -1,36 +1,36 @@
 -- ============================================================
 --   Nom de la base   :  Jeux                               
 --   Nom de SGBD      :  MySQL Version ..                
---   Date de creation :  10/11/2022  12:47                       
+--   Date de creation :  10/11/5022  12:47                       
 -- ============================================================
 
 -- @drop.sql
 
-drop table if exists JEUX                ; -- cascade constraints;
-drop table if exists JOUEURS             ; -- cascade constraints;
-drop table if exists NOTES               ; -- cascade constraints;
-drop table if exists ROLES               ; -- cascade constraints;
-drop table if exists EXTENSIONS          ; -- cascade constraints;
-drop table if exists MECANIQUES          ; -- cascade constraints;
-drop table if exists THEMES              ; -- cascade constraints;
-drop table if exists CONTRIBUTEURS       ; -- cascade constraints;
-drop table if exists JUGEMENTS           ; -- cascade constraints;
-drop table if exists JEUX_MECANIQUES     ; -- cascade constraints;
-drop table if exists JEUX_THEMES         ; -- cascade constraints;
-drop table if exists JOUEURS_MECANIQUES  ; -- cascade constraints;
-drop table if exists JOUEURS_THEMES      ; -- cascade constraints;
-drop table if exists PARTICIPATIONS      ; -- cascade constraints;
+drop table if exists JEUX_MECANIQUES     ; 
+drop table if exists JEUX_THEMES         ; 
+drop table if exists JOUEURS_MECANIQUES  ; 
+drop table if exists JOUEURS_THEMES      ; 
+drop table if exists EXTENSIONS          ; 
+drop table if exists MECANIQUES          ; 
+drop table if exists THEMES              ; 
+drop table if exists ROLES               ; 
+drop table if exists CONTRIBUTEURS       ; 
+drop table if exists JUGEMENTS           ; 
+drop table if exists PARTICIPATIONS      ; 
+drop table if exists NOTES               ; 
+drop table if exists JEUX                ; 
+drop table if exists JOUEURS             ; 
 
 -- ============================================================
 --   Table : Jeux                                        
 -- ============================================================
 create table JEUX
 (
-    NOM_JEU                      CHAR(20)              not null ,
-    EDITEUR                      CHAR(20)                       ,
+    NOM_JEU                      CHAR(50)              not null ,
+    EDITEUR                      CHAR(50)                       ,
     DATE_PARUTION                DATE                           ,
     DUREE                        INT(3)                         ,
-    TYPE_JEU                     CHAR(20)                       ,                       
+    TYPE_JEU                     CHAR(50)                       ,                       
     NOMBRE_JOUEURS               INT(2)                         ,
     STAND_ALONE                  BOOLEAN                        ,
     constraint pk_jeu primary key (NOM_JEU)
@@ -41,9 +41,9 @@ create table JEUX
 -- ============================================================
 create table JOUEURS
 (
-    PSEUDONYME                      CHAR(20)              not null,
-    NOM_JOUEUR                      CHAR(20)                      ,
-    PRENOM_JOUEUR                   CHAR(20)                      ,
+    PSEUDONYME                      CHAR(50)              not null,
+    NOM_JOUEUR                      CHAR(50)                      ,
+    PRENOM_JOUEUR                   CHAR(50)                      ,
     ADRESSE_MAIL                   CHAR(40)                      ,
     constraint pk_joueur primary key (PSEUDONYME)
 );
@@ -58,8 +58,8 @@ create table NOTES
     DATE_NOTE                       DATE                            ,
     VALEUR                          INT(1)                          ,
     NOMBRE_JOUEURS                  INT(2)                          ,
-    NOM_JEU                         CHAR(20)             not null   ,
-    PSEUDONYME                      CHAR(20)             not null   ,
+    NOM_JEU                         CHAR(50)             not null   ,
+    PSEUDONYME                      CHAR(50)             not null   ,
     constraint pk_note primary key (ID_NOTE)
 );
 
@@ -75,7 +75,7 @@ alter table NOTES
 -- ============================================================
 create table THEMES
 (
-    NOM_THEME                   CHAR(20)              not null   ,
+    NOM_THEME                   CHAR(50)              not null   ,
     constraint pk_theme primary key (NOM_THEME)
 );
 
@@ -84,7 +84,7 @@ create table THEMES
 -- ============================================================
 create table MECANIQUES
 (
-    NOM_MECANIQUES                   CHAR(20)              not null   ,
+    NOM_MECANIQUES                   CHAR(50)              not null   ,
     constraint pk_mecanique primary key (NOM_MECANIQUES)
 );
 
@@ -94,8 +94,8 @@ create table MECANIQUES
 create table CONTRIBUTEURS
 (
     ID_CONTRIBUTEUR                   INT(2)              not null  ,
-    NOM_CONTRIBUTEUR                  CHAR(20)                      ,
-    PRENOM_CONTRIBUTEUR               CHAR(20)                      ,
+    NOM_CONTRIBUTEUR                  CHAR(50)                      ,
+    PRENOM_CONTRIBUTEUR               CHAR(50)                      ,
     constraint pk_contributeur primary key (ID_CONTRIBUTEUR)
 );
 
@@ -104,9 +104,9 @@ create table CONTRIBUTEURS
 -- ============================================================
 create table ROLES
 (
-    NOM_JEU                           CHAR(20)              ,
+    NOM_JEU                           CHAR(50)              ,
     ID_CONTRIBUTEUR                   INT(2)                ,
-    ROLE_CONTRIBUTEUR                 CHAR(20)              ,
+    ROLE_CONTRIBUTEUR                 CHAR(50)              ,
     constraint pk_role primary key (ID_CONTRIBUTEUR, NOM_JEU)
 );
 
@@ -123,8 +123,8 @@ alter table ROLES
 create table JUGEMENTS
 (
     ID_NOTE                           INT(2)                    ,
-    PSEUDONYME                        CHAR(20)                  ,
-    AVIS                              CHAR(20)                          ,
+    PSEUDONYME                        CHAR(50)                  ,
+    AVIS                              CHAR(50)                          ,
     constraint pk_jugement primary key (PSEUDONYME, ID_NOTE)
 );
 
@@ -140,8 +140,8 @@ alter table JUGEMENTS
 -- ============================================================
 create table PARTICIPATIONS
 (
-    NOM_JEU                           CHAR(20)                  ,
-    PSEUDONYME                        CHAR(20)                  ,
+    NOM_JEU                           CHAR(50)                  ,
+    PSEUDONYME                        CHAR(50)                  ,
     constraint pk_participation primary key (PSEUDONYME, NOM_JEU)
 );
 
@@ -156,8 +156,8 @@ alter table PARTICIPATIONS
 -- ============================================================
 create table EXTENSIONS
 (
-    NOM_JEU                           CHAR(20)                  ,
-    NOM_EXTENSION                     CHAR(20)                  ,
+    NOM_JEU                           CHAR(50)                  ,
+    NOM_EXTENSION                     CHAR(50)                  ,
     constraint pk_extension primary key (NOM_EXTENSION, NOM_JEU)
 );
 
@@ -172,8 +172,8 @@ alter table EXTENSIONS
 -- ============================================================
 create table JEUX_THEMES
 (
-    NOM_JEU                       CHAR(20)                   ,
-    NOM_THEME                     CHAR(20)                   ,
+    NOM_JEU                       CHAR(50)                   ,
+    NOM_THEME                     CHAR(50)                   ,
     constraint pk_jeu_theme primary key (NOM_THEME, NOM_JEU)
 );
 
@@ -189,8 +189,8 @@ alter table JEUX_THEMES
 -- ============================================================
 create table JEUX_MECANIQUES
 (
-    NOM_JEU                     CHAR(20)                ,
-    NOM_MECANIQUES              CHAR(20)                ,
+    NOM_JEU                     CHAR(50)                ,
+    NOM_MECANIQUES              CHAR(50)                ,
     constraint pk_jeu_mecanique primary key (NOM_MECANIQUES, NOM_JEU)
 );
 
@@ -206,8 +206,8 @@ alter table JEUX_MECANIQUES
 -- ============================================================
 create table JOUEURS_THEMES
 (
-    PSEUDONYME                    CHAR(20)                   ,
-    NOM_THEME                     CHAR(20)                   ,
+    PSEUDONYME                    CHAR(50)                   ,
+    NOM_THEME                     CHAR(50)                   ,
     constraint pk_joueur_theme primary key (NOM_THEME, PSEUDONYME)
 );
 
@@ -223,8 +223,8 @@ alter table JOUEURS_THEMES
 -- ============================================================
 create table JOUEURS_MECANIQUES
 (
-    PSEUDONYME                  CHAR(20)                    ,
-    NOM_MECANIQUES              CHAR(20)                    ,
+    PSEUDONYME                  CHAR(50)                    ,
+    NOM_MECANIQUES              CHAR(50)                    ,
     constraint pk_joueur_mecanique primary key (NOM_MECANIQUES, PSEUDONYME)
 );
 
