@@ -81,6 +81,11 @@
                 </div>
 
                 <div class="consult-grid" style="overflow-y: scroll;">
+                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                        <tr>
+                                <th style="width:30%;">JEUX</th>
+                        </tr>
+                    </table>
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] === "POST") {
                         if (isset($_POST["Theme"])) {
@@ -89,7 +94,11 @@
                                $themes = $rs->fetchAll();
                                foreach ($themes as $theme) {
                                ?>
-                               <button class="test-bar" ><?php echo $theme['NOM_THEME']; ?></button>
+                               <table style="width:100%;">
+                                        <tr>
+                                            <td style="width:5%;"><?php echo $theme['NOM_THEME'];?></td >
+                                        </tr>
+                            </table>
                                <?php
                                 }
                         }
@@ -132,7 +141,11 @@
                                $themes = $rs->fetchAll();
                                foreach ($themes as $theme) {
                                ?>
-                               <button class="test-bar" ><?php echo $theme['NOM_JOUEUR']; ?></button>
+                               <table style="width:100%;">
+                                        <tr>
+                                            <td style="width:5%;"><?php echo $theme['NOM_JOUEUR'];?></td >
+                                        </tr>
+                            </table>
                                <?php
                                 }
                         }
@@ -167,6 +180,13 @@
                 </div>
 
                 <div class="consult-grid" style="overflow-y: scroll;">
+                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                        <tr>
+                                <th style="width:13%;">Peudonyme</th>
+                                <td style="width:22%;">Nom du jeu</td >
+                                <td style="width:13%;">Avis</td >
+                        </tr>
+                    </table>
                 <?php
                     if ($_SERVER['REQUEST_METHOD'] === "POST") {
                         $rs = $db->prepare('SELECT * FROM NOTES');
@@ -187,7 +207,13 @@
                                 $rows = $rs->fetchAll();
                                 foreach ($rows as $row) {
                                 ?>
-                                <button class="test-bar" ><?php echo $row['PSEUDONYME']; ?></button>
+                                <table style="width:100%;">
+                                        <tr>
+                                            <td style="width:13%;"><?php echo $row['PSEUDONYME'];?></td >
+                                            <td style="width:22%;"><?php echo $row['NOM_JEU'];?></td >
+                                            <td style="width:13%;"><?php echo $row['AVIS'];?></td >
+                                        </tr>
+                            </table>
                                 <?php
                                     }
                             }
