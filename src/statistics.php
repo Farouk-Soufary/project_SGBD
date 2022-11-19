@@ -60,13 +60,13 @@
             <div class="stats-wrap">
                 <div class="title-grid">Les joueurs classés selon le nombre de jeux qu'ils ont notés</div>
                 <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh; overflow-y: scroll;" >
-                <table style="width:100%">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);" >
                             <tr>
-                                <th style="width:5%">nb</th>
-                                <th style="width:20%">Pseudonyme</th>
-                                <th style="width:20%">Nom</th>
-                                <th style="width:20%">Prenom</th>
-                                <th style="width:20%">Adresse mail</th>
+                                <th style="width:5%; font-family: Montserrat; font-size: 3vh;">nb</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Pseudonyme</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Nom</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Prénom</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Adresse mail</th>
                             </tr>
                 </table>
                 <?php
@@ -85,11 +85,11 @@
                    ?>
                         <table style="width:100%">
                             <tr>
-                                <td style="width:5%"><?php echo $theme['NB'];?></td >
-                                <td style="width:20%"><?php echo $theme['PSEUDONYME'];?></td>
-                                <td style="width:20%"><?php echo $theme['NOM_JOUEUR'];?></td>
-                                <td style="width:20%"><?php echo $theme['PRENOM_JOUEUR'];?></td>
-                                <td style="width:20%"><?php echo $theme['ADRESSE_MAIL'];?></td>
+                                <td style="width: 5%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['NB'];?></td >
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['PSEUDONYME'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['NOM_JOUEUR'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['PRENOM_JOUEUR'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['ADRESSE_MAIL'];?></td>
                             </tr>
                    </table>
                    <?php
@@ -114,13 +114,13 @@
                 </div>
 
                 <div class="stats-grid">
-                    <table style="width:100%">
+                    <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                                <th style="width:5%">ID</th>
-                                <th style="width:20%">Commentaire</th>
-                                <th style="width:20%">Date</th>
-                                <th style="width:20%">Note</th>
-                                <th style="width:20%">Nom du jeu</th>
+                                <th style="width:5%; font-family: Montserrat; font-size: 3vh;">ID</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Commentaire</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Date</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Note</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Nom du jeu</th>
                         </tr>
                     </table>
                     <?php
@@ -149,11 +149,11 @@
                             ?>
                                     <table style="width:100%">
                                         <tr>
-                                            <td style="width:5%"><?php echo $theme['ID_NOTE'];?></td >
-                                            <td style="width:20%"><?php echo $theme['COMMENTAIRE'];?></td>
-                                            <td style="width:20%"><?php echo $theme['DATE_NOTE'];?></td>
-                                            <td style="width:20%"><?php echo $theme['VALEUR'];?></td>
-                                            <td style="width:20%"><?php echo $theme['NOM_JEU'];?></td>
+                                            <td style="width: 5%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['ID_NOTE'];?></td >
+                                            <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['COMMENTAIRE'];?></td>
+                                            <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['DATE_NOTE'];?></td>
+                                            <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['VALEUR'];?></td>
+                                            <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['NOM_JEU'];?></td>
                                         </tr>
                             </table>
                             <?php
@@ -168,12 +168,12 @@
             <div class="stats-wrap">
                 <div class="title-grid">Le commentaire qui laisse le moins indifférent <br> (celui qui a reçu le plus de jugement)</div>
                 <div class="stats-grid" style="margin-top: 9vh; border-radius: 2vh; overflow-y: scroll;">
-                <table style="width:100%">
+                <table  style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                             <tr>
-                                <th style="width:5%">nb</th>
-                                <th style="width:20%">Commentaire</th>
-                                <th style="width:20%">Date</th>
-                                <th style="width:20%">Note</th>
+                                <th style="width:5%; font-family: Montserrat; font-size: 3vh;">nb</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Commentaire</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Date</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Note</th>
                             </tr>
                 </table>
                 <?php
@@ -192,10 +192,10 @@
                    ?>
                         <table style="width:100%">
                             <tr>
-                                <td style="width:5%"><?php echo $theme['NB'];?></td >
-                                <td style="width:20%"><?php echo $theme['COMMENTAIRE'];?></td>
-                                <td style="width:20%"><?php echo $theme['DATE_NOTE'];?></td>
-                                <td style="width:20%"><?php echo $theme['VALEUR'];?></td>
+                                <td style="width: 5%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['NB'];?></td >
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['COMMENTAIRE'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['DATE_NOTE'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['VALEUR'];?></td>
                             </tr>
                    </table>
                    <?php
@@ -208,11 +208,13 @@
         <div class="page-4" style="background-color:  rgb(40, 54, 61);">
             <div class="stats-wrap">
                 <div class="title-grid">Les commentaires classés selon leurs indices de confiance</div>
-                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh;overflow-y: scroll;">
-                <table style="width:100%">
+                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh; overflow-y: scroll;">
+                <table  style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                             <tr>
-                                <th style="width:20%">Commentaire</th>
-                                <th style="width:20%">Indice de confiance</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Pseudonyme</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Jeu</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Commentaire</th>
+                                <th style="width:20%; font-family: Montserrat; font-size: 3vh;">Indice de confiance</th>
                             </tr>
                 </table>
                 <?php
@@ -221,18 +223,21 @@
                         'root',
                         ''
                         );
-                    $rs = $db->prepare("SELECT N.COMMENTAIRE , (1+count(CASE WHEN J.AVIS = 'PERTINENT' THEN 1 END))/ (1+count(CASE WHEN J.AVIS = 'IMPERTINENT' THEN 1 END)) INDICE from NOTES N
+                    $rs = $db->prepare("SELECT N.COMMENTAIRE, N.NOM_JEU, N.PSEUDONYME , (1+count(CASE WHEN J.AVIS = 'PERTINENT' THEN 1 END))/ (1+count(CASE WHEN J.AVIS = 'IMPERTINENT' THEN 1 END)) INDICE from NOTES N
                                         inner join JUGEMENTS J
                                         ON N.ID_NOTE = J.ID_NOTE
-                                        GROUP BY N.COMMENTAIRE;");
+                                        GROUP BY N.COMMENTAIRE 
+                                        ORDER BY INDICE DESC;");
                    $rs->execute();
                    $themes = $rs->fetchAll();
                    foreach ($themes as $theme) {
                    ?>
-                        <table style="width:100%">
+                        <table style="width:100%;">
                             <tr>
-                                <td style="width:20%"><?php echo $theme['COMMENTAIRE'];?></td>
-                                <td style="width:20%"><?php echo $theme['INDICE'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['PSEUDONYME'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['NOM_JEU'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['COMMENTAIRE'];?></td>
+                                <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['INDICE'];?></td>
                             </tr>
                    </table>
                    <?php
