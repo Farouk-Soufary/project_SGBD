@@ -1,0 +1,39 @@
+/* First Query */
+select J.* from JEUX J, JEUX_THEMES JT, JEUX_MECANIQUES JM
+where J.NOM_JEU = JT.NOM_JEU
+and J.NOM_JEU = JM.NOM_JEU
+and NOM_THEME = 'x'
+order by NOM_MECANIQUES;
+/* this one is the right one because it deletes the elements that were not judged (having no foreign key value in notes) */
+select J.* from JEUX J
+inner join NOTES N
+on J.NOM_JEU = N.NOM_JEU
+inner join JEUX_THEMES JT
+on J.NOM_JEU = JT.NOM_JEU
+inner join JEUX_MECANIQUES JM
+on J.NOM_JEU = JM.NOM_JEU
+where JT.NOM_THEME = 'x'
+order by JM.NOM_MECANIQUES;
+
+/* Second Query input = player, his prefered category*/
+select COMMENTAIRE from (
+select N.COMMENTAIRE, J.NOM_JEU, JM.NOM_MECANIQUES from NOTES N, JEUX J, JEUX_MECANIQUES JM, JOUEURS JR, JOUEURS_MECANIQUES JRM
+where N.NOM_JEU = J.NOM_JEU
+and JM.NOM_JEU = J.NOM_JEU
+and JRM.PSEUDONYME = JR.PSEUDONYME
+and JRM.PSEUDONYME = 'x';
+and JRM.NOM_MECANIQUES = JM.NOM_MECANIQUES)
+where NOM_MECANIQUES ='y'
+and NOM_JEU = 'z';
+
+
+select N.COMMENTAIRE, J.NOM_JEU, JM.NOM_MECANIQUES
+from NOTES N, JEUX J, JEUX_MECANIQUES JM, JOUEURS JR, JOUEURS_MECANIQUES JRM
+where N.NOM_JEU = J.NOM_JEU
+and JM.NOM_JEU = J.NOM_JEU
+and JRM.PSEUDONYME = JR.PSEUDONYME
+and JRM.PSEUDONYME = 'chosen player'
+and JRM.NOM_MECANIQUES = JM.NOM_MECANIQUES
+and J.NOM_JEU = 'chosen game';
+
+select N.COMMENTAIRE, J.NOM_JEU, JM.NOM_MECANIQUES from NOTES N, JEUX J, JEUX_MECANIQUES JM, JOUEURS JR, JOUEURS_MECANIQUES JRM where N.NOM_JEU = J.NOM_JEU and JM.NOM_JEU = J.NOM_JEU and JRM.PSEUDONYME = JR.PSEUDONYME and JRM.PSEUDONYME = '15donald' and JRM.NOM_MECANIQUES = JM.NOM_MECANIQUES and J.NOM_JEU = 'Power Grid';
