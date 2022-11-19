@@ -79,9 +79,9 @@
     </div>
     
     <div class="pages db-page">
-        <div class="page-1" style="z-index = 1;">
+        <div class="page-1" style="z-index = 1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table isActive" style="left: 10vw; background-color: rgb(43, 122, 120);" onclick="showTable(1);" title="Joueurs">Joueurs</button>
+            <button class="button-table isActive" style="left: 10vw;" onclick="showTable(1);" title="Joueurs">Joueurs</button>
             </div>
             
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
@@ -116,9 +116,9 @@
             </div>
         </div>
 
-        <div class="page-2" style="z-index = -1;">
+        <div class="page-2" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 21vw; background-color:  rgb(40, 54, 61);" onclick="showTable(2);" title="Joueurs">Jeux</button>
+            <button class="button-table" style="left: 21vw;" onclick="showTable(2);" title="Joueurs">Jeux</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
@@ -158,9 +158,9 @@
             </div>
         </div>
 
-        <div class="page-3" style="z-index = -1;">
+        <div class="page-3" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 32vw; background-color:  rgb(118, 13, 34);" onclick="showTable(3);" title="Joueurs">Notes</button>
+            <button class="button-table" style="left: 32vw;" onclick="showTable(3);" title="Joueurs">Notes</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
@@ -200,9 +200,9 @@
             </div>
         </div>
 
-        <div class="page-4" style="z-index = -1;">
+        <div class="page-4" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 43vw; background-color:  olive;" onclick="showTable(4);" title="Joueurs">Mécaniques</button>
+            <button class="button-table" style="left: 43vw;" onclick="showTable(4);" title="Joueurs">Mécaniques</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
@@ -232,9 +232,9 @@
             </div>
         </div>
 
-        <div class="page-5" style="z-index = -1;">
+        <div class="page-5" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 54vw; background-color:  peru;" onclick="showTable(5);" title="Joueurs">Thèmes</button>
+            <button class="button-table" style="left: 54vw;" onclick="showTable(5);" title="Joueurs">Thèmes</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
@@ -261,9 +261,9 @@
             </div>
         </div>
 
-        <div class="page-6" style="z-index = -1;">
+        <div class="page-6" style="z-index = -1;   background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 65vw; background-color:  rgb(0, 109, 109);" onclick="showTable(6);" title="Joueurs">Contributeurs</button>
+            <button class="button-table" style="left: 65vw;" onclick="showTable(6);" title="Joueurs">Contributeurs</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">

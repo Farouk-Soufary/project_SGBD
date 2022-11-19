@@ -7,7 +7,7 @@ html {
     aspect-ratio: 1;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: rgb(0,0,0,.6);
+    background-color: rgb(40, 54, 61);
 }
 
 .navbar{
@@ -17,7 +17,8 @@ html {
     height: 100vh;
     width: 40vh;
     z-index: 1;
-    background-color: rgba(80, 129, 217, 0.8);
+    background-color:rgb(40, 54, 61);
+    border-right: 2px solid rgb(0, 109, 109) ;
     transform: translateX(-30vh);
     transition: background-color .5s ease-out, transform .2s ease-out ;
 }
@@ -83,8 +84,8 @@ html {
 }
 
 .home-link:hover, .consult-link:hover, .statistics-link:hover, .about-link:hover, .modify-link:hover {
-    background-color: rgb(80,129,217);
-    color: greenyellow;
+    background-color: rgb(245, 245, 245, .6);
+    color:  rgb(40, 54, 61);
 }
 
 .text-link{
@@ -119,15 +120,14 @@ a{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 6vh;
-    background-color: rgb(120,169,255,.6);
+    background-color:rgb(0, 139, 139);
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(0, 139, 139);
+    background-color: whitesmoke;
 }
 
 /*! PAGES **/
-
 
 .pages {
     z-index: -1;
@@ -154,6 +154,7 @@ a{
     border: none;
     background-color: transparent;
     font-size: 3vh;
+    background-color: whitesmoke;
     border-top-left-radius: 2vh;
     border-top-right-radius: 2vh;
     cursor: pointer;
@@ -165,6 +166,10 @@ a{
     opacity: 1;
     box-shadow:  0 0 3vh .3vh rgb(0, 0, 0, .2);
     color: yellowgreen;
+}
+
+.button-table.isActive{
+    background-color: rgb(43, 122, 120);
 }
 
 .page-1, .page-2, .page-3, .page-4, .page-5, .page-6,.footer{
@@ -182,7 +187,7 @@ a{
 }
 
 .page-3{
-    background-color: rgb(118, 13, 34);
+    background-color:rgb(43, 122, 120);
 }
 
 .page-4{
@@ -378,7 +383,7 @@ a{
     width: 99.8%;
     height: 100%;
     margin-top: 20px;
-    background-color: rgb(58, 175, 169);
+    background-color: rgb(0, 139, 139);
 }
 
 
