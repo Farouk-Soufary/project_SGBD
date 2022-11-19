@@ -201,7 +201,36 @@
         <div class="page-4">
             <div class="stats-wrap">
                 <div class="title-grid">Les commentaires classés selon leurs indices de confiance</div>
-                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh;">
+                <div class="stats-grid" style="margin-top: 6vh; border-radius: 2vh;overflow-y: scroll;">
+                <table style="width:100%">
+                            <tr>
+                                <th style="width:20%">Commentaire</th>
+                                <th style="width:20%">Indice de confiance</th>
+                            </tr>
+                </table>
+                <?php
+                    $db = new PDO(
+                        'mysql:host=localhost;dbname=mysql;charset=utf8',
+                        'root',
+                        ''
+                        );
+                    $rs = $db->prepare("SELECT N.COMMENTAIRE , (1+count(CASE WHEN J.AVIS = 'PERTINENT' THEN 1 END))/ (1+count(CASE WHEN J.AVIS = 'IMPERTINENT' THEN 1 END)) INDICE from NOTES N
+                                        inner join JUGEMENTS J
+                                        ON N.ID_NOTE = J.ID_NOTE
+                                        GROUP BY N.COMMENTAIRE;");
+                   $rs->execute();
+                   $themes = $rs->fetchAll();
+                   foreach ($themes as $theme) {
+                   ?>
+                        <table style="width:100%">
+                            <tr>
+                                <td style="width:20%"><?php echo $theme['COMMENTAIRE'];?></td>
+                                <td style="width:20%"><?php echo $theme['INDICE'];?></td>
+                            </tr>
+                   </table>
+                   <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
