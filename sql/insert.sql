@@ -67,6 +67,8 @@ insert into JEUX values ( 'Too Many Bones','Kathryn Reyna','2017-5-18',120,'SURV
 insert into JEUX values ( 'Through the Ages A Story of Civilization','Marlene Beech','2006-3-18',120,'ACTION',4,0 );
 insert into JEUX values ( 'Azul','Marlene','2012-5-28',120,'SURVIVAL',2,0 );
 
+COMMIT;
+
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -122,6 +124,9 @@ insert into JOUEURS values ( '47carl', 'PARKER', 'carl', 'parker47@gmail.com') ;
 insert into JOUEURS values ( '48arthur', 'EVANS', 'arthur', 'evans48@gmail.com') ;
 insert into JOUEURS values ( '49ryan', 'EDWARDS', 'ryan', 'edwards49@gmail.com') ;
 insert into JOUEURS values ( '50roger', 'COLLINS', 'roger', 'collins50@gmail.com') ;
+
+
+COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -229,6 +234,8 @@ insert into NOTES values ( 97, 'Welcome to the big leagues.', '2011-4-12', 2, 11
 insert into NOTES values ( 98, 'He said the telegram had arrived at noon.', '2002-10-14', 17, 13, 'Too Many Bones', '21ronald') ;
 insert into NOTES values ( 99, 'Rosa likes tea better than coffee.', '2004-8-3', 19, 5, 'Through the Ages A Story of Civilization', '29larry') ;
 
+COMMIT;
+
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -249,6 +256,8 @@ insert into THEMES values ( 'Merveilleux' ) ;
 insert into THEMES values ( 'Mytholoie' ) ;
 insert into THEMES values ( 'Survie' ) ;
 
+COMMIT;
+
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -268,6 +277,7 @@ insert into MECANIQUES values ( 'Draft' ) ;
 insert into MECANIQUES values ( 'Guess' ) ;
 insert into MECANIQUES values ( 'Enchères' ) ;
 
+COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -374,6 +384,7 @@ insert into CONTRIBUTEURS values ( 97, 'Aniya', 'Garcia' );
 insert into CONTRIBUTEURS values ( 98, 'Rui', 'Guzman' );
 insert into CONTRIBUTEURS values ( 99, 'Graeme', 'Bond' );
 
+COMMIT;
 
 insert into ROLES values ( 'Gloomhaven', 1, 'Illustrateur' );
 insert into ROLES values ( 'Gloomhaven', 51, 'Auteur' );
@@ -426,6 +437,8 @@ insert into ROLES values ( 'Nemesis', 97, 'Auteur' );
 insert into ROLES values ( 'Orléans', 49, 'Illustrateur' );
 insert into ROLES values ( 'Orléans', 99, 'Auteur' );
 
+COMMIT;
+
 -- EXTENSIONS
 insert into EXTENSIONS values ( 'Pandemic Legacy', 'Pandemic Legacy  1' );
 insert into EXTENSIONS values ( 'Brass', 'Brass Birmingham' );
@@ -444,6 +457,8 @@ insert into EXTENSIONS values ( 'Tzolk', 'Tzolk The Mayan Calendar' );
 insert into EXTENSIONS values ( 'The Crew', 'The Crew The Quest for Planet Nine' );
 insert into EXTENSIONS values ( 'Star Wars', 'Star Wars Imperial Assault' );
 insert into EXTENSIONS values ( 'Through the Ages', 'Through the Ages A Story of Civilization' );
+
+COMMIT;
 
 -- JUGEMENTS
 insert into JUGEMENTS values ( 35, '1james', 'PERTINENT' );
@@ -875,6 +890,8 @@ insert into JUGEMENTS values ( 28, '49ryan', 'PERTINENT' );
 insert into JUGEMENTS values ( 81, '49ryan', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 53, '49ryan', 'IMPERTINENT' );
 
+COMMIT;
+
 -- PARTICIPATIONS
 insert into PARTICIPATIONS values ( 'Gloomhaven', '12daniel' );
 insert into PARTICIPATIONS values ( 'Gloomhaven', '29larry' );
@@ -1086,6 +1103,8 @@ insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', 
 insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', '45douglas' );
 insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', '28jose' );
 
+COMMIT;
+
 -- JEUX_THEMES
 
 
@@ -1139,6 +1158,8 @@ insert into JEUX_THEMES values ( 'Le Havre', 'Enfant') ;
 insert into JEUX_THEMES values ( 'Too Many Bones', 'Fantastique') ;
 insert into JEUX_THEMES values ( 'Through the Ages A Story of Civilization', 'Histoire') ;
 insert into JEUX_THEMES values ( 'Azul', 'Enquete') ;
+
+COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -1197,6 +1218,8 @@ insert into JEUX_MECANIQUES values ( 'Too Many Bones', 'Enchères') ;
 insert into JEUX_MECANIQUES values ( 'Through the Ages A Story of Civilization', 'Majorité ') ;
 insert into JEUX_MECANIQUES values ( 'Azul', 'Deck-building ') ;
 
+COMMIT;
+
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -1251,6 +1274,7 @@ insert into JOUEURS_THEMES values ( '5william', 'Espace') ;
 insert into JOUEURS_THEMES values ( '14mark', 'Antiquité ') ;
 insert into JOUEURS_THEMES values ( '15donald', 'Connaissances') ;
 
+COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -1317,3 +1341,4 @@ insert into JOUEURS_MECANIQUES values ( '24jason','Pari') ;
 insert into JOUEURS_MECANIQUES values ( '25matthew','Déduction') ;
 insert into JOUEURS_MECANIQUES values ( '26gary','Connection') ;
 
+COMMIT;

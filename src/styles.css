@@ -321,8 +321,13 @@ a{
 .modify-action, .player-object {
     background-color:  rgb(40, 54, 61);
 }
-.delete-action, .comment-object {
+.delete-action{
     background-color:  rgb(118, 13, 34);
+}
+
+.comment-object{
+    background-color:  rgb(20, 34, 41);
+
 }
 
 .add-action > .text, .delete-action > .text, .modify-action > .text, .game-object > .text, .player-object > .text, .comment-object > .text {
@@ -383,7 +388,7 @@ a{
     width: 99.8%;
     height: 100%;
     margin-top: 20px;
-    background-color: rgb(0, 139, 139);
+    background-color: whitesmoke;
 }
 
 

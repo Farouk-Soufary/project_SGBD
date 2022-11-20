@@ -164,7 +164,7 @@
                 Made with ❤️ by Jad 
             </div> 
             <div class="secondary-text">
-                Website built using only: Vanilla JS, CSS, HTML, PHP, SQL
+                Website built using : Vanilla JS, CSS, HTML, PHP, SQL
             </div>
         </div>
     </div>
