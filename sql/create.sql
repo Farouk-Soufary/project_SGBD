@@ -21,6 +21,7 @@ drop table if exists NOTES               ;
 drop table if exists JEUX                ; 
 drop table if exists JOUEURS             ; 
 
+COMMIT;
 -- ============================================================
 --   Table : Jeux                                        
 -- ============================================================
@@ -36,6 +37,8 @@ create table JEUX
     constraint pk_jeu primary key (NOM_JEU)
 );
 
+COMMIT;
+
 -- ============================================================
 --   Table : Joueurs                                       
 -- ============================================================
@@ -47,6 +50,9 @@ create table JOUEURS
     ADRESSE_MAIL                   CHAR(40)                      ,
     constraint pk_joueur primary key (PSEUDONYME)
 );
+
+
+COMMIT;
 
 -- ============================================================
 --   Table : Notes                                              
@@ -69,6 +75,7 @@ alter table NOTES
     add constraint fk2_note foreign key (PSEUDONYME)
        references JOUEURS (PSEUDONYME);
 
+COMMIT;
 
 -- ============================================================
 --   Table : Thèmes                                              
@@ -79,6 +86,8 @@ create table THEMES
     constraint pk_theme primary key (NOM_THEME)
 );
 
+COMMIT;
+
 -- ============================================================
 --   Table : Mécaniques                                              
 -- ============================================================
@@ -87,6 +96,8 @@ create table MECANIQUES
     NOM_MECANIQUES                   CHAR(50)              not null   ,
     constraint pk_mecanique primary key (NOM_MECANIQUES)
 );
+
+COMMIT;
 
 -- ============================================================
 --   Table : Contributeurs                                              
@@ -98,6 +109,8 @@ create table CONTRIBUTEURS
     PRENOM_CONTRIBUTEUR               CHAR(50)                      ,
     constraint pk_contributeur primary key (ID_CONTRIBUTEUR)
 );
+
+COMMIT;
 
 -- ============================================================
 --   Table : Roles                                         
@@ -116,6 +129,7 @@ alter table ROLES
     add constraint fk2_role foreign key (ID_CONTRIBUTEUR)
        references CONTRIBUTEURS (ID_CONTRIBUTEUR);
 
+COMMIT;
 
 -- ============================================================
 --   Table : Jugements                                              
@@ -134,6 +148,7 @@ alter table JUGEMENTS
     add constraint fk2_jugement foreign key (ID_NOTE)
        references NOTES (ID_NOTE);
 
+COMMIT;
 
 -- ============================================================
 --   Table : Participations                                              
@@ -151,6 +166,8 @@ alter table PARTICIPATIONS
     add constraint fk2_participation foreign key (NOM_JEU)
        references JEUX (NOM_JEU);
 
+COMMIT;
+
 -- ============================================================
 --   Table : Extensions                                              
 -- ============================================================
@@ -167,6 +184,8 @@ alter table EXTENSIONS
     add constraint fk2_extension foreign key (NOM_EXTENSION)
        references JEUX (NOM_JEU);
 
+COMMIT;
+
 -- ============================================================
 --   Table : Jeux_Themes                                           
 -- ============================================================
@@ -182,6 +201,8 @@ alter table JEUX_THEMES
        references JEUX (NOM_JEU),
     add constraint fk2_jeu_theme foreign key (NOM_THEME)
        references THEMES (NOM_THEME);
+
+COMMIT;
 
 
 -- ============================================================
@@ -200,7 +221,8 @@ alter table JEUX_MECANIQUES
     add constraint fk2_jeu_mecanique foreign key (NOM_MECANIQUES)
        references MECANIQUES (NOM_MECANIQUES);
 
-    
+COMMIT;
+
 -- ============================================================
 --   Table : Joueurs_Themes                                           
 -- ============================================================
@@ -217,6 +239,7 @@ alter table JOUEURS_THEMES
     add constraint fk2_joueur_theme foreign key (NOM_THEME)
        references THEMES (NOM_THEME);
 
+COMMIT;
 
 -- ============================================================
 --   Table : Joueurs_Mecaniques                                           
@@ -233,3 +256,5 @@ alter table JOUEURS_MECANIQUES
        references JOUEURS (PSEUDONYME),
     add constraint fk2_joueur_mecanique foreign key (NOM_MECANIQUES)
        references MECANIQUES (NOM_MECANIQUES);
+
+COMMIT;

@@ -81,9 +81,9 @@
                 </div>
 
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                                <th style="width:30%;">JEUX</th>
+                                <th style="width:30%; font-family: Montserrat; font-size: 3vh;">Jeux</th>
                         </tr>
                     </table>
                     <?php
@@ -148,6 +148,7 @@
                 ?>
               	</div>
                 <?php
+
                 if ($_SERVER['REQUEST_METHOD'] === "POST") {
                   $rs = $db->prepare('SELECT * FROM JOUEURS');
                   $rs->execute();
@@ -171,6 +172,7 @@
                       </form>
                       <?php
                       }
+
                     }
 
                   }?>
@@ -239,11 +241,11 @@
                 </div>
 
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table  style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                                <th style="width:13%;">Peudonyme</th>
-                                <td style="width:22%;">Nom du jeu</td >
-                                <td style="width:13%;">Avis</td >
+                                <th style="width:13%; font-family: Montserrat; font-size: 3vh;">Pseudonyme</th>
+                                <td style="width:22%; font-family: Montserrat; font-size: 3vh;">Nom du jeu</td >
+                                <td style="width:13%; font-family: Montserrat; font-size: 3vh;">Avis</td >
                         </tr>
                     </table>
                 <?php
@@ -268,9 +270,9 @@
                                 ?>
                                 <table style="width:100%;">
                                         <tr>
-                                            <td style="width:13%;"><?php echo $row['PSEUDONYME'];?></td >
-                                            <td style="width:22%;"><?php echo $row['NOM_JEU'];?></td >
-                                            <td style="width:13%;"><?php echo $row['AVIS'];?></td >
+                                            <td style="width:13%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $row['PSEUDONYME'];?></td >
+                                            <td style="width:22%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $row['NOM_JEU'];?></td >
+                                            <td style="width:13%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $row['AVIS'];?></td >
                                         </tr>
                             </table>
                                 <?php

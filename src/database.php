@@ -79,19 +79,19 @@
     </div>
     
     <div class="pages db-page">
-        <div class="page-1" style="z-index = 1;">
+        <div class="page-1" style="z-index = 1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table isActive" style="left: 10vw; background-color: rgb(43, 122, 120);" onclick="showTable(1);" title="Joueurs">Joueurs</button>
+            <button class="button-table isActive" style="left: 10vw;" onclick="showTable(1);" title="Joueurs">Joueurs</button>
             </div>
             
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                            <th style="width:10%;">Prenom</th>
-                            <th style="width:10%;">Nom </th>
-                            <th style="width:10%;">Pseudonyme</th>
-                            <th style="width:10%;">Email</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Prenom</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Nom </th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Pseudonyme</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Email</th>
                         </tr>
                     </table>
                     <?php
@@ -102,10 +102,10 @@
                         ?>
                         <table style="width:100%;">
                                 <tr>
-                                    <td style="width:10%;"><?php echo $player['PRENOM_JOUEUR'];?></td >
-                                    <td style="width:10%;"><?php echo $player['NOM_JOUEUR'];?></td >
-                                    <td style="width:10%;"><?php echo $player['PSEUDONYME'];?></td >
-                                    <td style="width:10%;"><?php echo $player['ADRESSE_MAIL'];?></td >
+                                    <td style="width:10%;  font-family: Montserrat; font-size: 2.5vh;"><?php echo $player['PRENOM_JOUEUR'];?></td >
+                                    <td style="width:10%;  font-family: Montserrat; font-size: 2.5vh;"><?php echo $player['NOM_JOUEUR'];?></td >
+                                    <td style="width:10%;  font-family: Montserrat; font-size: 2.5vh;"><?php echo $player['PSEUDONYME'];?></td >
+                                    <td style="width:10%;  font-family: Montserrat; font-size: 2.5vh;"><?php echo $player['ADRESSE_MAIL'];?></td >
                                     
                                 </tr>
                     </table>
@@ -116,21 +116,21 @@
             </div>
         </div>
 
-        <div class="page-2" style="z-index = -1;">
+        <div class="page-2" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 21vw; background-color:  rgb(40, 54, 61);" onclick="showTable(2);" title="Joueurs">Jeux</button>
+            <button class="button-table" style="left: 21vw;" onclick="showTable(2);" title="Joueurs">Jeux</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                            <th style="width:10%;">Nom</th>
-                            <th style="width:10%;">Editeur </th>
-                            <th style="width:10%;">Date de parution</th>
-                            <th style="width:10%;">Durée</th>
-                            <th style="width:10%;">Type</th>
-                            <th style="width:10%;">Nombre de joueurs</th>
-                            <th style="width:10%;">Stand Alone</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Nom</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Editeur </th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Date de parution</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Durée</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Type</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Nombre de joueurs</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Stand Alone</th>
                         </tr>
                     </table>
                     <?php
@@ -141,13 +141,13 @@
                         ?>
                         <table style="width:100%;">
                                 <tr>
-                                    <td style="width:10%;"><?php echo $game['EDITEUR'];?></td >
-                                    <td style="width:10%;"><?php echo $game['NOM_JEU'];?></td >
-                                    <td style="width:10%;"><?php echo $game['DATE_PARUTION'];?></td >
-                                    <td style="width:10%;"><?php echo $game['DUREE'];?></td >
-                                    <td style="width:10%;"><?php echo $game['TYPE_JEU'];?></td >
-                                    <td style="width:10%;"><?php echo $game['NOMBRE_JOUEURS'];?></td >
-                                    <td style="width:10%;"><?php echo $game['STAND_ALONE'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['EDITEUR'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['NOM_JEU'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['DATE_PARUTION'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['DUREE'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['TYPE_JEU'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['NOMBRE_JOUEURS'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['STAND_ALONE'];?></td >
                                     
                                 </tr>
                     </table>
@@ -158,21 +158,21 @@
             </div>
         </div>
 
-        <div class="page-3" style="z-index = -1;">
+        <div class="page-3" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 32vw; background-color:  rgb(118, 13, 34);" onclick="showTable(3);" title="Joueurs">Notes</button>
+            <button class="button-table" style="left: 32vw;" onclick="showTable(3);" title="Joueurs">Notes</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                            <th style="width:10%;">ID</th>
-                            <th style="width:10%;">Commentaire </th>
-                            <th style="width:10%;">Date</th>
-                            <th style="width:10%;">Valeur</th>
-                            <th style="width:10%;">Nombre de joueurs</th>
-                            <th style="width:10%;">Nom du jeu</th>
-                            <th style="width:10%;">Pseudonyme</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">ID</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Commentaire </th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Date</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Valeur</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Nombre de joueurs</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Nom du jeu</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Pseudonyme</th>
                         </tr>
                     </table>
                     <?php
@@ -183,13 +183,13 @@
                         ?>
                         <table style="width:100%;">
                                 <tr>
-                                    <td style="width:10%;"><?php echo $note['ID_NOTE'];?></td >
-                                    <td style="width:10%;"><?php echo $note['COMMENTAIRE'];?></td >
-                                    <td style="width:10%;"><?php echo $note['DATE_NOTE'];?></td >
-                                    <td style="width:10%;"><?php echo $note['VALEUR'];?></td >
-                                    <td style="width:10%;"><?php echo $note['NOMBRE_JOUEURS'];?></td >
-                                    <td style="width:10%;"><?php echo $note['NOM_JEU'];?></td >
-                                    <td style="width:10%;"><?php echo $note['PSEUDONYME'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['ID_NOTE'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['COMMENTAIRE'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['DATE_NOTE'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['VALEUR'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['NOMBRE_JOUEURS'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['NOM_JEU'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['PSEUDONYME'];?></td >
                                     
                                 </tr>
                     </table>
@@ -200,16 +200,16 @@
             </div>
         </div>
 
-        <div class="page-4" style="z-index = -1;">
+        <div class="page-4" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 43vw; background-color:  olive;" onclick="showTable(4);" title="Joueurs">Mécaniques</button>
+            <button class="button-table" style="left: 43vw;" onclick="showTable(4);" title="Joueurs">Mécaniques</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                            <th style="width:10%;">Jeu</th>
-                            <th style="width:10%;">Mécanique </th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Jeu</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Mécanique </th>
                         </tr>
                     </table>
                     <?php
@@ -220,8 +220,8 @@
                         ?>
                         <table style="width:100%;">
                                 <tr>
-                                    <td style="width:10%;"><?php echo $mechanic['NOM_JEU'];?></td >
-                                    <td style="width:10%;"><?php echo $mechanic['NOM_MECANIQUES'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $mechanic['NOM_JEU'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $mechanic['NOM_MECANIQUES'];?></td >
                                     
                                 </tr>
                     </table>
@@ -232,15 +232,15 @@
             </div>
         </div>
 
-        <div class="page-5" style="z-index = -1;">
+        <div class="page-5" style="z-index = -1;     background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 54vw; background-color:  peru;" onclick="showTable(5);" title="Joueurs">Thèmes</button>
+            <button class="button-table" style="left: 54vw;" onclick="showTable(5);" title="Joueurs">Thèmes</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                            <th style="width:10%;">Thèmes</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Thèmes</th>
                         </tr>
                     </table>
                     <?php
@@ -251,7 +251,7 @@
                         ?>
                         <table style="width:100%;">
                                 <tr>
-                                    <td style="width:10%;"><?php echo $theme['NOM_THEME'];?></td >                                    
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['NOM_THEME'];?></td >                                    
                                 </tr>
                     </table>
                         <?php
@@ -261,18 +261,18 @@
             </div>
         </div>
 
-        <div class="page-6" style="z-index = -1;">
+        <div class="page-6" style="z-index = -1;   background-color: rgb(43, 122, 120);">
             <div>
-            <button class="button-table" style="left: 65vw; background-color:  rgb(0, 109, 109);" onclick="showTable(6);" title="Joueurs">Contributeurs</button>
+            <button class="button-table" style="left: 65vw;" onclick="showTable(6);" title="Joueurs">Contributeurs</button>
             </div>
             <div class="consult-wrap" style="transform: translate(-30vw,-40vh); ">
                 <div class="consult-grid" style="overflow-y: scroll;">
-                <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                            <th style="width:10%;">ID</th>
-                            <th style="width:10%;">Nom </th>
-                            <th style="width:10%;">Prénom</th>
-                            <th style="width:10%;">Rôle</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">ID</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Nom </th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Prénom</th>
+                            <th style="width:10%; font-family: Montserrat; font-size: 3vh;">Rôle</th>
                         </tr>
                     </table>
                     <?php
@@ -284,10 +284,10 @@
                         ?>
                         <table style="width:100%;">
                                 <tr>
-                                    <td style="width:10%;"><?php echo $contributor['ID_CONTRIBUTEUR'];?></td >
-                                    <td style="width:10%;"><?php echo $contributor['NOM_CONTRIBUTEUR'];?></td >
-                                    <td style="width:10%;"><?php echo $contributor['PRENOM_CONTRIBUTEUR'];?></td >
-                                    <td style="width:10%;"><?php echo $contributor['ROLE_CONTRIBUTEUR'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $contributor['ID_CONTRIBUTEUR'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $contributor['NOM_CONTRIBUTEUR'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $contributor['PRENOM_CONTRIBUTEUR'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $contributor['ROLE_CONTRIBUTEUR'];?></td >
                                 </tr>
                     </table>
                         <?php
