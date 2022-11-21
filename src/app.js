@@ -6,6 +6,18 @@ const objects = document.querySelector('.sections-objects');
 const cancelButton = document.querySelector('.cancel-button');
 const consultChoiceBar = document.getElementsByClassName('choose-bar');
 const consultChoiceButton = document.getElementsByClassName('choose-button');
+
+const formSubmitButtons = document.querySelectorAll(".form-submit");
+// const formFieldsAdd = document.querySelectorAll(".form-fields.add");
+// const formFieldsModify = document.querySelectorAll(".form-fields.modify");
+// const formFieldsDelete = document.querySelectorAll(".form-fields.delete");
+// const formFieldsSections = [formFieldsAdd, formFieldsModify, formFieldsDelete];
+
+const actionsList = ["add", "modify", "delete"];
+const objectsList = ["game", "player", "comment"];
+
+let selectedAction, selectedObject;
+
 let action = {};
 let object = {};
 
@@ -29,21 +41,23 @@ function CreateEventListenersModify(){
     Object.keys(actions?.children).forEach( (key) => {
         const child = actions?.children[key];
         child.addEventListener('click', () => {
-            console.log("action-click", child);
             sectionsWrapper.classList.add('choose');
             action = child;
             object = {};
             cancelButton.classList.add('isActive');
+            formSubmitButtons[key].classList.add('isActive');
+            selectedAction = actionsList[key];
         });
     });
 
     Object.keys(objects?.children).forEach( (key) => {
         const child = objects?.children[key];
         child.addEventListener('click', () => {
-            console.log("object-click", child);
             sectionsWrapper.classList.remove('choose');
             sectionsWrapper.classList.add('form');
             object = child;
+            selectedObject = objectsList[key];
+            document.querySelector(`.form-fields.${selectedAction}.${selectedObject}`).classList.add("isActive");
         });
     });
 
@@ -51,6 +65,18 @@ function CreateEventListenersModify(){
         cancelButton.classList.remove('isActive');
         sectionsWrapper.classList.remove('form');
         sectionsWrapper.classList.remove('choose');
+
+        Object.keys(formSubmitButtons).forEach( (key) => {
+            formSubmitButtons[key].classList.remove('isActive');
+        });
+
+        actionsList.forEach( (act) => {
+            objectsList.forEach( (obj) => {
+                const selectedFields = document.querySelector(`.form-fields.${act}.${obj}`);
+                selectedFields.classList.remove("isActive");
+            });
+        });
+
     });
 
     blurScreen.addEventListener('click', () => {
@@ -88,6 +114,10 @@ function showTable(n){
     const DOMelement = document.querySelector(`.page-${n}`);
     DOMelement.style.zIndex = "1";
     DOMelement.childNodes[1].childNodes[1].classList.add("isActive");
+}
+
+function showQuery(){
+    console.log(selectedAction, selectedObject);
 }
 
 

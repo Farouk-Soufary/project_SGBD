@@ -226,7 +226,7 @@
                     $rs = $db->prepare("SELECT N.COMMENTAIRE, N.NOM_JEU, N.PSEUDONYME , (1+count(CASE WHEN J.AVIS = 'PERTINENT' THEN 1 END))/ (1+count(CASE WHEN J.AVIS = 'IMPERTINENT' THEN 1 END)) INDICE from NOTES N
                                         inner join JUGEMENTS J
                                         ON N.ID_NOTE = J.ID_NOTE
-                                        GROUP BY N.COMMENTAIRE 
+                                        GROUP BY N.COMMENTAIRE
                                         ORDER BY INDICE DESC;");
                    $rs->execute();
                    $themes = $rs->fetchAll();

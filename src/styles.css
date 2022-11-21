@@ -384,14 +384,133 @@ a{
 
 .form-wrapper{
     position: absolute;
-    top: 200%;
+    top: 200vh;
     width: 99.8%;
     height: 100%;
     margin-top: 20px;
     background-color: whitesmoke;
 }
 
+.form-select{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(40, 54, 61);
+    transform: translate(-38vw, -40vh);
+    border-radius: 3vh;
+    box-shadow: 0 0 3vh .2vh rgb(0, 0, 0, .2);
+}
 
+.form-submit{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2vh;
+    height: 8vh;
+    width: 15vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: none;
+    border-radius: 3vh;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-submit.delete{
+    background-color: crimson;
+}
+
+.form-submit.add{
+    background-color: rgb(0, 139, 139);
+}
+
+.form-submit.modify{
+    background-color: rgb(0, 109, 109);
+}
+
+.form-submit.isActive{
+    opacity: .9;
+    visibility: visible;
+}
+
+.form-submit:hover{
+    opacity: 1;
+    box-shadow: 0 0 3vh .2vh rgb(0, 0, 0, .2);
+}
+
+.form-submit-text{
+    margin-top: 1vh;
+    color: whitesmoke;
+    font-size: 4vh;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-submit-img{
+    margin-top: 1vh;
+    height: 6vh;
+}
+
+.form-field-wrapper{
+    position: absolute;
+    margin: 3vh;
+    top: 0;
+    left: 0;
+}
+
+.form-fields{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 2vh;
+    margin: 3vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-in-out;
+}
+
+.form-fields.isActive{
+    opacity: 1;
+    visibility: visible;
+}
+
+.field{
+    width: 70vw;
+    border-radius: 2vh;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: auto 50vw;
+}
+
+.field-name{
+    color: whitesmoke;
+    font-size: 4vh;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.field-input{
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 1vh;
+    height: 7vh;
+    border: none;
+    transition: .1s ease-in-out;
+}
+
+.field-input:hover{
+    border: .5vh solid rgb(0, 109, 109);
+}
+
+.field-input:focus{
+    border: .5vh solid whitesmoke;
+}
 
 /*! CONSULT/STATS PHP CSS */
 

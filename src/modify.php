@@ -96,18 +96,311 @@
 
 
         <div class="form-wrapper">
-            <div class="form-game">
-                <div class="form-add-game">
+            <div class="form-select">
+            
+            <div class="form-field-wrapper">
+                
+                <div class="add-section">
+                <!-- ADD GAME -->
+                    <div class="form-fields add game">
+                        <div class="field name">
+                            <div class="field-name">Nom</div>
+                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                        </div>
+                        <div class="field editor">
+                            <div class="field-name">Editeur</div>
+                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                        </div>
+                        <div class="field dateParution">
+                            <div class="field-name">Date de parution</div>
+                            <input class="field-input" type="date">
+                        </div>
+                        <div class="field duree">
+                            <div class="field-name">Durée</div>
+                            <input class="field-input" type="number" placeholder="Durée du jeu">
+                        </div>
+                        <div class="field type">
+                            <div class="field-name">Type</div>
+                            <input class="field-input" type="text" placeholder="Type du jeu">
+                        </div>
+                        <div class="field numberOfPlayers">
+                            <div class="field-name">Nombre de joueurs</div>
+                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                        </div>
+                        <div class="field standAlone">
+                            <div class="field-name">stand Alone</div>
+                            <input class="field-input" type="checkbox">
+                        </div>
+                    </div>
 
+                <!-- ADD PLAYER -->
+                    <div class="form-fields add player">
+                        <div class="field pseudonyme">
+                            <div class="field-name">Pseudonyme</div>
+                            <input class="field-input" type="text" placeholder="Pseudonyme">
+                        </div>
+                        <div class="field lastName">
+                            <div class="field-name">Nom</div>
+                            <input class="field-input" type="text" placeholder="Nom du joueur">
+                        </div>
+                        <div class="field firstName">
+                            <div class="field-name">Prénom</div>
+                            <input class="field-input" type="text" placeholder="Prénom du joueur">
+                        </div>
+                        <div class="field email">
+                            <div class="field-name">Adresse mail</div>
+                            <input class="field-input" type="email" placeholder="Adresse mail">
+                        </div>
+                    </div>
+
+                <!-- ADD COMMENT -->
+                    <div class="form-fields add comment">
+                        <div class="field id">
+                            <div class="field-name">ID</div>
+                            <input class="field-input" type="number"  min="0" placeholder="ID du commentaire">
+                        </div>
+                        <div class="field comment">
+                            <div class="field-name">Commentaire</div>
+                            <input class="field-input" type="text" placeholder="Commentaire">
+                        </div>
+                        <div class="field date">
+                            <div class="field-name">Date</div>
+                            <input class="field-input" type="date" placeholder="Date du commentaire">
+                        </div>
+                        <div class="field value">
+                            <div class="field-name">Value</div>
+                            <input class="field-input" type="number" min="0" max="20" placeholder="Valeur">
+                        </div>
+                        <div class="field numberOfPlayers">
+                            <div class="field-name">Value</div>
+                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                        </div>
+                        <div class="field nameGame">
+                            <div class="field-name">Nom du jeu</div>
+                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                        </div>
+                        <div class="field pseudonyme">
+                            <div class="field-name">Pseudonyme</div>
+                            <input class="field-input" type="text" placeholder="Pseudonyme">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-modify-game">
-                    
+                <div class="modify-section">
+                <!-- MODIFY GAME -->
+                    <div class="form-fields modify game">
+                        <div class="field name">
+                            <div class="field-name">Nom</div>
+                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                        </div>
+                        <div class="field editor">
+                            <div class="field-name">Editeur</div>
+                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                        </div>
+                        <div class="field dateParution">
+                            <div class="field-name">Date de parution</div>
+                            <input class="field-input" type="date">
+                        </div>
+                        <div class="field duree">
+                            <div class="field-name">Durée</div>
+                            <input class="field-input" type="number" placeholder="Durée du jeu">
+                        </div>
+                        <div class="field type">
+                            <div class="field-name">Type</div>
+                            <input class="field-input" type="text" placeholder="Type du jeu">
+                        </div>
+                        <div class="field numberOfPlayers">
+                            <div class="field-name">Nombre de joueurs</div>
+                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                        </div>
+                        <div class="field standAlone">
+                            <div class="field-name">stand Alone</div>
+                            <input class="field-input" type="checkbox">
+                        </div>
+                    </div>
+
+                <!-- MODIFY PLAYER -->
+                    <div class="form-fields modify player">
+                        <div class="field name">
+                            <div class="field-name">Nom</div>
+                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                        </div>
+                        <div class="field editor">
+                            <div class="field-name">Editeur</div>
+                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                        </div>
+                        <div class="field dateParution">
+                            <div class="field-name">Date de parution</div>
+                            <input class="field-input" type="date">
+                        </div>
+                        <div class="field duree">
+                            <div class="field-name">Durée</div>
+                            <input class="field-input" type="number" placeholder="Durée du jeu">
+                        </div>
+                        <div class="field type">
+                            <div class="field-name">Type</div>
+                            <input class="field-input" type="text" placeholder="Type du jeu">
+                        </div>
+                        <div class="field numberOfPlayers">
+                            <div class="field-name">Nombre de joueurs</div>
+                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                        </div>
+                        <div class="field standAlone">
+                            <div class="field-name">stand Alone</div>
+                            <input class="field-input" type="checkbox">
+                        </div>
+                    </div>
+
+                <!-- MODIFY COMMENT -->
+                    <div class="form-fields modify comment">
+                        <div class="field name">
+                            <div class="field-name">Nom</div>
+                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                        </div>
+                        <div class="field editor">
+                            <div class="field-name">Editeur</div>
+                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                        </div>
+                        <div class="field dateParution">
+                            <div class="field-name">Date de parution</div>
+                            <input class="field-input" type="date">
+                        </div>
+                        <div class="field duree">
+                            <div class="field-name">Durée</div>
+                            <input class="field-input" type="number" placeholder="Durée du jeu">
+                        </div>
+                        <div class="field type">
+                            <div class="field-name">Type</div>
+                            <input class="field-input" type="text" placeholder="Type du jeu">
+                        </div>
+                        <div class="field numberOfPlayers">
+                            <div class="field-name">Nombre de joueurs</div>
+                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                        </div>
+                        <div class="field standAlone">
+                            <div class="field-name">stand Alone</div>
+                            <input class="field-input" type="checkbox">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-delete-game">
-                    
+
+                <div class="delete-section">   
+                    <!-- DELETE GAME -->
+                        <div class="form-fields delete game">
+                            <div class="field name">
+                                <div class="field-name">Nom</div>
+                                <input class="field-input" type="text" placeholder="Nom du jeu">
+                            </div>
+                            <div class="field editor">
+                                <div class="field-name">Editeur</div>
+                                <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                            </div>
+                            <div class="field dateParution">
+                                <div class="field-name">Date de parution</div>
+                                <input class="field-input" type="date">
+                            </div>
+                            <div class="field duree">
+                                <div class="field-name">Durée</div>
+                                <input class="field-input" type="number" placeholder="Durée du jeu">
+                            </div>
+                            <div class="field type">
+                                <div class="field-name">Type</div>
+                                <input class="field-input" type="text" placeholder="Type du jeu">
+                            </div>
+                            <div class="field numberOfPlayers">
+                                <div class="field-name">Nombre de joueurs</div>
+                                <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                            </div>
+                            <div class="field standAlone">
+                                <div class="field-name">stand Alone</div>
+                                <input class="field-input" type="checkbox">
+                            </div>
+                        </div>
+
+                    <!-- DELETE PLAYER -->
+                        <div class="form-fields delete player">
+                            <div class="field name">
+                                <div class="field-name">Nom</div>
+                                <input class="field-input" type="text" placeholder="Nom du jeu">
+                            </div>
+                            <div class="field editor">
+                                <div class="field-name">Editeur</div>
+                                <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                            </div>
+                            <div class="field dateParution">
+                                <div class="field-name">Date de parution</div>
+                                <input class="field-input" type="date">
+                            </div>
+                            <div class="field duree">
+                                <div class="field-name">Durée</div>
+                                <input class="field-input" type="number" placeholder="Durée du jeu">
+                            </div>
+                            <div class="field type">
+                                <div class="field-name">Type</div>
+                                <input class="field-input" type="text" placeholder="Type du jeu">
+                            </div>
+                            <div class="field numberOfPlayers">
+                                <div class="field-name">Nombre de joueurs</div>
+                                <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                            </div>
+                            <div class="field standAlone">
+                                <div class="field-name">stand Alone</div>
+                                <input class="field-input" type="checkbox">
+                            </div>
+                        </div>
+
+                    <!-- DELETE COMMENT -->
+                        <div class="form-fields delete comment">
+                            <div class="field name">
+                                <div class="field-name">Nom</div>
+                                <input class="field-input" type="text" placeholder="Nom du jeu">
+                            </div>
+                            <div class="field editor">
+                                <div class="field-name">Editeur</div>
+                                <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                            </div>
+                            <div class="field dateParution">
+                                <div class="field-name">Date de parution</div>
+                                <input class="field-input" type="date">
+                            </div>
+                            <div class="field duree">
+                                <div class="field-name">Durée</div>
+                                <input class="field-input" type="number" placeholder="Durée du jeu">
+                            </div>
+                            <div class="field type">
+                                <div class="field-name">Type</div>
+                                <input class="field-input" type="text" placeholder="Type du jeu">
+                            </div>
+                            <div class="field numberOfPlayers">
+                                <div class="field-name">Nombre de joueurs</div>
+                                <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                            </div>
+                            <div class="field standAlone">
+                                <div class="field-name">stand Alone</div>
+                                <input class="field-input" type="checkbox">
+                            </div>
+                        </div>
+
                 </div>
+            </div>
+
+
+            <button class="form-submit add" onclick="showQuery();">
+                <div class="form-submit-text">Ajouter</div>    
+                <img class="form-submit-img" src="assets/addIcon.png">
+            </button>
+
+            <button class="form-submit modify" onclick="showQuery();">
+                <div class="form-submit-text">Modifier</div>    
+                <img class="form-submit-img" src="assets/modifyIcon.png">
+            </button>
+
+            <button class="form-submit delete" onclick="showQuery();">
+                <div class="form-submit-text">Supprimer</div>    
+                <img class="form-submit-img" src="assets/deleteIcon.png">
+            </button>
+
             </div>
         </div>
     </div>
