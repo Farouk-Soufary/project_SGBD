@@ -134,7 +134,7 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: auto;
     column-gap: 0px;
@@ -175,7 +175,7 @@ a{
 .page-1, .page-2, .page-3, .page-4, .page-5, .page-6,.footer{
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .page-1{
