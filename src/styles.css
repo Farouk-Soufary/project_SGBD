@@ -372,7 +372,7 @@ a{
 }
 
 .cancel-button:hover{
-    border-radius: 1vh;
+    box-shadow: 0 0 3vh .1vh rgb(0, 0, 0, .2);
 }
 
 .cancel-button.isActive{
@@ -552,12 +552,21 @@ a{
     border-radius: 2vh;
 }
 
+.field-input.choose-button{
+    height: 7vh;
+    background-color: whitesmoke;
+}
+
+.field-input.choose-button:hover{
+    background-color: rgb(245, 245, 245, .8);
+}
+
 .choose-button:hover{
     background-color: rgb(255, 255, 255, .5);
 }
 
 .choose-bar {
-    display: inline-block;
+    display: none;
     width: 50vw;
     height: 10vh;
     overflow-x: hidden;
@@ -576,6 +585,7 @@ a{
     opacity: 1;
     transform: translateY(0px);
     visibility: visible;
+    display: inline-block;
 }
 
 .test-bar{
@@ -596,6 +606,13 @@ a{
     color: yellowgreen;
 }
 
+.test-bar.choose-value{
+    background-color: whitesmoke;
+}
+
+.test-bar.choose-value:hover{
+    background-color: rgb(245, 245, 245, .8);
+}
 
 .consult-grid, .stats-grid {
     z-index: -1;

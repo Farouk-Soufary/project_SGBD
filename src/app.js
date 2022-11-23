@@ -164,7 +164,11 @@ formName.split(".")[formName.length -1]
 
     const formInputs = document.querySelector(formName).getElementsByTagName("input");
     Object.keys(formInputs).forEach( (key) => {
-        if ("email checkbox text".includes(formInputs[key].type)){
+        if (formInputs[key].value === "" || formInputs[key].value === ". . ."){
+            alert("Please fill all the information correctly");
+            throw new console.error("error");
+        }
+        if ("email checkbox text button".includes(formInputs[key].type)){
             query += "'" + formInputs[key].value + "'" + ",";
         } else {
             query += formInputs[key].value + ",";
@@ -179,7 +183,7 @@ formName.split(".")[formName.length -1]
         query = "";
     }
 
-
+    // RUN QUERY
     alert(query);
 }
 
@@ -193,7 +197,17 @@ function showTable(n){
     DOMelement.childNodes[1].childNodes[1].classList.add("isActive");
 }
 
+function selectValue(el){
+   el.parentElement.parentElement.children[0].value = el.innerHTML;
+   hideAllChooseBars();
+}
 
+function hideAllChooseBars(){
+    const chooseBars = document.querySelectorAll(".choose-bar");
+    Object.keys(chooseBars).forEach( (key) => {
+        chooseBars[key].classList.remove('isVisible')
+    });
+}
 
 CreateEventListenersModify();
 CreateEventListenersConsult();

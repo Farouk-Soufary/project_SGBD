@@ -129,7 +129,13 @@
                         </div>
                         <div class="field standAlone">
                             <div class="field-name">stand Alone</div>
-                            <input class="field-input" type="checkbox">
+                            <div style="display: grid; grid_template_columns: auto;">
+                                <input class="field-input choose-button" type="button" value=". . ." required>
+                                <div class="choose-bar">
+                                    <button class="test-bar choose-value"  type="button" onclick="selectValue(this);">True</button>
+                                    <button class="test-bar choose-value"  type="button" onclick="selectValue(this);">False</button>
+                                </div>
+                            </div>
                         </div>
                     </form>
 
@@ -155,6 +161,7 @@
 
                 <!-- ADD COMMENT -->
                     <form class="form-fields add comment" id="addcomment" onsubmit="showQuery('.form-fields.add.comment');">
+
                         <div class="field id">
                             <div class="field-name">ID</div>
                             <input class="field-input" type="number"  min="0" placeholder="ID du commentaire" required>
@@ -175,14 +182,56 @@
                             <div class="field-name">Nombre de joueurs</div>
                             <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs" required>
                         </div>
+
                         <div class="field nameGame">
                             <div class="field-name">Nom du jeu</div>
-                            <input class="field-input" type="text" placeholder="Nom du jeu" required>
+                            <div style="display: grid; grid_template_columns: auto;">
+                                <input class="field-input choose-button" type="button" value=". . ." required>
+                                <div class="choose-bar">
+                                    <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare('SELECT NOM_JEU FROM JEUX');
+                                    $rs->execute();
+                                    $jeux = $rs->fetchAll();
+                                    foreach ($jeux as $jeu) {
+                                    ?>
+                                    <button class="test-bar choose-value"  type="button" onclick="selectValue(this);"><?php echo $jeu['NOM_JEU']; ?></button>
+                                    <?php
+                                    }
+                                    ?>    
+                                </div>
+                            </div>
                         </div>
+
                         <div class="field pseudonyme">
                             <div class="field-name">Pseudonyme</div>
-                            <input class="field-input" type="text" placeholder="Pseudonyme" required>
+                            <div style="display: grid; grid_template_columns: auto;">
+                                <input class="field-input choose-button" type="button" value=". . ." required>
+                                <div class="choose-bar">
+                                    <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare('SELECT PSEUDONYME FROM JOUEURS');
+                                    $rs->execute();
+                                    $players = $rs->fetchAll();
+                                    foreach ($players as $player) {
+                                    ?>
+                                    <form  action="" method="post">
+                                    <button class="test-bar choose-value" type="button" onclick="selectValue(this);"><?php echo $player['PSEUDONYME']; ?></button>
+                                    <?php
+                                    }
+                                    ?>    
+                                </div>
+                            </div>
                         </div>
+
                     </form>
                 </div>
 
