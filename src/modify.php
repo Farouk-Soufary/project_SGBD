@@ -267,7 +267,7 @@
                         </div>
                         <div class="field dateParution">
                             <div class="field-name">Date de parution</div>
-                            <input class="field-input" type="date" value="Nouvelle Date">
+                            <input class="field-input" type="date" placeholder="Nouvelle Date">
                         </div>
                         <div class="field duree">
                             <div class="field-name">Durée</div>
@@ -284,7 +284,7 @@
                         <div class="field standAlone">
                             <div class="field-name">stand Alone</div>
                             <div style="display: grid; grid_template_columns: auto;">
-                                <input class="field-input choose-button" type="button" value="New value">
+                                <input class="field-input choose-button" type="button">
                                 <div class="choose-bar">
                                     <button class="test-bar choose-value"  type="button" onclick="selectValue(this);">True</button>
                                     <button class="test-bar choose-value"  type="button" onclick="selectValue(this);">False</button>
@@ -338,7 +338,7 @@
                         <div class="field id">
                             <div class="field-name">ID</div>
                             <div style="display: grid; grid_template_columns: auto;">
-                                <input class="field-input choose-button" type="number" >
+                                <input class="field-input choose-button" type="number" value="0">
                                 <div class="choose-bar">
                                     <?php
                                     $db = new PDO(
@@ -434,7 +434,7 @@
                     <!-- DELETE COMMENT -->
                         <form class="form-fields delete comment"  id="deletecomment" onsubmit="showQuery('.form-fields.delete.comment');">
                             <div style="display: grid; grid_template_columns: auto; margin-left: 11vw;">
-                                    <input class="field-input choose-button" type="number" min="0" value="Choix du commentaire" required>
+                                    <input class="field-input choose-button" type="number" min="0" required>
                                     <div class="choose-bar"  style=" height: 60vh; visibility: visible; opacity:1; display: inline-block; transform: translateY(0); ">
                                         <?php
                                         $db = new PDO(
@@ -447,7 +447,7 @@
                                         $notes = $rs->fetchAll();
                                         foreach ($notes as $note) {
                                         ?>
-                                        <button class="test-bar choose-value" style="text-align: left;" type="button" onclick="selectValue(this);"><?php echo $note['ID_NOTE']."- ".$note['COMMENTAIRE']."- ".$note['PSEUDONYME']."- ".$note['NOM_JEU']; ?></button>
+                                        <button class="test-bar choose-value" style="text-align: left;" type="button" onclick="selectValue(this);"><?php echo $note['ID_NOTE']."-- ".$note['COMMENTAIRE']." --".$note['PSEUDONYME']." --".$note['NOM_JEU']; ?></button>
                                         <?php
                                         }
                                         ?>    

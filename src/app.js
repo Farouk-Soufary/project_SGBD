@@ -12,9 +12,10 @@ const formSubmitButtons = document.querySelectorAll(".form-submit");
 
 const actionsList = ["add", "modify", "delete"];
 const objectsList = ["game", "player", "comment"];
-const gameKeys = ["NOM_JEU", "EDITEUR", "DATE_PARUTION", "DUREE", "TYPE_JEU", "NOMBRE_JOUEURS", "STAND_ALONE"];
-const playerKeys = ["PSEUDONYME", "NOM_JOUEUR", "PRENOM_JOUEUR", "ADRESSE_MAIL"];
-const commentKeys = ["ID_NOTE", "COMMENTAIRE", "DATE_NOTE", "VALEUR", "NOMBRE_JOUEURS"];
+const dbKeys = { JEUX : ["NOM_JEU", "EDITEUR", "DATE_PARUTION", "DUREE", "TYPE_JEU", "NOMBRE_JOUEURS", "STAND_ALONE"],
+                JOUEURS : ["PSEUDONYME", "NOM_JOUEUR", "PRENOM_JOUEUR", "ADRESSE_MAIL"],
+                NOTES :["ID_NOTE", "COMMENTAIRE", "DATE_NOTE", "VALEUR", "NOMBRE_JOUEURS"]};
+
 let selectedAction, selectedObject, selectedSubmitButton;
 
 let action = {};
@@ -167,7 +168,7 @@ formName.split(".")[formName.length -1]
     if (mode === "INSERT"){
         query = mode + " INTO " + table + " VALUES ( ";
     } else if (mode === "UPDATE"){
-        query = mode + " " + table + " SET";
+        query = mode + " " + table + " SET  ";
     } else if (mode === "DELETE"){
         query = mode + " FROM " + table + " WHERE "+ id + "=";
     } else {
@@ -176,19 +177,19 @@ formName.split(".")[formName.length -1]
 
     const formInputs = document.querySelector(formName).getElementsByTagName("input");
     Object.keys(formInputs).forEach( (key) => {
-        if (formInputs[key].value === "" || formInputs[key].value === ". . ." || formInputs[key].value.includes("Choix")){
+        if (mode !== "UPDATE" && (formInputs[key].value === "" || formInputs[key].value === ". . ." || formInputs[key].value.includes("Choix"))){
             alert("Please fill all the information correctly");
             throw new console.error("error");
         }
 
-        if (mode != "UPDATE"){
+        if (mode !== "UPDATE"){
             if ("email checkbox text button".includes(formInputs[key].type)){
-                query += "'" + formInputs[key].value.split("-")[0] + "'" + ",";
+                query += "'" + formInputs[key].value.split("--")[0] + "'" + ",";
             } else {
-                query += formInputs[key].value.split("-")[0] + ",";
+                query += formInputs[key].value.split("--")[0] + ",";
             }
         } else {
-            let i = updateList.push(formInputs[key].value.split("-")[0]);
+            let i = updateList.push(formInputs[key].value.split("--")[0]);
         }
     });
 
@@ -198,6 +199,24 @@ formName.split(".")[formName.length -1]
         query += ")";
     } else if (mode === "UPDATE"){
         console.log(updateList);
+        updateList.forEach( (el, i) => {
+            if (el.includes("Choix")){
+                alert("Please fill all the information correctly");
+                throw new console.error("error");
+            } else if (el !== ""){
+                    if (isNumeric(el)){
+                        query += " " + dbKeys[`${table}`][i] + "=" + el + ",";
+                    } else {
+                        query += " " + dbKeys[`${table}`][i] + "='" + el + "',";
+                    }
+                }
+        });
+        query = query.slice(0, -1);
+        if (table !== "NOTES"){
+            query += " WHERE " + dbKeys[`${table}`][0] + "='" + updateList[0] + "'";
+        } else {
+            query += " WHERE " + dbKeys[`${table}`][0] + "=" + updateList[0];
+        }
     }
     query += ";";
 
@@ -225,6 +244,10 @@ function hideAllChooseBars(){
     Object.keys(chooseBars).forEach( (key) => {
         chooseBars[key].classList.remove('isVisible')
     });
+}
+
+function isNumeric(num){
+    return !isNaN(num);
 }
 
 CreateEventListenersModify();
