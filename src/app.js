@@ -8,15 +8,12 @@ const consultChoiceBar = document.getElementsByClassName('choose-bar');
 const consultChoiceButton = document.getElementsByClassName('choose-button');
 
 const formSubmitButtons = document.querySelectorAll(".form-submit");
-// const formFieldsAdd = document.querySelectorAll(".form-fields.add");
-// const formFieldsModify = document.querySelectorAll(".form-fields.modify");
-// const formFieldsDelete = document.querySelectorAll(".form-fields.delete");
-// const formFieldsSections = [formFieldsAdd, formFieldsModify, formFieldsDelete];
+
 
 const actionsList = ["add", "modify", "delete"];
 const objectsList = ["game", "player", "comment"];
 
-let selectedAction, selectedObject;
+let selectedAction, selectedObject, selectedSubmitButton;
 
 let action = {};
 let object = {};
@@ -47,6 +44,7 @@ function CreateEventListenersModify(){
             cancelButton.classList.add('isActive');
             formSubmitButtons[key].classList.add('isActive');
             selectedAction = actionsList[key];
+            selectedSubmitButton = formSubmitButtons[key];
         });
     });
 
@@ -58,6 +56,7 @@ function CreateEventListenersModify(){
             object = child;
             selectedObject = objectsList[key];
             document.querySelector(`.form-fields.${selectedAction}.${selectedObject}`).classList.add("isActive");
+            selectedSubmitButton.setAttribute('form', selectedAction+selectedObject);
         });
     });
 
@@ -106,6 +105,84 @@ function CreateEventListenersConsult(){
 function CreateEventListenersStats(){
 }
 
+function showQuery(formName){
+formName.split(".")[formName.length -1]
+    let mode, table, query, acc;
+    acc = formName.split(".")[2] + formName.split(".")[3];
+    switch(acc){
+        case 'addgame':
+            mode = "INSERT";
+            table = "JEUX";
+            break;
+        case 'modifygame':
+            mode = "UPDATE";
+            table = "JEUX";
+            break;
+        case 'deletegame':
+            mode = "DELETE";
+            table = "JEUX";
+            break;
+        case 'addplayer':
+            mode = "INSERT";
+            table = "JOUEURS";
+            break;
+        case 'modifyplayer':
+            mode = "UPDATE";
+            table = "JOUEURS";
+            break;
+        case 'deleteplayer':
+            mode = "DELETE";
+            table = "JOUEURS";
+            break;
+        case 'addcomment':
+            mode = "INSERT";
+            table = "NOTES";
+            break;
+        case 'modifycomment':
+            mode = "UPDATE";
+            table = "NOTES";
+            break;
+        case 'deletecomment':
+            mode = "DELETE";
+            table = "NOTES";
+            break;
+        default:
+            mode = "";
+            table = "";
+            break;                                
+    }
+
+    if (mode === "INSERT"){
+        query = mode + " INTO " + table + " VALUES ( ";
+    } else if (mode === "UPDATE"){
+        query = mode + " " + table + " SET";
+    } else if (mode === "DELETE"){
+        query = mode + " FROM " + table + " WHERE ";
+    } else {
+        query = "";
+    }
+
+    const formInputs = document.querySelector(formName).getElementsByTagName("input");
+    Object.keys(formInputs).forEach( (key) => {
+        if ("email checkbox text".includes(formInputs[key].type)){
+            query += "'" + formInputs[key].value + "'" + ",";
+        } else {
+            query += formInputs[key].value + ",";
+        }
+    });
+
+    if (mode === "INSERT"){
+        query = query.slice(0, -1) + ");";
+    } else if (mode === "UPDATE"){
+    } else if (mode === "DELETE"){
+    } else {
+        query = "";
+    }
+
+
+    alert(query);
+}
+
 function showTable(n){
     for (let i = 1; i <= 6; i++){
         document.querySelector(`.page-${i}`).style.zIndex = "-1";
@@ -116,9 +193,6 @@ function showTable(n){
     DOMelement.childNodes[1].childNodes[1].classList.add("isActive");
 }
 
-function showQuery(){
-    console.log(selectedAction, selectedObject);
-}
 
 
 CreateEventListenersModify();

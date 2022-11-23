@@ -102,93 +102,93 @@
                 
                 <div class="add-section">
                 <!-- ADD GAME -->
-                    <div class="form-fields add game">
+                    <form class="form-fields add game" id="addgame" onsubmit="showQuery('.form-fields.add.game');">
                         <div class="field name">
                             <div class="field-name">Nom</div>
-                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                            <input class="field-input" type="text" placeholder="Nom du jeu" required>
                         </div>
                         <div class="field editor">
                             <div class="field-name">Editeur</div>
-                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                            <input class="field-input" type="text" placeholder="Nom de l'éditeur" required>
                         </div>
                         <div class="field dateParution">
                             <div class="field-name">Date de parution</div>
-                            <input class="field-input" type="date">
+                            <input class="field-input" type="date" required>
                         </div>
                         <div class="field duree">
                             <div class="field-name">Durée</div>
-                            <input class="field-input" type="number" placeholder="Durée du jeu">
+                            <input class="field-input" type="number" placeholder="Durée du jeu" required>
                         </div>
                         <div class="field type">
                             <div class="field-name">Type</div>
-                            <input class="field-input" type="text" placeholder="Type du jeu">
+                            <input class="field-input" type="text" placeholder="Type du jeu" required>
                         </div>
                         <div class="field numberOfPlayers">
                             <div class="field-name">Nombre de joueurs</div>
-                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs" required>
                         </div>
                         <div class="field standAlone">
                             <div class="field-name">stand Alone</div>
                             <input class="field-input" type="checkbox">
                         </div>
-                    </div>
+                    </form>
 
                 <!-- ADD PLAYER -->
-                    <div class="form-fields add player">
+                    <form class="form-fields add player" id="addplayer" onsubmit="showQuery('.form-fields.add.player');">
                         <div class="field pseudonyme">
                             <div class="field-name">Pseudonyme</div>
-                            <input class="field-input" type="text" placeholder="Pseudonyme">
+                            <input class="field-input" type="text" placeholder="Pseudonyme" required>
                         </div>
                         <div class="field lastName">
                             <div class="field-name">Nom</div>
-                            <input class="field-input" type="text" placeholder="Nom du joueur">
+                            <input class="field-input" type="text" placeholder="Nom du joueur" required>
                         </div>
                         <div class="field firstName">
                             <div class="field-name">Prénom</div>
-                            <input class="field-input" type="text" placeholder="Prénom du joueur">
+                            <input class="field-input" type="text" placeholder="Prénom du joueur" required>
                         </div>
                         <div class="field email">
                             <div class="field-name">Adresse mail</div>
-                            <input class="field-input" type="email" placeholder="Adresse mail">
+                            <input class="field-input" type="email" placeholder="Adresse mail" required>
                         </div>
-                    </div>
+                    </form>
 
                 <!-- ADD COMMENT -->
-                    <div class="form-fields add comment">
+                    <form class="form-fields add comment" id="addcomment" onsubmit="showQuery('.form-fields.add.comment');">
                         <div class="field id">
                             <div class="field-name">ID</div>
-                            <input class="field-input" type="number"  min="0" placeholder="ID du commentaire">
+                            <input class="field-input" type="number"  min="0" placeholder="ID du commentaire" required>
                         </div>
                         <div class="field comment">
                             <div class="field-name">Commentaire</div>
-                            <input class="field-input" type="text" placeholder="Commentaire">
+                            <input class="field-input" type="text" placeholder="Commentaire" required>
                         </div>
                         <div class="field date">
                             <div class="field-name">Date</div>
-                            <input class="field-input" type="date" placeholder="Date du commentaire">
+                            <input class="field-input" type="date" placeholder="Date du commentaire" required>
                         </div>
                         <div class="field value">
                             <div class="field-name">Value</div>
-                            <input class="field-input" type="number" min="0" max="20" placeholder="Valeur">
+                            <input class="field-input" type="number" min="0" max="20" placeholder="Valeur" required>
                         </div>
                         <div class="field numberOfPlayers">
                             <div class="field-name">Value</div>
-                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs" required>
                         </div>
                         <div class="field nameGame">
                             <div class="field-name">Nom du jeu</div>
-                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                            <input class="field-input" type="text" placeholder="Nom du jeu" required>
                         </div>
                         <div class="field pseudonyme">
                             <div class="field-name">Pseudonyme</div>
-                            <input class="field-input" type="text" placeholder="Pseudonyme">
+                            <input class="field-input" type="text" placeholder="Pseudonyme" required>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <div class="modify-section">
                 <!-- MODIFY GAME -->
-                    <div class="form-fields modify game">
+                    <form class="form-fields modify game" id="modifygame" onsubmit="showQuery('.form-fields.modify.game');">
                         <div class="field name">
                             <div class="field-name">Nom</div>
                             <input class="field-input" type="text" placeholder="Nom du jeu">
@@ -217,10 +217,10 @@
                             <div class="field-name">stand Alone</div>
                             <input class="field-input" type="checkbox">
                         </div>
-                    </div>
+                    </form>
 
                 <!-- MODIFY PLAYER -->
-                    <div class="form-fields modify player">
+                    <form class="form-fields modify player" id="modifyplayer" onsubmit="showQuery('.form-fields.modify.player');">
                         <div class="field name">
                             <div class="field-name">Nom</div>
                             <input class="field-input" type="text" placeholder="Nom du jeu">
@@ -249,10 +249,10 @@
                             <div class="field-name">stand Alone</div>
                             <input class="field-input" type="checkbox">
                         </div>
-                    </div>
+                    </form>
 
                 <!-- MODIFY COMMENT -->
-                    <div class="form-fields modify comment">
+                    <form class="form-fields modify comment" id="modifycomment" onsubmit="showQuery('.form-fields.modify.comment');">
                         <div class="field name">
                             <div class="field-name">Nom</div>
                             <input class="field-input" type="text" placeholder="Nom du jeu">
@@ -281,13 +281,13 @@
                             <div class="field-name">stand Alone</div>
                             <input class="field-input" type="checkbox">
                         </div>
-                    </div>
+                    </form>
                 </div>
 
 
                 <div class="delete-section">   
                     <!-- DELETE GAME -->
-                        <div class="form-fields delete game">
+                        <form class="form-fields delete game" id="deletegame" onsubmit="showQuery('.form-fields.delete.game');">
                             <div class="field name">
                                 <div class="field-name">Nom</div>
                                 <input class="field-input" type="text" placeholder="Nom du jeu">
@@ -316,10 +316,10 @@
                                 <div class="field-name">stand Alone</div>
                                 <input class="field-input" type="checkbox">
                             </div>
-                        </div>
+                        </form>
 
                     <!-- DELETE PLAYER -->
-                        <div class="form-fields delete player">
+                        <form class="form-fields delete player" id="deleteplayer" onsubmit="showQuery('.form-fields.delete.player');">
                             <div class="field name">
                                 <div class="field-name">Nom</div>
                                 <input class="field-input" type="text" placeholder="Nom du jeu">
@@ -348,10 +348,10 @@
                                 <div class="field-name">stand Alone</div>
                                 <input class="field-input" type="checkbox">
                             </div>
-                        </div>
+                        </form>
 
                     <!-- DELETE COMMENT -->
-                        <div class="form-fields delete comment">
+                        <form class="form-fields delete comment" id="deletecomment" onsubmit="showQuery('.form-fields.delete.comment');">
                             <div class="field name">
                                 <div class="field-name">Nom</div>
                                 <input class="field-input" type="text" placeholder="Nom du jeu">
@@ -380,23 +380,23 @@
                                 <div class="field-name">stand Alone</div>
                                 <input class="field-input" type="checkbox">
                             </div>
-                        </div>
+                        </form>
 
                 </div>
             </div>
 
 
-            <button class="form-submit add" onclick="showQuery();">
+            <button type="submit" form="addgame" class="form-submit add">
                 <div class="form-submit-text">Ajouter</div>    
                 <img class="form-submit-img" src="assets/addIcon.png">
             </button>
 
-            <button class="form-submit modify" onclick="showQuery();">
+            <button type="submit" form="modifygame" class="form-submit modify">
                 <div class="form-submit-text">Modifier</div>    
                 <img class="form-submit-img" src="assets/modifyIcon.png">
             </button>
 
-            <button class="form-submit delete" onclick="showQuery();">
+            <button type="submit"  form="deletegame" class="form-submit delete">
                 <div class="form-submit-text">Supprimer</div>    
                 <img class="form-submit-img" src="assets/deleteIcon.png">
             </button>

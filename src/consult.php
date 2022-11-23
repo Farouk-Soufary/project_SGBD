@@ -250,7 +250,7 @@
                 <div class="consult-grid" style="overflow-y: scroll;">
                 <table  style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                                <th style="width:13%; font-family: Montserrat; font-size: 3vh;">Pseudonyme</th>
+                                <td style="width:13%; font-family: Montserrat; font-size: 3vh;">Pseudonyme</title-grid>
                                 <td style="width:22%; font-family: Montserrat; font-size: 3vh;">Nom du jeu</td >
                                 <td style="width:13%; font-family: Montserrat; font-size: 3vh;">Avis</td >
                         </tr>
