@@ -172,7 +172,7 @@
                             <input class="field-input" type="number" min="0" max="20" placeholder="Valeur" required>
                         </div>
                         <div class="field numberOfPlayers">
-                            <div class="field-name">Value</div>
+                            <div class="field-name">Nombre de joueurs</div>
                             <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs" required>
                         </div>
                         <div class="field nameGame">
