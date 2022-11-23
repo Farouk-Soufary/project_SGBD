@@ -183,7 +183,7 @@ formName.split(".")[formName.length -1]
         }
 
         if (mode !== "UPDATE"){
-            if ("email checkbox text button".includes(formInputs[key].type)){
+            if ("email checkbox text button date".includes(formInputs[key].type)){
                 query += "'" + formInputs[key].value.split("--")[0] + "'" + ",";
             } else {
                 query += formInputs[key].value.split("--")[0] + ",";
