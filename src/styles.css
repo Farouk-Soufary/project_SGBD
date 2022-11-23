@@ -458,6 +458,7 @@ a{
 .form-field-wrapper{
     position: absolute;
     margin: 3vh;
+    height: auto;
     top: 0;
     left: 0;
 }

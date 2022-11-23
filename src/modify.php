@@ -186,7 +186,7 @@
                         <div class="field nameGame">
                             <div class="field-name">Nom du jeu</div>
                             <div style="display: grid; grid_template_columns: auto;">
-                                <input class="field-input choose-button" type="button" value=". . ." required>
+                                <input class="field-input choose-button" type="button" value="Choix du jeu" required>
                                 <div class="choose-bar">
                                     <?php
                                     $db = new PDO(
@@ -210,7 +210,7 @@
                         <div class="field pseudonyme">
                             <div class="field-name">Pseudonyme</div>
                             <div style="display: grid; grid_template_columns: auto;">
-                                <input class="field-input choose-button" type="button" value=". . ." required>
+                                <input class="field-input choose-button" type="button" value="Choix du pseudonyme" required>
                                 <div class="choose-bar">
                                     <?php
                                     $db = new PDO(
@@ -223,7 +223,6 @@
                                     $players = $rs->fetchAll();
                                     foreach ($players as $player) {
                                     ?>
-                                    <form  action="" method="post">
                                     <button class="test-bar choose-value" type="button" onclick="selectValue(this);"><?php echo $player['PSEUDONYME']; ?></button>
                                     <?php
                                     }
@@ -238,97 +237,143 @@
                 <div class="modify-section">
                 <!-- MODIFY GAME -->
                     <form class="form-fields modify game" id="modifygame" onsubmit="showQuery('.form-fields.modify.game');">
-                        <div class="field name">
-                            <div class="field-name">Nom</div>
-                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                        <div class="field nameGame">
+                            <div class="field-name">Nom du jeu</div>
+                            <div style="display: grid; grid_template_columns: auto;">
+                                <input class="field-input choose-button" type="button" value="Choix du jeu" required>
+                                <div class="choose-bar">
+                                    <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare('SELECT NOM_JEU FROM JEUX');
+                                    $rs->execute();
+                                    $jeux = $rs->fetchAll();
+                                    foreach ($jeux as $jeu) {
+                                    ?>
+                                    <button class="test-bar choose-value"  type="button" onclick="selectValue(this);"><?php echo $jeu['NOM_JEU']; ?></button>
+                                    <?php
+                                    }
+                                    ?>    
+                                </div>
+                            </div>
                         </div>
+
                         <div class="field editor">
                             <div class="field-name">Editeur</div>
-                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                            <input class="field-input" type="text" placeholder="Nouveau Nom de l'éditeur">
                         </div>
                         <div class="field dateParution">
                             <div class="field-name">Date de parution</div>
-                            <input class="field-input" type="date">
+                            <input class="field-input" type="date" value="Nouvelle Date">
                         </div>
                         <div class="field duree">
                             <div class="field-name">Durée</div>
-                            <input class="field-input" type="number" placeholder="Durée du jeu">
+                            <input class="field-input" type="number" placeholder="Nouvelle Durée du jeu">
                         </div>
                         <div class="field type">
                             <div class="field-name">Type</div>
-                            <input class="field-input" type="text" placeholder="Type du jeu">
+                            <input class="field-input" type="text" placeholder="Nouveau Type du jeu">
                         </div>
                         <div class="field numberOfPlayers">
                             <div class="field-name">Nombre de joueurs</div>
-                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
+                            <input class="field-input" type="number" min="0" placeholder="Nouveau Nombre de joueurs">
                         </div>
                         <div class="field standAlone">
                             <div class="field-name">stand Alone</div>
-                            <input class="field-input" type="checkbox">
+                            <div style="display: grid; grid_template_columns: auto;">
+                                <input class="field-input choose-button" type="button" value="New value">
+                                <div class="choose-bar">
+                                    <button class="test-bar choose-value"  type="button" onclick="selectValue(this);">True</button>
+                                    <button class="test-bar choose-value"  type="button" onclick="selectValue(this);">False</button>
+                                </div>
+                            </div>
                         </div>
+
                     </form>
 
                 <!-- MODIFY PLAYER -->
                     <form class="form-fields modify player" id="modifyplayer" onsubmit="showQuery('.form-fields.modify.player');">
-                        <div class="field name">
+                        <div class="field pseudonyme">
+                            <div class="field-name">Pseudonyme</div>
+                            <div style="display: grid; grid_template_columns: auto;">
+                                <input class="field-input choose-button" type="button" value="Choix du pseudonyme" >
+                                <div class="choose-bar">
+                                    <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare('SELECT PSEUDONYME FROM JOUEURS');
+                                    $rs->execute();
+                                    $players = $rs->fetchAll();
+                                    foreach ($players as $player) {
+                                    ?>
+                                    <button class="test-bar choose-value" type="button" onclick="selectValue(this);"><?php echo $player['PSEUDONYME']; ?></button>
+                                    <?php
+                                    }
+                                    ?>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field lastName">
                             <div class="field-name">Nom</div>
-                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                            <input class="field-input" type="text" placeholder="Nouveau Nom" >
                         </div>
-                        <div class="field editor">
-                            <div class="field-name">Editeur</div>
-                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+                        <div class="field firstName">
+                            <div class="field-name">Prénom</div>
+                            <input class="field-input" type="text" placeholder="Nouveau Prénom" >
                         </div>
-                        <div class="field dateParution">
-                            <div class="field-name">Date de parution</div>
-                            <input class="field-input" type="date">
-                        </div>
-                        <div class="field duree">
-                            <div class="field-name">Durée</div>
-                            <input class="field-input" type="number" placeholder="Durée du jeu">
-                        </div>
-                        <div class="field type">
-                            <div class="field-name">Type</div>
-                            <input class="field-input" type="text" placeholder="Type du jeu">
-                        </div>
-                        <div class="field numberOfPlayers">
-                            <div class="field-name">Nombre de joueurs</div>
-                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
-                        </div>
-                        <div class="field standAlone">
-                            <div class="field-name">stand Alone</div>
-                            <input class="field-input" type="checkbox">
+                        <div class="field email">
+                            <div class="field-name">Adresse mail</div>
+                            <input class="field-input" type="email" placeholder="Nouvelle Adresse mail" >
                         </div>
                     </form>
 
                 <!-- MODIFY COMMENT -->
                     <form class="form-fields modify comment" id="modifycomment" onsubmit="showQuery('.form-fields.modify.comment');">
-                        <div class="field name">
-                            <div class="field-name">Nom</div>
-                            <input class="field-input" type="text" placeholder="Nom du jeu">
+                        <div class="field id">
+                            <div class="field-name">ID</div>
+                            <div style="display: grid; grid_template_columns: auto;">
+                                <input class="field-input choose-button" type="number" >
+                                <div class="choose-bar">
+                                    <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare('SELECT ID_NOTE FROM NOTES');
+                                    $rs->execute();
+                                    $notes = $rs->fetchAll();
+                                    foreach ($notes as $note) {
+                                    ?>
+                                    <button class="test-bar choose-value" type="button" onclick="selectValue(this);"><?php echo $note['ID_NOTE']; ?></button>
+                                    <?php
+                                    }
+                                    ?>    
+                                </div>
+                            </div>
                         </div>
-                        <div class="field editor">
-                            <div class="field-name">Editeur</div>
-                            <input class="field-input" type="text" placeholder="Nom de l'éditeur">
+
+                        <div class="field comment">
+                            <div class="field-name">Commentaire</div>
+                            <input class="field-input" type="text" placeholder="Nouveau Commentaire" >
                         </div>
-                        <div class="field dateParution">
-                            <div class="field-name">Date de parution</div>
-                            <input class="field-input" type="date">
+                        <div class="field date">
+                            <div class="field-name">Date</div>
+                            <input class="field-input" type="date" placeholder="Nouvelle Date du commentaire" >
                         </div>
-                        <div class="field duree">
-                            <div class="field-name">Durée</div>
-                            <input class="field-input" type="number" placeholder="Durée du jeu">
-                        </div>
-                        <div class="field type">
-                            <div class="field-name">Type</div>
-                            <input class="field-input" type="text" placeholder="Type du jeu">
+                        <div class="field value">
+                            <div class="field-name">Valeur</div>
+                            <input class="field-input" type="number" min="0" max="20" placeholder="Nouvelle Valeur" >
                         </div>
                         <div class="field numberOfPlayers">
                             <div class="field-name">Nombre de joueurs</div>
-                            <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
-                        </div>
-                        <div class="field standAlone">
-                            <div class="field-name">stand Alone</div>
-                            <input class="field-input" type="checkbox">
+                            <input class="field-input" type="number" min="0" placeholder="Nouveau Nombre de joueurs" >
                         </div>
                     </form>
                 </div>
@@ -336,98 +381,77 @@
 
                 <div class="delete-section">   
                     <!-- DELETE GAME -->
-                        <form class="form-fields delete game" id="deletegame" onsubmit="showQuery('.form-fields.delete.game');">
-                            <div class="field name">
-                                <div class="field-name">Nom</div>
-                                <input class="field-input" type="text" placeholder="Nom du jeu">
+
+                        <form class="form-fields delete game"  id="deletegame" onsubmit="showQuery('.form-fields.delete.game');">
+                            <div style="display: grid; grid_template_columns: auto; margin-left: 11vw;">
+                                    <input class="field-input choose-button" type="button" value="Choix du jeu" required>
+                                    <div class="choose-bar" style=" height: 60vh; visibility: visible; opacity:1; display: inline-block; transform: translateY(0); ">
+                                        <?php
+                                        $db = new PDO(
+                                        'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                        'root',
+                                        ''
+                                        );
+                                        $rs = $db->prepare('SELECT NOM_JEU FROM JEUX');
+                                        $rs->execute();
+                                        $games = $rs->fetchAll();
+                                        foreach ($games as $game) {
+                                        ?>
+                                        <button class="test-bar choose-value str" type="button" onclick="selectValue(this);"><?php echo $game['NOM_JEU']; ?></button>
+                                        <?php
+                                        }
+                                        ?>    
+                                    </div>
                             </div>
-                            <div class="field editor">
-                                <div class="field-name">Editeur</div>
-                                <input class="field-input" type="text" placeholder="Nom de l'éditeur">
-                            </div>
-                            <div class="field dateParution">
-                                <div class="field-name">Date de parution</div>
-                                <input class="field-input" type="date">
-                            </div>
-                            <div class="field duree">
-                                <div class="field-name">Durée</div>
-                                <input class="field-input" type="number" placeholder="Durée du jeu">
-                            </div>
-                            <div class="field type">
-                                <div class="field-name">Type</div>
-                                <input class="field-input" type="text" placeholder="Type du jeu">
-                            </div>
-                            <div class="field numberOfPlayers">
-                                <div class="field-name">Nombre de joueurs</div>
-                                <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
-                            </div>
-                            <div class="field standAlone">
-                                <div class="field-name">stand Alone</div>
-                                <input class="field-input" type="checkbox">
-                            </div>
+
                         </form>
 
                     <!-- DELETE PLAYER -->
-                        <form class="form-fields delete player" id="deleteplayer" onsubmit="showQuery('.form-fields.delete.player');">
-                            <div class="field name">
-                                <div class="field-name">Nom</div>
-                                <input class="field-input" type="text" placeholder="Nom du jeu">
+                        <form class="form-fields delete player"  id="deleteplayer" onsubmit="showQuery('.form-fields.delete.player');">
+                            <div style="display: grid; grid_template_columns: auto; margin-left: 11vw;">
+                                    <input class="field-input choose-button" type="button" value="Choix du joueur" required>
+                                    <div class="choose-bar"  style=" height: 60vh; visibility: visible; opacity:1; display: inline-block; transform: translateY(0); ">
+                                        <?php
+                                        $db = new PDO(
+                                        'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                        'root',
+                                        ''
+                                        );
+                                        $rs = $db->prepare('SELECT PSEUDONYME FROM JOUEURS');
+                                        $rs->execute();
+                                        $players = $rs->fetchAll();
+                                        foreach ($players as $player) {
+                                        ?>
+                                        <button class="test-bar choose-value str" type="button" onclick="selectValue(this);"><?php echo $player['PSEUDONYME']; ?></button>
+                                        <?php
+                                        }
+                                        ?>    
+                                    </div>
                             </div>
-                            <div class="field editor">
-                                <div class="field-name">Editeur</div>
-                                <input class="field-input" type="text" placeholder="Nom de l'éditeur">
-                            </div>
-                            <div class="field dateParution">
-                                <div class="field-name">Date de parution</div>
-                                <input class="field-input" type="date">
-                            </div>
-                            <div class="field duree">
-                                <div class="field-name">Durée</div>
-                                <input class="field-input" type="number" placeholder="Durée du jeu">
-                            </div>
-                            <div class="field type">
-                                <div class="field-name">Type</div>
-                                <input class="field-input" type="text" placeholder="Type du jeu">
-                            </div>
-                            <div class="field numberOfPlayers">
-                                <div class="field-name">Nombre de joueurs</div>
-                                <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
-                            </div>
-                            <div class="field standAlone">
-                                <div class="field-name">stand Alone</div>
-                                <input class="field-input" type="checkbox">
-                            </div>
+
                         </form>
 
                     <!-- DELETE COMMENT -->
-                        <form class="form-fields delete comment" id="deletecomment" onsubmit="showQuery('.form-fields.delete.comment');">
-                            <div class="field name">
-                                <div class="field-name">Nom</div>
-                                <input class="field-input" type="text" placeholder="Nom du jeu">
-                            </div>
-                            <div class="field editor">
-                                <div class="field-name">Editeur</div>
-                                <input class="field-input" type="text" placeholder="Nom de l'éditeur">
-                            </div>
-                            <div class="field dateParution">
-                                <div class="field-name">Date de parution</div>
-                                <input class="field-input" type="date">
-                            </div>
-                            <div class="field duree">
-                                <div class="field-name">Durée</div>
-                                <input class="field-input" type="number" placeholder="Durée du jeu">
-                            </div>
-                            <div class="field type">
-                                <div class="field-name">Type</div>
-                                <input class="field-input" type="text" placeholder="Type du jeu">
-                            </div>
-                            <div class="field numberOfPlayers">
-                                <div class="field-name">Nombre de joueurs</div>
-                                <input class="field-input" type="number" min="0" placeholder="Nombre de joueurs">
-                            </div>
-                            <div class="field standAlone">
-                                <div class="field-name">stand Alone</div>
-                                <input class="field-input" type="checkbox">
+                        <form class="form-fields delete comment"  id="deletecomment" onsubmit="showQuery('.form-fields.delete.comment');">
+                            <div style="display: grid; grid_template_columns: auto; margin-left: 11vw;">
+                                    <input class="field-input choose-button" type="number" min="0" value="Choix du commentaire" required>
+                                    <div class="choose-bar"  style=" height: 60vh; visibility: visible; opacity:1; display: inline-block; transform: translateY(0); ">
+                                        <?php
+                                        $db = new PDO(
+                                        'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                        'root',
+                                        ''
+                                        );
+                                        $rs = $db->prepare('SELECT * FROM NOTES');
+                                        $rs->execute();
+                                        $notes = $rs->fetchAll();
+                                        foreach ($notes as $note) {
+                                        ?>
+                                        <button class="test-bar choose-value" style="text-align: left;" type="button" onclick="selectValue(this);"><?php echo $note['ID_NOTE']."- ".$note['COMMENTAIRE']."- ".$note['PSEUDONYME']."- ".$note['NOM_JEU']; ?></button>
+                                        <?php
+                                        }
+                                        ?>    
+                                    </div>
                             </div>
                         </form>
 
@@ -435,20 +459,20 @@
             </div>
 
 
-            <button type="submit" form="addgame" class="form-submit add">
-                <div class="form-submit-text">Ajouter</div>    
-                <img class="form-submit-img" src="assets/addIcon.png">
-            </button>
+                <button type="submit" form="addgame" class="form-submit add">
+                    <div class="form-submit-text">Ajouter</div>    
+                    <img class="form-submit-img" src="assets/addIcon.png">
+                </button>
 
-            <button type="submit" form="modifygame" class="form-submit modify">
-                <div class="form-submit-text">Modifier</div>    
-                <img class="form-submit-img" src="assets/modifyIcon.png">
-            </button>
+                <button type="submit" form="modifygame" class="form-submit modify">
+                    <div class="form-submit-text">Modifier</div>    
+                    <img class="form-submit-img" src="assets/modifyIcon.png">
+                </button>
 
-            <button type="submit"  form="deletegame" class="form-submit delete">
-                <div class="form-submit-text">Supprimer</div>    
-                <img class="form-submit-img" src="assets/deleteIcon.png">
-            </button>
+                <button type="submit"  form="deletegame" class="form-submit delete">
+                    <div class="form-submit-text">Supprimer</div>    
+                    <img class="form-submit-img" src="assets/deleteIcon.png">
+                </button>
 
             </div>
         </div>

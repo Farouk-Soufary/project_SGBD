@@ -114,7 +114,7 @@
                                         <tr>
                                             <td style="width:5%;"><?php echo $game['NOM_JEU'];?></td>
                                         </tr>
-                            </table>
+                                </table>
                                <?php
                                 }
                         }

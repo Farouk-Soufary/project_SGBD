@@ -12,7 +12,9 @@ const formSubmitButtons = document.querySelectorAll(".form-submit");
 
 const actionsList = ["add", "modify", "delete"];
 const objectsList = ["game", "player", "comment"];
-
+const gameKeys = ["NOM_JEU", "EDITEUR", "DATE_PARUTION", "DUREE", "TYPE_JEU", "NOMBRE_JOUEURS", "STAND_ALONE"];
+const playerKeys = ["PSEUDONYME", "NOM_JOUEUR", "PRENOM_JOUEUR", "ADRESSE_MAIL"];
+const commentKeys = ["ID_NOTE", "COMMENTAIRE", "DATE_NOTE", "VALEUR", "NOMBRE_JOUEURS"];
 let selectedAction, selectedObject, selectedSubmitButton;
 
 let action = {};
@@ -107,44 +109,54 @@ function CreateEventListenersStats(){
 
 function showQuery(formName){
 formName.split(".")[formName.length -1]
-    let mode, table, query, acc;
+    let mode, table, query, acc, id;
+    let updateList = [];
     acc = formName.split(".")[2] + formName.split(".")[3];
     switch(acc){
         case 'addgame':
             mode = "INSERT";
             table = "JEUX";
+            id = "NOM_JEU";
             break;
         case 'modifygame':
             mode = "UPDATE";
             table = "JEUX";
+            id = "NOM_JEU";
             break;
         case 'deletegame':
             mode = "DELETE";
             table = "JEUX";
+            id = "NOM_JEU";
             break;
         case 'addplayer':
             mode = "INSERT";
             table = "JOUEURS";
+            id = "PSEUDONYME";
             break;
         case 'modifyplayer':
             mode = "UPDATE";
             table = "JOUEURS";
+            id = "PSEUDONYME";
             break;
         case 'deleteplayer':
             mode = "DELETE";
             table = "JOUEURS";
+            id = "PSEUDONYME";
             break;
         case 'addcomment':
             mode = "INSERT";
             table = "NOTES";
+            id = "ID_NOTE";
             break;
         case 'modifycomment':
             mode = "UPDATE";
             table = "NOTES";
+            id = "ID_NOTE";
             break;
         case 'deletecomment':
             mode = "DELETE";
             table = "NOTES";
+            id = "ID_NOTE";
             break;
         default:
             mode = "";
@@ -157,31 +169,37 @@ formName.split(".")[formName.length -1]
     } else if (mode === "UPDATE"){
         query = mode + " " + table + " SET";
     } else if (mode === "DELETE"){
-        query = mode + " FROM " + table + " WHERE ";
+        query = mode + " FROM " + table + " WHERE "+ id + "=";
     } else {
         query = "";
     }
 
     const formInputs = document.querySelector(formName).getElementsByTagName("input");
     Object.keys(formInputs).forEach( (key) => {
-        if (formInputs[key].value === "" || formInputs[key].value === ". . ."){
+        if (formInputs[key].value === "" || formInputs[key].value === ". . ." || formInputs[key].value.includes("Choix")){
             alert("Please fill all the information correctly");
             throw new console.error("error");
         }
-        if ("email checkbox text button".includes(formInputs[key].type)){
-            query += "'" + formInputs[key].value + "'" + ",";
+
+        if (mode != "UPDATE"){
+            if ("email checkbox text button".includes(formInputs[key].type)){
+                query += "'" + formInputs[key].value.split("-")[0] + "'" + ",";
+            } else {
+                query += formInputs[key].value.split("-")[0] + ",";
+            }
         } else {
-            query += formInputs[key].value + ",";
+            let i = updateList.push(formInputs[key].value.split("-")[0]);
         }
     });
 
+    query = query.slice(0, -1);
+
     if (mode === "INSERT"){
-        query = query.slice(0, -1) + ");";
+        query += ")";
     } else if (mode === "UPDATE"){
-    } else if (mode === "DELETE"){
-    } else {
-        query = "";
+        console.log(updateList);
     }
+    query += ";";
 
     // RUN QUERY
     alert(query);
@@ -198,7 +216,7 @@ function showTable(n){
 }
 
 function selectValue(el){
-   el.parentElement.parentElement.children[0].value = el.innerHTML;
+   el.parentElement.parentElement.children[0].value = el.innerHTML.split("-")[0];
    hideAllChooseBars();
 }
 
