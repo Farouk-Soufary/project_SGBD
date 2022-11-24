@@ -20,7 +20,11 @@ let selectedAction, selectedObject, selectedSubmitButton;
 
 let action = {};
 let object = {};
+const QUERY = document.querySelectorAll('.QUERY');
 
+Object.keys(QUERY).forEach( (key) => {
+    QUERY[key].value = "";
+});
 
 function activateNavbar(){
     if (!navbar.classList.contains('isActive')){
@@ -221,7 +225,11 @@ formName.split(".")[formName.length -1]
     query += ";";
 
     // RUN QUERY
-    alert(query);
+    Object.keys(QUERY).forEach( (key) => {
+        QUERY[key].value = query;
+    });
+
+    alert("Your changes are processed successfully\nChanges applied.\nThe applied query is : " + query);
 }
 
 function showTable(n){

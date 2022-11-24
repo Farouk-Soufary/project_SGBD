@@ -13,6 +13,29 @@
             scroll-behavior: smooth;
         }
     </style>
+
+    <?php
+        $query="";
+        function runQuery() {
+            $query = $_POST["query"];
+            // echo "<div style='position: absolute; height: 10vh; width: 10vw; background-color: red; left: 10vw;'>";
+            // echo $query;
+            // echo "</pre>";
+            $db = new PDO(
+                'mysql:host=localhost;dbname=mysql;charset=utf8',
+                'root',
+                ''
+                );
+            $rs = $db->prepare($query." COMMIT;");
+            $rs->execute();
+        }
+
+        if(array_key_exists('query', $_POST)) {
+            $query="";
+            runQuery();
+        }
+    ?>
+
 </head>
 <body>
     <div class="navbar">
@@ -99,10 +122,10 @@
             <div class="form-select">
             
             <div class="form-field-wrapper">
-                
+
                 <div class="add-section">
                 <!-- ADD GAME -->
-                    <form class="form-fields add game" id="addgame" onsubmit="showQuery('.form-fields.add.game');">
+                    <form method="post" class="form-fields add game" id="addgame" onsubmit="showQuery('.form-fields.add.game');">
                         <div class="field name">
                             <div class="field-name">Nom</div>
                             <input class="field-input" type="text" placeholder="Nom du jeu" required>
@@ -140,7 +163,7 @@
                     </form>
 
                 <!-- ADD PLAYER -->
-                    <form class="form-fields add player" id="addplayer" onsubmit="showQuery('.form-fields.add.player');">
+                    <form method="post" class="form-fields add player" id="addplayer" onsubmit="showQuery('.form-fields.add.player');">
                         <div class="field pseudonyme">
                             <div class="field-name">Pseudonyme</div>
                             <input class="field-input" type="text" placeholder="Pseudonyme" required>
@@ -160,7 +183,7 @@
                     </form>
 
                 <!-- ADD COMMENT -->
-                    <form class="form-fields add comment" id="addcomment" onsubmit="showQuery('.form-fields.add.comment');">
+                    <form method="post" class="form-fields add comment" id="addcomment" onsubmit="showQuery('.form-fields.add.comment');">
 
                         <div class="field id">
                             <div class="field-name">ID</div>
@@ -236,7 +259,7 @@
 
                 <div class="modify-section">
                 <!-- MODIFY GAME -->
-                    <form class="form-fields modify game" id="modifygame" onsubmit="showQuery('.form-fields.modify.game');">
+                    <form method="post" class="form-fields modify game" id="modifygame" onsubmit="showQuery('.form-fields.modify.game');">
                         <div class="field nameGame">
                             <div class="field-name">Nom du jeu</div>
                             <div style="display: grid; grid_template_columns: auto;">
@@ -295,7 +318,7 @@
                     </form>
 
                 <!-- MODIFY PLAYER -->
-                    <form class="form-fields modify player" id="modifyplayer" onsubmit="showQuery('.form-fields.modify.player');">
+                    <form method="post" class="form-fields modify player" id="modifyplayer" onsubmit="showQuery('.form-fields.modify.player');">
                         <div class="field pseudonyme">
                             <div class="field-name">Pseudonyme</div>
                             <div style="display: grid; grid_template_columns: auto;">
@@ -334,7 +357,7 @@
                     </form>
 
                 <!-- MODIFY COMMENT -->
-                    <form class="form-fields modify comment" id="modifycomment" onsubmit="showQuery('.form-fields.modify.comment');">
+                    <form method="post" class="form-fields modify comment" id="modifycomment" onsubmit="showQuery('.form-fields.modify.comment');">
                         <div class="field id">
                             <div class="field-name">ID</div>
                             <div style="display: grid; grid_template_columns: auto;">
@@ -382,7 +405,7 @@
                 <div class="delete-section">   
                     <!-- DELETE GAME -->
 
-                        <form class="form-fields delete game"  id="deletegame" onsubmit="showQuery('.form-fields.delete.game');">
+                        <form method="post" class="form-fields delete game"  id="deletegame" onsubmit="showQuery('.form-fields.delete.game');">
                             <div style="display: grid; grid_template_columns: auto; margin-left: 11vw;">
                                     <input class="field-input choose-button" type="button" value="Choix du jeu" required>
                                     <div class="choose-bar" style=" height: 60vh; visibility: visible; opacity:1; display: inline-block; transform: translateY(0); ">
@@ -407,7 +430,7 @@
                         </form>
 
                     <!-- DELETE PLAYER -->
-                        <form class="form-fields delete player"  id="deleteplayer" onsubmit="showQuery('.form-fields.delete.player');">
+                        <form method="post" class="form-fields delete player"  id="deleteplayer" onsubmit="showQuery('.form-fields.delete.player');">
                             <div style="display: grid; grid_template_columns: auto; margin-left: 11vw;">
                                     <input class="field-input choose-button" type="button" value="Choix du joueur" required>
                                     <div class="choose-bar"  style=" height: 60vh; visibility: visible; opacity:1; display: inline-block; transform: translateY(0); ">
@@ -432,7 +455,7 @@
                         </form>
 
                     <!-- DELETE COMMENT -->
-                        <form class="form-fields delete comment"  id="deletecomment" onsubmit="showQuery('.form-fields.delete.comment');">
+                        <form method="post" class="form-fields delete comment"  id="deletecomment" onsubmit="showQuery('.form-fields.delete.comment');">
                             <div style="display: grid; grid_template_columns: auto; margin-left: 11vw;">
                                     <input class="field-input choose-button" type="number" min="0" required>
                                     <div class="choose-bar"  style=" height: 60vh; visibility: visible; opacity:1; display: inline-block; transform: translateY(0); ">
@@ -454,22 +477,24 @@
                                     </div>
                             </div>
                         </form>
-
+                        <!-- <form method="post" action="" style="display: none;">
+                            <input class="QUERY" name="query" type="text" value="" style="display: none;">
+                        </form> -->
                 </div>
             </div>
 
 
-                <button type="submit" form="addgame" class="form-submit add">
+                <button  type="submit" form="addgame" name="query" value="" class="form-submit add QUERY">
                     <div class="form-submit-text">Ajouter</div>    
                     <img class="form-submit-img" src="assets/addIcon.png">
                 </button>
 
-                <button type="submit" form="modifygame" class="form-submit modify">
+                <button  type="submit" form="modifygame" name="query" value="" class="form-submit modify QUERY">
                     <div class="form-submit-text">Modifier</div>    
                     <img class="form-submit-img" src="assets/modifyIcon.png">
                 </button>
 
-                <button type="submit"  form="deletegame" class="form-submit delete">
+                <button  type="submit"  form="deletegame" name="query" value="" class="form-submit delete QUERY">
                     <div class="form-submit-text">Supprimer</div>    
                     <img class="form-submit-img" src="assets/deleteIcon.png">
                 </button>
@@ -484,4 +509,5 @@
 
 
 <script type="text/javascript" src="app.js"></script>
+
 </html>
