@@ -8,6 +8,10 @@
     <link rel = "icon" type = "image/png" href = "assets/favicon.png">
     <title>projet SGBD : Jeux</title>
 </head>
+
+<style>
+    .loading-page{height: 400vh;}
+</style>
 <body>
 
     <div>

@@ -165,7 +165,7 @@ a{
 .button-table:hover, .button-table.isActive{
     opacity: 1;
     box-shadow:  0 0 3vh .3vh rgb(0, 0, 0, .2);
-    color: yellowgreen;
+    color: rgb(0, 186, 152);
 }
 
 .button-table.isActive{
@@ -547,7 +547,7 @@ a{
     border: none;
     cursor: pointer;
     transition: .2s ease-out;
-    background-color: rgb(189, 188, 188, .5);
+    background-color:rgba(138, 255, 228, 0.345);
     backdrop-filter: blur(20px);
     color: black;
     border-radius: 2vh;
@@ -563,7 +563,7 @@ a{
 }
 
 .choose-button:hover{
-    background-color: rgb(255, 255, 255, .5);
+    background-color: rgba(138, 255, 228, 0.645);
 }
 
 .choose-bar {
@@ -604,7 +604,7 @@ a{
 
 .test-bar:hover{
     background-color:  rgb(55, 128, 130);
-    color: yellowgreen;
+    color:  rgba(138, 255, 228, 0.645);
 }
 
 .test-bar.choose-value{
@@ -626,7 +626,7 @@ a{
     height: 70vh;
     width: 80vw;
     border-radius: 2vh;
-    background-color:  rgb(255, 255, 255, .6);
+    background-color:  rgba(138, 255, 228, 0.345);
     backdrop-filter: blur(20px);
 }
 
@@ -648,25 +648,28 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(55, 55, 55, .5);
+    background-color: rgba(138, 255, 228, 0.345);
     width: 70vw;
     padding: 2vh;
-    border-radius: 2vh;
-    text-align: center;
+    text-align: left;
+}
+
+.paragraph.special{
+    position: relative;
 }
 
 .title{
-    color: rgb(1, 255, 119);
+    text-align: left;
+    color: rgb(20, 34, 41);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 6vh;
     font-weight: 700;
-    text-align: center;
 }
 
 .content{
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3vh;
+    font-size: 2.6vh;
     font-weight: 500;
     text-align: justify;
 }
@@ -681,7 +684,7 @@ a{
 
 .loading-page{
     position: absolute;
-    height: 400vh;
+    height: 300vh;
     width: 100vw;
     z-index: -10;
     opacity: 0;

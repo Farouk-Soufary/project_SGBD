@@ -120,18 +120,18 @@
         </div>
 
         <div class="page-2">
-            <div class="paragraph">
-                <div class="title">Schéma conceptuel et relationel</div>
+            <div class="paragraph" style="text-align: center;">
+                <div class="title" style="text-align: center;">Schéma conceptuel et relationel</div>
                 <div class="content"></div>
                 <div class="scheme-links">
                     <a class="scheme-link-one" href="./assets/scheme-concept.pdf">
-                        <div class="scheme-concept title" style="color: whitesmoke; font-size: 5vh;">Conceptuel</div>
-                        <img src="./assets/scheme-concept.png" style="height: 31vh;">
+                        <div class="scheme-concept title" style="color: whitesmoke; font-size: 5vh; text-align: center;">Conceptuel</div>
+                        <img src="./assets/scheme-concept.png" style="height: 31vh; text-align: center;">
                     </a>
 
                     <a class="scheme-link-two" href="./assets/scheme-relation.pdf">
-                        <div class="scheme-relation title" style="color: whitesmoke; font-size: 5vh;" >Relationel</div>
-                        <img src="./assets/scheme-relation.png" style="height: 32vh;">
+                        <div class="scheme-relation title" style="color: whitesmoke; font-size: 5vh; text-align: center;" >Relationel</div>
+                        <img src="./assets/scheme-relation.png" style="height: 32vh; text-align: center;">
                     </a>
                 </div>
 
@@ -139,26 +139,34 @@
         </div>
 
         <div class="page-3">
-            <div class="paragraph">
-                <a class="title" href="consult.php">Consultation</a>
-                <div class="content">
-                    Aprés avoir stocké les informations cités dans le paragraphe précédent dans notre base de données, on veut
-                    disposer des manipulations comme par exemple la consultation de la base de données.<br>
-                    La page de consultation montre des informations sur les jeux, les joueurs, et les commentaires. En particulier on montre les cas suivants:<br>
-                    La liste des jeux notés disponibles dans un thème choisit par l'utilisateur, cet ensemble est classés par mécaniques.<br>
-                    La liste des commentaires se reférant à un jeu dans une des catégories (mécaniques) d'un joueur que l'utilisateur peut choisir.<br>
-                    La liste des joueurs qui ont appréciés un commentaire choisit.<br>
+            <div style="display:grid; grid-template-columns: auto; row-gap: 2vh; margin-top: 2vh;">
+                <div class="paragraph special">
+                    <a class="title" href="consult.php">Consultation</a>
+                    <div class="content">
+                        Aprés avoir stocké les informations cités dans le paragraphe précédent dans notre base de données, on veut
+                        disposer des manipulations comme par exemple la consultation de la base de données.<br>
+                        La page de consultation montre des informations sur les jeux, les joueurs, et les commentaires. En particulier on montre les cas suivants:<br>
+                        La liste des jeux notés disponibles dans un thème choisit par l'utilisateur, cet ensemble est classés par mécaniques.<br>
+                        La liste des commentaires se reférant à un jeu dans une des catégories (mécaniques) d'un joueur que l'utilisateur peut choisir.<br>
+                        La liste des joueurs qui ont appréciés un commentaire choisit.<br>
+                    </div>
                 </div>
-                <a class="title" href="statistics.php">Statistiques</a>
-                <div class="content">
-                    Dans cette partie on cherche plus à faire des calculs dans la base de données pour avoir une idée sur l'avis général d'un jeu
-                    la moyenne des jeux qui ont été le plus appréciés, les commentaires les plus pertinent (calculs d'indice de confiance), et les commentaires les plus récents.<br>
+                
+                <div class="paragraph special">
+                    <a class="title" href="statistics.php">Statistiques</a>
+                    <div class="content">
+                        Dans cette partie on cherche plus à faire des calculs dans la base de données pour avoir une idée sur l'avis général d'un jeu
+                        la moyenne des jeux qui ont été le plus appréciés, les commentaires les plus pertinent (calculs d'indice de confiance), et les commentaires les plus récents.<br>
+                    </div>
                 </div>
-                <a class="title" href="modify">Modiciation</a>
-                <div class="content">
-                    La page de modification nous permet d'avoir une interface qui simplifie la modification de la base de données. On garantie l'ajout,
-                    le suppression  et la modification d'un jeu, d'un joueur, ou d'un commentaire. La modification de ces trois ensembles nécéssite une
-                    connaissance du nom du jeu (pour les jeux), le pseudonyme (pour les joueurs), l'ID (pour le commentaire).
+                
+                <div class="paragraph special">
+                    <a class="title" href="modify">Modifiation</a>
+                    <div class="content">
+                        La page de modification nous permet d'avoir une interface qui simplifie la modification de la base de données. On garantie l'ajout,
+                        le suppression  et la modification d'un jeu, d'un joueur, ou d'un commentaire. La modification de ces trois ensembles nécéssite une
+                        connaissance du nom du jeu (pour les jeux), le pseudonyme (pour les joueurs), l'ID (pour le commentaire).
+                    </div>
                 </div>
             </div>
         </div>

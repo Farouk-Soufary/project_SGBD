@@ -13,6 +13,10 @@
             overflow-y: hidden;
             scroll-behavior: smooth;
         }
+
+        .consult-grid{
+            margin-top: 0;            
+        }
     </style>
     <?php
       	$login = 'root';
