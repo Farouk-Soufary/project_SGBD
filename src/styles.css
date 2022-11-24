@@ -138,6 +138,7 @@ a{
     display: grid;
     grid-template-columns: auto;
     column-gap: 0px;
+    transition: .4s ease-in-out;
 }
 
 .pages.db-page > *{
@@ -647,15 +648,27 @@ a{
     position: absolute;
     top: 50%;
     left: 50%;
+    opacity: 1;
     transform: translate(-50%, -50%);
     background-color: rgba(138, 255, 228, 0.345);
     width: 70vw;
     padding: 2vh;
     text-align: left;
+    transition: .6s ease-in-out;
 }
 
 .paragraph.special{
     position: relative;
+}
+
+.paragraph.slide{
+    left: 0;
+    opacity: 0;
+}
+
+.paragraph.slide.isVisible{
+    left: 50%;
+    opacity: 1;
 }
 
 .title{
@@ -719,4 +732,61 @@ a{
 @keyframes rotate {
     from{ transform: rotate(0);}
     to{ transform: rotate(360deg);}
+}
+
+
+.go-button{
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    margin: 4vh;
+    height: 7vh;
+    aspect-ratio: 1;
+    opacity: 0;
+    visibility: hidden;
+    background-image: url(assets/arrow.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.go-button.up{
+    top: 10vh;
+}
+
+.go-button.down{
+    bottom: 5vh;
+    transform: rotate(180deg);
+}
+
+
+.go-button.isActive{
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-relation{
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+.pages.down{
+    transform: translateY(-110vh);
+}
+
+.wrapper-relation{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    background-color: rgb(20, 34, 41);
+    height: 80vh;
+    width: 80vw;
 }

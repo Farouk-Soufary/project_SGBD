@@ -101,7 +101,7 @@
     <div class="pages">
         <div class="page-1">
             <div class="index-title-page">Jeux</div>
-            <div class="paragraph">
+            <div class="paragraph slide">
                 <div class="title">Présentation du projet</div>
                 <div class="content">
                     Le but de ce projet est de mettre en œuvre les connaissances et les notions vues dans le module SGBD.
@@ -120,7 +120,7 @@
         </div>
 
         <div class="page-2">
-            <div class="paragraph" style="text-align: center;">
+            <div class="paragraph slide" style="text-align: center;">
                 <div class="title" style="text-align: center;">Schéma conceptuel et relationel</div>
                 <div class="content"></div>
                 <div class="scheme-links">
@@ -140,7 +140,7 @@
 
         <div class="page-3">
             <div style="display:grid; grid-template-columns: auto; row-gap: 2vh; margin-top: 2vh;">
-                <div class="paragraph special">
+                <div class="paragraph special slide">
                     <a class="title" href="consult.php">Consultation</a>
                     <div class="content">
                         Aprés avoir stocké les informations cités dans le paragraphe précédent dans notre base de données, on veut
@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 
-                <div class="paragraph special">
+                <div class="paragraph special slide">
                     <a class="title" href="statistics.php">Statistiques</a>
                     <div class="content">
                         Dans cette partie on cherche plus à faire des calculs dans la base de données pour avoir une idée sur l'avis général d'un jeu
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 
-                <div class="paragraph special">
+                <div class="paragraph special slide">
                     <a class="title" href="modify">Modifiation</a>
                     <div class="content">
                         La page de modification nous permet d'avoir une interface qui simplifie la modification de la base de données. On garantie l'ajout,

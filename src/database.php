@@ -31,6 +31,12 @@
 </head>
 <body>
 
+    <button class="go-button up" onclick="movePages('up');">
+    </button>
+
+    <button class="go-button down isActive" onclick="movePages('down');">
+    </button>
+    
     <div>
         <div class="loading-page isActive"></div>
         <div class="loading-motion isActive"></div>
@@ -298,7 +304,12 @@
                 </div>
             </div>
         </div>
+        
+        <div class="page-relation">
+            <div class="wrapper-relation">
 
+            </div>
+        </div>
     </div>
 </body>
 
