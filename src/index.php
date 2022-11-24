@@ -9,18 +9,18 @@
     <link rel = "icon" type = "image/png" href = "assets/favicon.png">
     <title>projet SGBD</title>
     <?php
-      	// $login = 'root';
-        // $db_pwd = '';
-        // $db = new PDO("mysql:host=127.0.0.1;dbname=mysql;charset=utf8mb4", $login, $db_pwd);
-        // if (!$db) {
-        //     $e = oci_error();
-        //     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-        // }
+      	$login = 'root';
+        $db_pwd = '';
+        $db = new PDO("mysql:host=127.0.0.1;dbname=mysql;charset=utf8mb4", $login, $db_pwd);
+        if (!$db) {
+            $e = oci_error();
+            trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+        }
 
         // $cr_query = file_get_contents('../sql/create.sql');
         // $ins_query = file_get_contents('../sql/insert.sql');
         // $drp_query = file_get_contents('../sql/drop.sql');
-        // // $result = mysqli_query($db, $cr_query);
+        // // // $result = mysqli_query($db, $cr_query);
         
         // $result = $db->exec($cr_query.$ins_query);
 
@@ -43,6 +43,10 @@
 </head>
 <body>
 
+    <div>
+        <div class="loading-page isActive"></div>
+        <div class="loading-motion isActive"></div>
+    </div>
 
     <div class="navbar">
         <div>

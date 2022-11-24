@@ -9,6 +9,11 @@
     <title>projet SGBD : Jeux</title>
 </head>
 <body>
+
+    <div>
+        <div class="loading-page isActive"></div>
+        <div class="loading-motion isActive"></div>
+    </div>
     <div class="navbar">
         <div>
             <button class="menu-button" onclick="activateNavbar();" title="Menu"></button>

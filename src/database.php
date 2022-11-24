@@ -27,6 +27,10 @@
 </head>
 <body>
 
+    <div>
+        <div class="loading-page isActive"></div>
+        <div class="loading-motion isActive"></div>
+    </div>
 
     <div class="navbar" style="z-index: 7;">
         <div>

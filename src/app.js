@@ -26,6 +26,13 @@ Object.keys(QUERY).forEach( (key) => {
     QUERY[key].value = "";
 });
 
+window.onload = () =>{
+    setTimeout( () =>{
+        document.querySelector(".loading-page").classList.remove("isActive");
+        document.querySelector(".loading-motion").classList.remove("isActive");
+    }, 700)
+};
+
 function activateNavbar(){
     if (!navbar.classList.contains('isActive')){
         document.querySelector('.menu-button').style.backgroundImage = 'url(./assets/crossIcon.png)';
