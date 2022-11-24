@@ -96,7 +96,7 @@
                 <div class="consult-grid" style="overflow-y: scroll;">
                 <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
-                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Prenom</th>
+                            <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Prénom</th>
                             <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Nom </th>
                             <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Pseudonyme</th>
                             <th style="width:10%;  font-family: Montserrat; font-size: 3vh;">Email</th>
@@ -149,8 +149,8 @@
                         ?>
                         <table style="width:100%;">
                                 <tr>
-                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['EDITEUR'];?></td >
                                     <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['NOM_JEU'];?></td >
+                                    <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['EDITEUR'];?></td >
                                     <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['DATE_PARUTION'];?></td >
                                     <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['DUREE'];?></td >
                                     <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $game['TYPE_JEU'];?></td >
@@ -307,6 +307,61 @@
         
         <div class="page-relation">
             <div class="wrapper-relation">
+
+                    <div class="game-wrapper-title">Jeu</div>
+                    <div class="choose-bar isVisible game" style=>
+                        <?php
+                            $db = new PDO(
+                            'mysql:host=localhost;dbname=mysql;charset=utf8',
+                            'root',
+                            ''
+                            );
+                            $rs = $db->prepare('SELECT * FROM JEUX');
+                            $rs->execute();
+                            $games = $rs->fetchAll();
+                            foreach ($games as $game) {
+                            ?>
+                                <button class="test-bar game"><?php echo $game['NOM_JEU']; ?></button>
+                            <?php
+                            }
+                        ?>
+                    </div>
+
+                <div class="comment-wrapper">
+                    <?php
+                        foreach ($games as $game) {
+                        ?>                
+                        <!-- <div class="comment-bar">
+                            
+                        </div> -->
+                        <?php
+                        }
+                    ?>
+                </div>
+
+                <div class="player-wrapper">
+                    <?php
+                        foreach ($games as $game) {
+                        ?>                
+                        <!-- <div class="player-bar">
+                            
+                        </div> -->
+                        <?php
+                        }
+                    ?>
+                </div>
+
+                <div class="contributor-wrapper">
+                    <?php
+                        foreach ($games as $game) {
+                        ?>                
+                        <!-- <div class="contributor-bar">
+                            
+                        </div> -->
+                        <?php
+                        }
+                    ?>
+                </div>
 
             </div>
         </div>
