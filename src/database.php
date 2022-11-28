@@ -297,7 +297,7 @@
                                     <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $contributor['PRENOM_CONTRIBUTEUR'];?></td >
                                     <td style="width:10%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $contributor['ROLE_CONTRIBUTEUR'];?></td >
                                 </tr>
-                    </table>
+                        </table>
                         <?php
                         }
                     ?>
@@ -306,9 +306,18 @@
         </div>
         
         <div class="page-relation">
+                    <table style="position: absolute; top: 4vh; left=30vw; color: whitesmoke; font-size: 2vw; font-weight: 600; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    width: 80%; margin-left: 10vw;">
+                        <tr>
+                            <td style="width: 7%; text-align: center;">Jeu</td>
+                            <td style="width: 10%; text-align: center;">Commentaires</td>
+                            <td style="width: 5%;  text-align: center; ">Joueurs</td>
+                            <td style="width: 2%;  text-align: center; ">Contributeurs</td>
+                        </tr>
+                    </table>
             <div class="wrapper-relation">
 
-                    <div class="game-wrapper-title">Jeu</div>
+
                     <div class="choose-bar isVisible game" style=>
                         <?php
                             $db = new PDO(
@@ -321,19 +330,38 @@
                             $games = $rs->fetchAll();
                             foreach ($games as $game) {
                             ?>
-                                <button class="test-bar game"><?php echo $game['NOM_JEU']; ?></button>
+                                <button class="test-bar game" onclick="showInfo('<?php echo $game['NOM_JEU']; ?>', this);"><?php echo $game['NOM_JEU']; ?></button>
                             <?php
                             }
-                        ?>
+                            ?>
                     </div>
 
                 <div class="comment-wrapper">
                     <?php
                         foreach ($games as $game) {
                         ?>                
-                        <!-- <div class="comment-bar">
-                            
-                        </div> -->
+                        <div class="comment-bar">
+                            <div class="choose-bar comment" id="<?php echo $game['NOM_JEU'];?>">
+                                <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare("SELECT * FROM NOTES
+                                    WHERE NOM_JEU='".$game['NOM_JEU']."';");
+                                    $rs->execute();
+                                    $comments = $rs->fetchAll();
+                                    foreach ($comments as $comment) {
+                                ?>    
+                                    <button class="test-bar comment"> 
+                                        <?php echo $comment['COMMENTAIRE']."   ".$comment['VALEUR'].'/20'; ?>
+                                    </button>
+                                <?php
+                                    }
+                                ?>
+                            </div>
+                        </div>
                         <?php
                         }
                     ?>
@@ -343,9 +371,28 @@
                     <?php
                         foreach ($games as $game) {
                         ?>                
-                        <!-- <div class="player-bar">
-                            
-                        </div> -->
+                        <div class="player-bar">
+                            <div class="choose-bar player" id="<?php echo $game['NOM_JEU'];?>">
+                                <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare("SELECT PSEUDONYME FROM PARTICIPATIONS
+                                    WHERE NOM_JEU='".$game['NOM_JEU']."';");
+                                    $rs->execute();
+                                    $players = $rs->fetchAll();
+                                    foreach ($players as $player) {
+                                ?>    
+                                    <button class="test-bar player"> 
+                                        <?php echo $player['PSEUDONYME']; ?>
+                                    </button>
+                                <?php
+                                    }
+                                ?>
+                            </div>
+                        </div>
                         <?php
                         }
                     ?>
@@ -355,9 +402,29 @@
                     <?php
                         foreach ($games as $game) {
                         ?>                
-                        <!-- <div class="contributor-bar">
-                            
-                        </div> -->
+                        <div class="contributor-bar">
+                            <div class="choose-bar contributor" id="<?php echo $game['NOM_JEU'];?>">
+                                <?php
+                                    $db = new PDO(
+                                    'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                    'root',
+                                    ''
+                                    );
+                                    $rs = $db->prepare("SELECT PRENOM_CONTRIBUTEUR, NOM_CONTRIBUTEUR 
+                                    FROM CONTRIBUTEURS NATURAL JOIN ROLES
+                                    WHERE NOM_JEU='".$game['NOM_JEU']."';");
+                                    $rs->execute();
+                                    $contributors = $rs->fetchAll();
+                                    foreach ($contributors as $contributor) {
+                                ?>    
+                                    <button class="test-bar contributor" > 
+                                        <?php echo $contributor['NOM_CONTRIBUTEUR'][0].".".$contributor['PRENOM_CONTRIBUTEUR']; ?>
+                                    </button>
+                                <?php
+                                    }
+                                ?>
+                            </div>
+                        </div>
                         <?php
                         }
                     ?>

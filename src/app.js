@@ -6,7 +6,9 @@ const objects = document.querySelector('.sections-objects');
 const cancelButton = document.querySelector('.cancel-button');
 const consultChoiceBar = document.getElementsByClassName('choose-bar');
 const consultChoiceButton = document.getElementsByClassName('choose-button');
-
+const commentList = document.querySelectorAll(".choose-bar.comment");
+const playerList = document.querySelectorAll(".choose-bar.player");
+const contributorList = document.querySelectorAll(".choose-bar.contributor");
 const formSubmitButtons = document.querySelectorAll(".form-submit");
 
 
@@ -303,6 +305,47 @@ function slideOnScroll(){
     };
 }
 
+
+function showInfo(gameName, buttonDOM){
+    hideAllInfo();
+    buttonDOM.classList.add('isSelected');
+    let comment, player, contributor;
+    Object.keys(commentList).forEach((key) => {
+        if (commentList[key]?.id == gameName){
+            comment = commentList[key];
+        }
+    });
+    Object.keys(playerList).forEach((key) => {
+        if (playerList[key]?.id == gameName){
+            player = playerList[key]
+        }
+    });
+    Object.keys(contributorList).forEach((key) => {
+        if (contributorList[key]?.id == gameName){
+            contributor = contributorList[key];
+        }
+    });
+
+    comment.classList.add('isVisible');
+    player.classList.add('isVisible');
+    contributor.classList.add('isVisible');
+}
+
+function hideAllInfo(){
+    Object.keys(document.querySelectorAll(".test-bar.game")).forEach((key) => {
+        document.querySelectorAll(".test-bar.game")[key].classList.remove('isSelected');
+    });
+
+    Object.keys(commentList).forEach((key) => {
+        commentList[key].classList.remove('isVisible');
+    });
+    Object.keys(playerList).forEach((key) => {
+        playerList[key].classList.remove('isVisible');
+    });
+    Object.keys(contributorList).forEach((key) => {
+        contributorList[key].classList.remove('isVisible');
+    });
+}
 
 CreateEventListenersModify();
 CreateEventListenersConsult();

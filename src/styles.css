@@ -590,6 +590,7 @@ a{
     display: inline-block;
 }
 
+
 .test-bar{
     height: 6vh;
     width: 50vw;
@@ -775,7 +776,7 @@ a{
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: whitesmoke;
+    background-color:rgb(40, 54, 61);
 }
 
 .pages.down{
@@ -784,7 +785,7 @@ a{
 
 .wrapper-relation{
     position: absolute;
-    top: 9vh;
+    top: 10vh;
     left: -10vw;
     background-color: rgb(0, 109, 109);
     border: 1vh solid rgb(40, 54, 61);
@@ -799,22 +800,37 @@ a{
 
 
 .choose-bar.game{
-    margin-top: 20%;
-    height: 91.5%;
-    width: 17vw;
+    height: 80vh;
+    width: 18vw;
 }
 
-.test-bar.game{
+.choose-bar.comment, .choose-bar.player, .choose-bar.contributor{
+    width: 100%;
+    height: 80vh;
+}
+
+.test-bar.game, .test-bar.comment, .test-bar.player, .test-bar.contributor{
     width: 100%;
     background-color: rgb(245, 245, 245, .8);
     border: none;
 }
 
-.test-bar:hover{
+.test-bar.game:hover, .test-bar.comment:hover, .test-bar.player:hover, .test-bar.contributor:hover{
     background-color:rgb(0, 139, 139, .8);
     border: none;
     color: rgb(40, 54, 61);
 }
+
+.test-bar.isSelected{
+    background-color:rgb(0, 139, 139, .8);
+    border: none;
+    color: rgb(40, 54, 61);
+}
+
+.test-bar.comment, .test-bar.player, .test-bar.contributor{
+    cursor: not-allowed;
+}
+
 
 .game-wrapper-title{
     position: absolute;
@@ -837,8 +853,10 @@ a{
     width: 33vw;
 }
 
+
 .player-wrapper{
     width: 15vw;
+
 }
 
 .contributor-wrapper{
