@@ -66,6 +66,23 @@
     <div class="pages">
         <div class="page-1">
             <div class="about-title-page">À propos</div>
+            <div style="display:grid; grid-template-columns: auto; row-gap: 2vh; margin-top: 9vh;">
+                <div class="paragraph slide">
+                    <a class="title" href="https://www.kaggle.com/datasets/andrewmvd/board-games">Références</a>
+                    <div class="content">
+                        Les données que nous avons utilisées dans ce projet ont été principalement inspirées du site Kaggle.<br>
+                        Les photos utilisées dans ce site ont été pris de FontAwesome.<br>
+                        Les données utilisées sont une œuvre de fiction. Les noms, Jeux, commentaires et contributeurs sont le fruit de l'imagination de l'auteur ou sont utilisés de manière fictive. Toute ressemblance avec des événements, des lieux ou des personnes réels, vivants ou morts, est entièrement fortuite.<br>                        
+                    </div>
+
+                    <a class="title" href="statistics.php">Ressources</a>
+                    <div class="content">
+                        Dans cette partie on cherche plus à faire des calculs dans la base de données pour avoir une idée sur l'avis général d'un jeu
+                        la moyenne des jeux qui ont été le plus appréciés, les commentaires les plus pertinent (calculs d'indice de confiance), et les commentaires les plus récents.<br>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </body>
