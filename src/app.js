@@ -124,15 +124,13 @@ function CreateEventListenersModify(){
 }
 
 function CreateEventListenersConsult(){
-    if (!consultChoiceBar || !consultChoiceButton) return;
-    
     Object.keys(consultChoiceButton).forEach((choiceButtonIndex) => {
-        consultChoiceButton[choiceButtonIndex].addEventListener('click', () => {
+        consultChoiceButton[choiceButtonIndex]?.addEventListener('click', () => {
 
-            if (consultChoiceBar[choiceButtonIndex].classList.contains('isVisible')){
-                consultChoiceBar[choiceButtonIndex].classList.remove('isVisible');
+            if (consultChoiceBar[choiceButtonIndex]?.classList.contains('isVisible')){
+                consultChoiceBar[choiceButtonIndex]?.classList.remove('isVisible');
             } else {
-                consultChoiceBar[choiceButtonIndex].classList.add('isVisible');
+                consultChoiceBar[choiceButtonIndex]?.classList.add('isVisible');
             }
         });
     });
@@ -347,9 +345,20 @@ function hideAllInfo(){
     });
 }
 
+function showFavoriteGames(DOM){
+    hideAllChooseBars();
+    DOM.classList.add('isVisible');
+}
 
-function applyPC2(name, DOM){
-    console.log(name, DOM);
+function applyPC2(name, DOM, isPlayer){
+    if (isPlayer){
+        DOM.parentElement.parentElement.children[0].innerHTML = name.slice(1);
+        showFavoriteGames(document.querySelector("#"+name));
+    } else {
+        DOM.parentElement.parentElement.children[0].children[0].innerHTML = name;
+        document.querySelector(".choose-button-pc2.submit").value = name;
+        hideAllChooseBars();
+    }
 }
 
 CreateEventListenersModify();

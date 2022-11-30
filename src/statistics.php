@@ -164,7 +164,7 @@
                                             <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['VALEUR'];?></td>
                                             <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['NOM_JEU'];?></td>
                                         </tr>
-                            </table>
+                                    </table>
                             <?php
                                 }
                         }
