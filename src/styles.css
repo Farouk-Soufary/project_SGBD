@@ -568,7 +568,7 @@ a{
 }
 
 .choose-bar {
-    display: none;
+    display: inline-block;
     width: 50vw;
     height: 10vh;
     overflow-x: hidden;
@@ -587,9 +587,18 @@ a{
     opacity: 1;
     transform: translateY(0px);
     visibility: visible;
-    display: inline-block;
 }
 
+.choose-bar.db{
+    display: none;
+}
+
+.choose-bar.db.choose-bar.isVisible{
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+    display: inline-block;
+}
 
 .test-bar{
     height: 6vh;
@@ -625,7 +634,7 @@ a{
     margin: 1vh;
     margin-left: -8vw;
     margin-top: 10vh;
-    height: 70vh;
+    height: 60vh;
     width: 80vw;
     border-radius: 2vh;
     background-color:  rgba(138, 255, 228, 0.345);

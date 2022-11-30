@@ -318,7 +318,7 @@
             <div class="wrapper-relation">
 
 
-                    <div class="choose-bar isVisible game" style=>
+                    <div class="choose-bar db isVisible game" style=>
                         <?php
                             $db = new PDO(
                             'mysql:host=localhost;dbname=mysql;charset=utf8',
@@ -341,7 +341,7 @@
                         foreach ($games as $game) {
                         ?>                
                         <div class="comment-bar">
-                            <div class="choose-bar comment" id="<?php echo $game['NOM_JEU'];?>">
+                            <div class="choose-bar db comment" id="<?php echo $game['NOM_JEU'];?>">
                                 <?php
                                     $db = new PDO(
                                     'mysql:host=localhost;dbname=mysql;charset=utf8',
@@ -372,7 +372,7 @@
                         foreach ($games as $game) {
                         ?>                
                         <div class="player-bar">
-                            <div class="choose-bar player" id="<?php echo $game['NOM_JEU'];?>">
+                            <div class="choose-bar db player" id="<?php echo $game['NOM_JEU'];?>">
                                 <?php
                                     $db = new PDO(
                                     'mysql:host=localhost;dbname=mysql;charset=utf8',
@@ -403,7 +403,7 @@
                         foreach ($games as $game) {
                         ?>                
                         <div class="contributor-bar">
-                            <div class="choose-bar contributor" id="<?php echo $game['NOM_JEU'];?>">
+                            <div class="choose-bar db contributor" id="<?php echo $game['NOM_JEU'];?>">
                                 <?php
                                     $db = new PDO(
                                     'mysql:host=localhost;dbname=mysql;charset=utf8',

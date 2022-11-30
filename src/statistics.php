@@ -122,7 +122,7 @@
                 </form>
                 </div>
 
-                <div class="stats-grid">
+                <div class="stats-grid"  style="margin-top: 9vh; border-radius: 2vh; overflow-y: scroll;">
                     <table style="width:100%; border-radius-bottom: 2vh; font-family: Montserrat; font-size: 3vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
                         <tr>
                                 <th style="width:5%; font-family: Montserrat; font-size: 3vh;">ID</th>
@@ -206,7 +206,7 @@
                                 <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['DATE_NOTE'];?></td>
                                 <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $theme['VALEUR'];?></td>
                             </tr>
-                   </table>
+                        </table>
                    <?php
                     }
                     ?>

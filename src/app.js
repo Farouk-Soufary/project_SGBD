@@ -33,7 +33,7 @@ window.onload = () =>{
         document.querySelector(".loading-page").classList.remove("isActive");
         document.querySelector(".loading-motion").classList.remove("isActive");
         if (document.querySelector(".paragraph.slide")){
-            document.querySelector(".paragraph.slide").classList.add('isVisible');
+            document.querySelector(".paragraph.slide")?.classList.add('isVisible');
         }
     }, 700);
 
@@ -292,12 +292,12 @@ function slideOnScroll(){
     const slides = document.querySelectorAll('.paragraph.slide'); 
     window.onscroll = (event) => {
         if (window.scrollY >= 400 && window.scrollY <= 1000){
-            slides['1'].classList.add("isVisible");
+            slides['1']?.classList.add("isVisible");
         } else if (window.scrollY >= 1100){
             let i = 1;
             ['2', '3', '4'].forEach((idx) =>{
                 setTimeout( () => {
-                    slides[idx].classList.add("isVisible");
+                    slides[idx]?.classList.add("isVisible");
                 }, i*200);
                 i++;
             });
