@@ -136,92 +136,69 @@
         <div class="page-2">
             <div class="consult-wrap">
                 <div class="title-grid">Commentaires d'un des jeux préférés du joueur 'PLAYER'</div>
-                <button class="choose-button">Choix du joueur</button>
+                
+                <form class="pc2-wrapper">
 
-                <div class="choose-bar">
-                    <?php
-                        $db = new PDO(
-                        'mysql:host=localhost;dbname=mysql;charset=utf8',
-                        'root',
-                        ''
-                        );
-                        $rs = $db->prepare('SELECT * FROM JOUEURS');
-                        $rs->execute();
-                        $joueurs = $rs->fetchAll();
-                        foreach ($joueurs as $joueur) {
-                    ?>
-                    <form  action="" method="post">
-                    <button class="test-bar" type=submit name=<?php echo $joueur['PSEUDONYME'];?> ><?php echo $joueur['PSEUDONYME']; ?></button>
-                    </form>
-                    <?php
-                        }
-                    ?>
-              	</div>
-                <!-- <?php
-
-                    // if ($_SERVER['REQUEST_METHOD'] === "POST") {
-                    // $rs = $db->prepare('SELECT * FROM JOUEURS');
-                    // $rs->execute();
-                    // $joueurs = $rs->fetchAll();
-                    // foreach($joueurs as $joueur){
-                    //     if (isset($_POST[$joueur['PSEUDONYME']])) {
-                    //     $player = $joueur['PSEUDONYME'];
-                    //     $rs = $db->prepare('SELECT distinct J.* from JEUX J
-                    //     inner join JEUX_MECANIQUES JM
-                    //     on JM.NOM_JEU = J.NOM_JEU
-                    //     inner join JOUEURS_MECANIQUES JOM
-                    //     on JOM.NOM_MECANIQUES = JM.NOM_MECANIQUES
-                    //     where JOM.PSEUDONYME =:playername');
-                    //     $rs->bindParam('playername',$player,PDO::PARAM_STR);
-                    //     $rs->execute();
-                    //     $games = $rs->fetchAll();
-                    //     foreach($games as $game){
-                        ?>
-                        <form  action="" method="post">
-                        <button class="test-bar" type=submit name=<?php //echo $game['NOM_JEU'];?> ><?php //echo $game['NOM_JEU']; ?></button>
-                        </form>
-                        <?php
-                        // }
-                        // }
-                        // }?> -->
-
-
-                  <div class="consult-grid" style="overflow-y: scroll;">
-                  <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
-                          <tr>
-                                  <th style="width:30%;">Commentaires</th>
-                          </tr>
-                      </table>
-                      <?php
-                        if ($_SERVER['REQUEST_METHOD'] === "POST") {
-                            $rs = $db->prepare('SELECT * FROM JEUX');
-                            $rs->execute();
-                            $games = $rs->fetchAll();
-                            foreach($games as $game){
-                            if (isset($_POST[$game['NOM_JEU']])) {
-                                $targetgame = $game['NOM_JEU'];
-                                $rs = $db->prepare('SELECT distinct N.* from NOTES N
-                                inner join JEUX J
-                                on J.NOM_JEU = N.NOM_JEU
-                                where J.NOM_JEU =:lejeu');
-                                $rs->bindParam('lejeu',$targetgame,PDO::PARAM_STR);
+                    <div class="pc2-element">
+                        <button class="choose-button pc2" type='button'>Choix du joueur</button>
+                        <div class="choose-bar pc2">
+                            <?php
+                                $db = new PDO(
+                                'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                'root',
+                                ''
+                                );
+                                $rs = $db->prepare('SELECT * FROM JOUEURS');
                                 $rs->execute();
-                                $lesnotes = $rs->fetchAll();
-                                foreach($lesnotes as $unenote){?>
-                          <table style="width:100%;">
-                                   <tr>
-                                      <td style="width:5%;"><?php echo $unenote['COMMENTAIRE'];?></td>
-                                   </tr>
-                          </table>
-                          <?php
-                        }
-                      }
-                  }
-                }
-              //} 
-                ?>
-              </div>
+                                $joueurs = $rs->fetchAll();
+                                foreach ($joueurs as $joueur) {
+                            ?>
+                            <button class="test-bar pc2" type='button' onclick="applyPC2('<?php echo $joueur['PSEUDONYME'];?>', this);"><?php echo $joueur['PSEUDONYME']; ?></button>
+                            <?php
+                                }
+                            ?>
+                        </div>
+                    </div>
+
+                    <div class="pc2-element">
+                        <button class="choose-button pc2"  type='button'>Choix du jeu</button>
+                        <div class="choose-bar pc2">
+                            <?php
+                                $db = new PDO(
+                                'mysql:host=localhost;dbname=mysql;charset=utf8',
+                                'root',
+                                ''
+                                );
+                                $rs = $db->prepare('SELECT * FROM JEUX');
+                                $rs->execute();
+                                $jeux = $rs->fetchAll();
+                                foreach ($jeux as $jeu) {
+                            ?>
+                            <button class="test-bar pc2" type='button' onclick="applyPC2('<?php echo $jeu['NOM_JEU'];?>', this);"><?php echo $jeu['NOM_JEU']; ?></button>
+                            <?php
+                                }
+                            ?>
+                        </div>
+                    </div>
+                    
+
+                    <div class="pc2-element">
+                        <button class="choose-button pc2" type='button'>Search</button>
+                    </div>
+                </form>    
+
+                <div class="consult-grid" style="overflow-y: scroll;">
+                    <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
+                            <tr>
+                                <th style="width:30%;">Commentaires</th>
+                            </tr>
+                    </table>
+                </div>
+                
+
             </div>
+
+            <button  type="submit" form="addgame" name="query" value="" class="form-submit add QUERY"></button>
         </div>
 
 

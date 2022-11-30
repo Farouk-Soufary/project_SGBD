@@ -481,9 +481,6 @@
                                     </div>
                             </div>
                         </form>
-                        <!-- <form method="post" action="" style="display: none;">
-                            <input class="QUERY" name="query" type="text" value="" style="display: none;">
-                        </form> -->
                 </div>
             </div>
 

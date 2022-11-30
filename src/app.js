@@ -347,6 +347,11 @@ function hideAllInfo(){
     });
 }
 
+
+function applyPC2(name, DOM){
+    console.log(name, DOM);
+}
+
 CreateEventListenersModify();
 CreateEventListenersConsult();
 CreateEventListenersStats();
