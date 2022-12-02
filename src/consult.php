@@ -114,7 +114,7 @@
               		    foreach ($themes as $theme) {
                         if (isset($_POST[$theme['NOM_THEME']])) {
                                $ttarget = $theme['NOM_THEME'];
-                               $rs = $db->prepare('SELECT J.* from JEUX J
+                               $rs = $db->prepare('SELECT DISTINCT J.* from JEUX J
                                inner join NOTES N
                                on J.NOM_JEU = N.NOM_JEU
                                inner join JEUX_THEMES JT
@@ -148,7 +148,7 @@
             <div class="consult-wrap">
                 <div class="title-grid">Joueurs qui ont appréciés le commentaire 'ID' de 'PLAYER'</div>
                 <button class="choose-button">Choix du commentaire</button>
-                
+
                 <div class="choose-bar">
                     <?php
                     $db = new PDO(
@@ -165,7 +165,7 @@
                     <button class="test-bar" type=submit name="<?php echo $note['ID_NOTE']; ?>"><?php echo $note['ID_NOTE']; ?></button>
                     <?php
                     }
-                    ?>    
+                    ?>
                 </div>
 
                 <div class="consult-grid" style="overflow-y: scroll;">
@@ -217,7 +217,7 @@
         <div class="page-3">
             <div class="consult-wrap">
                 <div class="title-grid">Commentaires d'un des jeux préférés du joueur 'PLAYER'</div>
-                
+
 
 
                 <div class="pc2-wrapper">
@@ -284,7 +284,7 @@
 
 
 
-                </div>    
+                </div>
 
                 <div class="consult-grid" style="overflow-y: scroll;">
                     <table style="width:100%; border-radius-bottom: 2vh; background-color: rgb(0,0,0,.2); box-shadow: 0 0 4vh .1vh rgb(0,0,0,.4);">
@@ -319,12 +319,12 @@
                                     <td style="width: 20%; font-family: Montserrat; font-size: 2.5vh;"><?php echo $note['NOM_JEU'];?></td>
                                 </tr>
                             </table>
-                        <?php 
+                        <?php
                         }
                     }
                     ?>
                 </div>
-                
+
 
             </div>
         </div>
