@@ -1093,8 +1093,10 @@ insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', 
 insert into JEUX_THEMES values ( 'Gloomhaven', 'Antiquité') ;
 insert into JEUX_THEMES values ( 'Pandemic Legacy  1', 'Espace') ;
 insert into JEUX_THEMES values ( 'Brass Birmingham', 'Enquete') ;
+insert into JEUX_THEMES values ( 'Brass', 'Enquete') ;
 insert into JEUX_THEMES values ( 'Terraforming Mars', 'Connaissances') ;
 insert into JEUX_THEMES values ( 'Twilight Imperium Fourth Edition', 'Histoire') ;
+insert into JEUX_THEMES values ( 'Twilight Imperium', 'Histoire') ;  
 insert into JEUX_THEMES values ( 'Gloomhaven Jaws of the Lion', 'Histoire') ;
 insert into JEUX_THEMES values ( 'Through the Ages A New Story of Civilization', 'Aventure') ;
 insert into JEUX_THEMES values ( 'Gaia Project', 'Abstrait') ;
@@ -1102,6 +1104,7 @@ insert into JEUX_THEMES values ( 'Star Wars Rebellion', 'Construction') ;
 insert into JEUX_THEMES values ( 'Twilight Struggle', 'Antiquité ') ;
 insert into JEUX_THEMES values ( 'Great Western Trail', 'Espace') ;
 insert into JEUX_THEMES values ( 'War of the Ring Second Edition', 'Construction') ;
+insert into JEUX_THEMES values ( 'War of the Ring', 'Construction') ;
 insert into JEUX_THEMES values ( 'Spirit Island', 'Enfant') ;
 insert into JEUX_THEMES values ( 'Scythe', 'Aventure') ;
 insert into JEUX_THEMES values ( 'The Castles of Burgundy', 'Survie') ;
@@ -1112,6 +1115,7 @@ insert into JEUX_THEMES values ( 'Brass Lancashire', 'Survie') ;
 insert into JEUX_THEMES values ( 'Wingspan', 'Mytholoie') ;
 insert into JEUX_THEMES values ( 'A Feast for Odin', 'Enquete') ;
 insert into JEUX_THEMES values ( 'Arkham Horror The Card Game', 'Fantastique ') ;
+insert into JEUX_THEMES values ( 'Arkham Horror', 'Fantastique ') ;
 insert into JEUX_THEMES values ( 'Viticulture Essential Edition', 'Antiquité ') ;
 insert into JEUX_THEMES values ( 'Nemesis', 'Espace') ;
 insert into JEUX_THEMES values ( 'Orléans', 'Survie') ;
@@ -1120,25 +1124,33 @@ insert into JEUX_THEMES values ( 'Root', 'Merveilleux') ;
 insert into JEUX_THEMES values ( 'Puerto Rico', 'Connaissances') ;
 insert into JEUX_THEMES values ( 'Food Chain Magnate', 'Enfant') ;
 insert into JEUX_THEMES values ( 'Caverna The Cave Farmers', 'Mathematiques') ;
+insert into JEUX_THEMES values ( 'Caverna', 'Mathematiques') ;
 insert into JEUX_THEMES values ( 'Agricola', 'Enfant') ;
 insert into JEUX_THEMES values ( 'Blood Rage', 'Connaissances') ;
 insert into JEUX_THEMES values ( 'Mansions of Madness Second Edition', 'Mathematiques') ;
+insert into JEUX_THEMES values ( 'Mansions of Madness', 'Mathematiques') ;
 insert into JEUX_THEMES values ( 'The 7th Continent', 'Mytholoie') ;
 insert into JEUX_THEMES values ( 'Pandemic Legacy  2', 'Abstrait') ;
+insert into JEUX_THEMES values ( 'Pandemic Legacy', 'Abstrait') ;
 insert into JEUX_THEMES values ( 'Everdell', 'Aventure') ;
 insert into JEUX_THEMES values ( 'Maracaibo', 'Fantastique') ;
 insert into JEUX_THEMES values ( 'Kingdom Death Monster', 'Abstrait') ;
+insert into JEUX_THEMES values ( 'Kingdom Death', 'Abstrait') ;
 insert into JEUX_THEMES values ( 'Power Grid', 'Construction') ;
 insert into JEUX_THEMES values ( 'Tzolk The Mayan Calendar', 'Construction') ;
+insert into JEUX_THEMES values ( 'Tzolk', 'Construction') ;
 insert into JEUX_THEMES values ( 'The Crew The Quest for Planet Nine', 'Mathematiques') ;
+insert into JEUX_THEMES values ( 'The Crew', 'Mathematiques') ;
 insert into JEUX_THEMES values ( 'Mechs vs. Minions', 'Antiquité') ;
 insert into JEUX_THEMES values ( 'Underwater Cities', 'Aventure') ;
 insert into JEUX_THEMES values ( 'Star Wars Imperial Assault', 'Merveilleux') ;
+insert into JEUX_THEMES values ( 'Star Wars', 'Merveilleux') ;
 insert into JEUX_THEMES values ( 'Clans of Caledonia', 'Mytholoie') ;
 insert into JEUX_THEMES values ( 'Anachrony', 'Abstrait') ;
 insert into JEUX_THEMES values ( 'Le Havre', 'Enfant') ;
 insert into JEUX_THEMES values ( 'Too Many Bones', 'Fantastique') ;
 insert into JEUX_THEMES values ( 'Through the Ages A Story of Civilization', 'Histoire') ;
+insert into JEUX_THEMES values ( 'Through the Ages', 'Histoire') ;
 insert into JEUX_THEMES values ( 'Azul', 'Enquete') ;
 
 -- ============================================================
@@ -1152,6 +1164,7 @@ insert into JEUX_MECANIQUES values ( 'Pandemic Legacy  1', 'Course') ;
 insert into JEUX_MECANIQUES values ( 'Brass Birmingham', 'Connection') ;
 insert into JEUX_MECANIQUES values ( 'Terraforming Mars', 'Combinaison') ;
 insert into JEUX_MECANIQUES values ( 'Twilight Imperium Fourth Edition', 'Enigmes') ;
+insert into JEUX_MECANIQUES values ( 'Twilight Imperium', 'Enigmes') ;
 insert into JEUX_MECANIQUES values ( 'Gloomhaven Jaws of the Lion', 'Pari') ;
 insert into JEUX_MECANIQUES values ( 'Through the Ages A New Story of Civilization', 'Déduction') ;
 insert into JEUX_MECANIQUES values ( 'Gaia Project', 'Majorité') ;
@@ -1159,16 +1172,19 @@ insert into JEUX_MECANIQUES values ( 'Star Wars Rebellion', 'Deck-building') ;
 insert into JEUX_MECANIQUES values ( 'Twilight Struggle', 'Draft') ;
 insert into JEUX_MECANIQUES values ( 'Great Western Trail', 'Bluff') ;
 insert into JEUX_MECANIQUES values ( 'War of the Ring Second Edition', 'Course') ;
+insert into JEUX_MECANIQUES values ( 'War of the Ring', 'Course') ;
 insert into JEUX_MECANIQUES values ( 'Spirit Island', 'Connection') ;
 insert into JEUX_MECANIQUES values ( 'Scythe', 'Guess') ;   
 insert into JEUX_MECANIQUES values ( 'The Castles of Burgundy', 'Combinaison') ;
 insert into JEUX_MECANIQUES values ( 'Terra Mystica', 'Enigmes') ;
 insert into JEUX_MECANIQUES values ( '7 Wonders Duel', 'Pari') ;
 insert into JEUX_MECANIQUES values ( 'Concordia', 'Déduction') ;
+insert into JEUX_MECANIQUES values ( 'Brass', 'Enchères') ;
 insert into JEUX_MECANIQUES values ( 'Brass Lancashire', 'Enchères') ;
 insert into JEUX_MECANIQUES values ( 'Wingspan', 'Majorité ') ;
 insert into JEUX_MECANIQUES values ( 'A Feast for Odin', 'Deck-building ') ;
 insert into JEUX_MECANIQUES values ( 'Arkham Horror The Card Game', 'Draft') ;
+insert into JEUX_MECANIQUES values ( 'Arkham Horror', 'Draft') ;
 insert into JEUX_MECANIQUES values ( 'Viticulture Essential Edition', 'Bluff') ;
 insert into JEUX_MECANIQUES values ( 'Nemesis', 'Course') ;
 insert into JEUX_MECANIQUES values ( 'Orléans', 'Pari') ;
@@ -1177,25 +1193,33 @@ insert into JEUX_MECANIQUES values ( 'Root', 'Enchères') ;
 insert into JEUX_MECANIQUES values ( 'Puerto Rico', 'Majorité ') ;
 insert into JEUX_MECANIQUES values ( 'Food Chain Magnate', 'Draft') ;
 insert into JEUX_MECANIQUES values ( 'Caverna The Cave Farmers', 'Bluff') ;
+insert into JEUX_MECANIQUES values ( 'Caverna', 'Bluff') ;
 insert into JEUX_MECANIQUES values ( 'Agricola', 'Course') ;
 insert into JEUX_MECANIQUES values ( 'Blood Rage', 'Connection') ;
 insert into JEUX_MECANIQUES values ( 'Mansions of Madness Second Edition', 'Guess') ;
+insert into JEUX_MECANIQUES values ( 'Mansions of Madness', 'Guess') ;
 insert into JEUX_MECANIQUES values ( 'The 7th Continent', 'Combinaison') ;
 insert into JEUX_MECANIQUES values ( 'Pandemic Legacy  2', 'Enigmes') ;
+insert into JEUX_MECANIQUES values ( 'Pandemic Legacy', 'Enigmes') ;
 insert into JEUX_MECANIQUES values ( 'Everdell', 'Pari') ;
 insert into JEUX_MECANIQUES values ( 'Maracaibo', 'Déduction') ;
 insert into JEUX_MECANIQUES values ( 'Kingdom Death Monster', 'Enchères') ;
+insert into JEUX_MECANIQUES values ( 'Kingdom Death', 'Enchères') ;
 insert into JEUX_MECANIQUES values ( 'Power Grid', 'Majorité ') ;
 insert into JEUX_MECANIQUES values ( 'Tzolk The Mayan Calendar', 'Deck-building ') ;
+insert into JEUX_MECANIQUES values ( 'Tzolk', 'Deck-building ') ;
 insert into JEUX_MECANIQUES values ( 'The Crew The Quest for Planet Nine', 'Draft') ;
+insert into JEUX_MECANIQUES values ( 'The Crew', 'Draft') ;
 insert into JEUX_MECANIQUES values ( 'Mechs vs. Minions', 'Bluff') ;
 insert into JEUX_MECANIQUES values ( 'Underwater Cities', 'Connection') ;
 insert into JEUX_MECANIQUES values ( 'Star Wars Imperial Assault', 'Guess') ;
+insert into JEUX_MECANIQUES values ( 'Star Wars', 'Guess') ;
 insert into JEUX_MECANIQUES values ( 'Clans of Caledonia', 'Combinaison') ;
 insert into JEUX_MECANIQUES values ( 'Anachrony', 'Enigmes') ;
 insert into JEUX_MECANIQUES values ( 'Le Havre', 'Déduction') ;
 insert into JEUX_MECANIQUES values ( 'Too Many Bones', 'Enchères') ;
 insert into JEUX_MECANIQUES values ( 'Through the Ages A Story of Civilization', 'Majorité ') ;
+insert into JEUX_MECANIQUES values ( 'Through the Ages', 'Majorité ') ;
 insert into JEUX_MECANIQUES values ( 'Azul', 'Deck-building ') ;
 
 -- ============================================================
@@ -1251,6 +1275,26 @@ insert into JOUEURS_THEMES values ( '4michael', 'Abstrait') ;
 insert into JOUEURS_THEMES values ( '5william', 'Espace') ;
 insert into JOUEURS_THEMES values ( '14mark', 'Antiquité ') ;
 insert into JOUEURS_THEMES values ( '15donald', 'Connaissances') ;
+insert into JOUEURS_THEMES values ( '21ronald', 'Histoire') ;
+insert into JOUEURS_THEMES values ( '22anthony', 'Construction') ;
+insert into JOUEURS_THEMES values ( '23kevin', 'Connaissances') ;
+insert into JOUEURS_THEMES values ( '24jason', 'Espace') ;
+insert into JOUEURS_THEMES values ( '25matthew', 'Survie') ;
+insert into JOUEURS_THEMES values ( '26gary', 'Histoire') ;
+insert into JOUEURS_THEMES values ( '27timothy', 'Connaissances') ;
+insert into JOUEURS_THEMES values ( '28jose', 'Construction') ;
+insert into JOUEURS_THEMES values ( '29larry', 'Connaissances') ;
+insert into JOUEURS_THEMES values ( '30jeffrey', 'Histoire') ;
+insert into JOUEURS_THEMES values ( '31frank', 'Survie') ;
+insert into JOUEURS_THEMES values ( '32scott', 'Espace') ;
+insert into JOUEURS_THEMES values ( '33eric', 'Enquete') ;
+insert into JOUEURS_THEMES values ( '34stephen', 'Histoire') ;
+insert into JOUEURS_THEMES values ( '44harold', 'Mathematiques') ;
+insert into JOUEURS_THEMES values ( '45douglas', 'Espace') ;
+insert into JOUEURS_THEMES values ( '47carl', 'Histoire') ;
+insert into JOUEURS_THEMES values ( '46henry', 'Survie') ;
+insert into JOUEURS_THEMES values ( '48arthur', 'Enquete') ;
+insert into JOUEURS_THEMES values ( '6david', 'Abstrait') ;
 
 
 -- ============================================================
@@ -1317,4 +1361,25 @@ insert into JOUEURS_MECANIQUES values ( '23kevin','Bluff') ;
 insert into JOUEURS_MECANIQUES values ( '24jason','Pari') ;
 insert into JOUEURS_MECANIQUES values ( '25matthew','Déduction') ;
 insert into JOUEURS_MECANIQUES values ( '26gary','Connection') ;
+insert into JOUEURS_MECANIQUES values ( '8charles','Connection') ;
+insert into JOUEURS_MECANIQUES values ( '30jeffrey','Pari') ;
+insert into JOUEURS_MECANIQUES values ( '31frank','Enigmes') ;
+insert into JOUEURS_MECANIQUES values ( '32scott','Combinaison') ;
+insert into JOUEURS_MECANIQUES values ( '33eric','Connection') ;
+insert into JOUEURS_MECANIQUES values ( '34stephen','Deck-building ') ;
+insert into JOUEURS_MECANIQUES values ( '35andrew','Connection') ;
+insert into JOUEURS_MECANIQUES values ( '36raymond','Bluff') ;
+insert into JOUEURS_MECANIQUES values ( '37gregory','Guess') ;
+insert into JOUEURS_MECANIQUES values ( '27timothy','Combinaison') ;
+insert into JOUEURS_MECANIQUES values ( '28jose','Deck-building ') ;
+insert into JOUEURS_MECANIQUES values ( '29larry','Déduction') ;
+
+
+
+
+
+
+
+
+
 
