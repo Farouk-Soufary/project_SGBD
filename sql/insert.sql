@@ -4,70 +4,68 @@
 -- ============================================================
 
 -- JEUX
-insert into JEUX values ( 'Gloomhaven','Soren Yang','23-12-2017',120,'SURVIVAL',4,'FALSE' );
-insert into JEUX values ( 'Pandemic Legacy Season 1','Stacy Hail','15-3-2015',60,'PLATFORM',4,'TRUE' );
-insert into JEUX values ( 'Brass Birmingham','Justin Parkes','16-1-2018',120,'COOPERATION',4,'TRUE' );
-insert into JEUX values ( 'Brass','Justin Parkes','2018-11-19',120,'COOPERATION',4,'TRUE' );
-insert into JEUX values ( 'Terraforming Mars','Theodore Newton','18-7-2016',120,'SURVIVAL',5,'FALSE' );
-insert into JEUX values ( 'Twilight Imperium Fourth Edition','June Avila','23-8-2017',480,'STRATEGY',6,'TRUE' );
-insert into JEUX values ( 'Twilight Imperium','June Avila','2017-6-5',480,'STRATEGY',6,0 );
-insert into JEUX values ( 'Gloomhaven Jaws of the Lion','Zander Calderon','10-4-2020',120,'ARCADE',4,'TRUE' );
-insert into JEUX values ( 'Through the Ages','Marshall Bowers','2015-7-15',120,'RPG',4,0 );
-insert into JEUX values ( 'Through the Ages A New Story of Civilization','Marshall Bowers','21-1-2015',120,'RPG',4,'TRUE' );
-insert into JEUX values ( 'Gaia Project','Terrence Hope','7-3-2017',150,'ACTION',4,'FALSE' );
-insert into JEUX values ( 'Star Wars Rebellion','Yasmine Humphreys','11-4-2016',240,'SURVIVAL',4,'TRUE' );
-insert into JEUX values ( 'Star Wars','Yasmine Humphreys','11-4-2016',240,'SURVIVAL',4,'TRUE' );
-insert into JEUX values ( 'Twilight Struggle','Maryam Melia','18-7-2005',180,'CARD',2,'FALSE' );
-insert into JEUX values ( 'Great Western Trail','Elen Brennan','21-5-2016',150,'CARD',4,'FALSE' );
-insert into JEUX values ( 'War of the Ring Second Edition','Enid Oakley','24-11-2012',180,'SURVIVAL',4,'TRUE' );
-insert into JEUX values ( 'War of the Ring','Enid Oakley','24-11-2012',180,'SURVIVAL',4,'TRUE' );
-insert into JEUX values ( 'Spirit Island','Ariyah Forster','6-10-2017',120,'COMPETITIVE',4,'FALSE' );
-insert into JEUX values ( 'Scythe','Sheila Munro','18-8-2016',115,'ARCADE',5,'FALSE' );
-insert into JEUX values ( 'The Castles of Burgundy','Jaimee Greaves','21-4-2011',90,'COMPETITIVE',4,'FALSE' );
-insert into JEUX values ( 'Terra Mystica','Emmanuel Harmon','15-3-2012',150,'COMPETITIVE',5,'FALSE' );
-insert into JEUX values ( '7 Wonders Duel','Aditi Alexander','3-10-2015',30,'ARCADE',2,'FALSE' );
-insert into JEUX values ( 'Concordia','Mai Nicholson','12-5-2013',100,'PUZZLE',5,'FALSE' );
-insert into JEUX values ( 'Brass Lancashire','Timur Reese','19-5-2007',120,'PUZZLE',4,'TRUE' );
-insert into JEUX values ( 'Wingspan','Jacob Philip','4-8-2019',70,'SURVIVAL',5,'FALSE' );
-insert into JEUX values ( 'A Feast for Odin','Mysha Boyer','4-2-2016',120,'COMPETITIVE',4,'FALSE' );
-insert into JEUX values ( 'Arkham Horror The Card Game','Dion Leech','20-11-2016',120,'CARD',2,'TRUE' );
-insert into JEUX values ( 'Arkham Horror','Dion Leech','20-11-2016',120,'CARD',2,'TRUE' );
-insert into JEUX values ( 'Viticulture Essential Edition','Donnell Browne','23-1-2015',90,'COOPERATION',6,'FALSE' );
-insert into JEUX values ( 'Nemesis','Emelia Strong','2-7-2018',180,'CARD',5,'FALSE' );
-insert into JEUX values ( 'Orléans','Mercy Miranda','13-3-2014',90,'COMPETITIVE',4,'FALSE' );
-insert into JEUX values ( 'Mage Knight Board Game','Kloe Peterson','17-7-2011',240,'ARCADE',4,'FALSE' );
-insert into JEUX values ( 'Root','Farrah Byers','19-11-2018',90,'ARCADE',4,'FALSE' );
-insert into JEUX values ( 'Puerto Rico','Abdul Lucero','25-6-2002',150,'ACTION',5,'FALSE' );
-insert into JEUX values ( 'Food Chain Magnate','Ronaldo Cope','10-12-2015',240,'CARD',5,'FALSE' );
-insert into JEUX values ( 'Caverna The Cave Farmers','Kaitlyn Acosta','3-9-2013',210,'COOPERATION',7,'TRUE' );
-insert into JEUX values ( 'Caverna','Kaitlyn Acosta','3-9-2013',210,'COOPERATION',7,'TRUE' );
-insert into JEUX values ( 'Agricola','Kayleigh Barrett','6-6-2007',150,'ACTION',5,'FALSE' );
-insert into JEUX values ( 'Blood Rage','Ethan Noble','1-9-2015',90,'ARCADE',4,'FALSE' );
-insert into JEUX values ( 'Mansions of Madness Second Edition','Maiya Medina','7-11-2016',180,'SURVIVAL',5,'TRUE' );
-insert into JEUX values ( 'Mansions of Madness','Maiya Medina','7-11-2016',180,'SURVIVAL',5,'TRUE' );
-insert into JEUX values ( 'The 7th Continent','Matt Curry','20-4-2017',1000,'COOPERATION',4,'FALSE' );
-insert into JEUX values ( 'Pandemic Legacy 2','Skye Whittaker','26-2-2017',60,'COMPETITIVE',4,'TRUE' );
-insert into JEUX values ( 'Pandemic Legacy','Skye Whittaker','26-2-2017',60,'COMPETITIVE',4,'TRUE' );
-insert into JEUX values ( 'Everdell','Levison Mann','20-8-2018',80,'PLATFORM',4,'FALSE' );
-insert into JEUX values ( 'Maracaibo','Gracie-Mae Juarez','19-3-2019',120,'ARCADE',4,'FALSE' );
-insert into JEUX values ( 'Kingdom Death Monster','Lacie-Mae Allen','10-3-2015',180,'COOPERATION',4,'TRUE' );
-insert into JEUX values ( 'Kingdom Death','Lacie-Mae Allen','10-3-2015',180,'COOPERATION',4,'TRUE' );
-insert into JEUX values ( 'Power Grid','Ursula Fox','11-5-2004',120,'ARCADE',6,'FALSE' );
-insert into JEUX values ( 'Tzolk The Mayan Calendar','Isis Gaines','21-8-2012',90,'COOPERATION',4,'TRUE' );
-insert into JEUX values ( 'Tzolk','Isis Gaines','21-8-2012',90,'COOPERATION',4,'TRUE' );
-insert into JEUX values ( 'The Crew The Quest for Planet Nine','Eilish Mclellan','1-1-2019',20,'ARCADE',5,'TRUE' );
-insert into JEUX values ( 'The Crew','Eilish Mclellan','1-1-2019',20,'ARCADE',5,'TRUE' );
-insert into JEUX values ( 'Mechs vs. Minions','Sally Silva','2-4-2016',120,'PLATFORM',4,'FALSE' );
-insert into JEUX values ( 'Underwater Cities','Nour Humphries','17-2-2018',150,'STRATEGY',4,'FALSE' );
-insert into JEUX values ( 'Star Wars Imperial Assault','Amos Mccullough','2-9-2014',120,'STRATEGY',5,'TRUE' );
-insert into JEUX values ( 'Clans of Caledonia','Zain Mcdaniel','8-6-2017',120,'ACTION',4,'FALSE' );
-insert into JEUX values ( 'Anachrony','Fiona Sweeney','26-10-2017',120,'ARCADE',4,'FALSE' );
-insert into JEUX values ( 'Le Havre','Maci Woodward','2-3-2008',150,'CARD',5,'FALSE' );
-insert into JEUX values ( 'Too Many Bones','Kathryn Reyna','7-7-2017',120,'COMPETITIVE',4,'FALSE' );
-insert into JEUX values ( 'Through the Ages A Story of Civilization','Marlene Beech','3-4-2006',120,'ARCADE',4,'TRUE' );
-insert into JEUX values ( 'Azul','Marlene','2012-5-28',120,'SURVIVAL',2,'TRUE' );
-
-COMMIT;
+insert into JEUX values ( 'Gloomhaven','Soren Yang','2017-5-8',120,'PLATFORM',4,1 );
+insert into JEUX values ( 'Pandemic Legacy  1','Stacy Hail','2015-9-6',60,'PUZZLE',4,0 );
+insert into JEUX values ( 'Brass Birmingham','Justin Parkes','2018-11-19',120,'COOPERATION',4,0 );
+insert into JEUX values ( 'Brass','Justin Parkes','2018-11-19',120,'COOPERATION',4,0 );
+insert into JEUX values ( 'Terraforming Mars','Theodore Newton','2016-11-14',120,'PUZZLE',5,1 );
+insert into JEUX values ( 'Twilight Imperium Fourth Edition','June Avila','2017-6-5',480,'ARCADE',6,0 );
+insert into JEUX values ( 'Twilight Imperium','June Avila','2017-6-5',480,'ARCADE',6,0 );
+insert into JEUX values ( 'Gloomhaven Jaws of the Lion','Zander Calderon','2020-6-10',120,'PLATFORM',4,0 );
+insert into JEUX values ( 'Through the Ages','Marshall Bowers','2015-7-15',120,'ARCADE',4,0 );
+insert into JEUX values ( 'Through the Ages A New Story of Civilization','Marshall Bowers','2015-7-15',120,'ARCADE',4,0 );
+insert into JEUX values ( 'Gaia Project','Terrence Hope','2017-2-25',150,'SURVIVAL',4,1 );
+insert into JEUX values ( 'Star Wars Rebellion','Yasmine Humphreys','2016-9-7',240,'PLATFORM',4,0 );
+insert into JEUX values ( 'Star Wars','Yasmine Humphreys','2016-9-7',240,'PLATFORM',4,0 );
+insert into JEUX values ( 'Twilight Struggle','Maryam Melia','2005-3-19',180,'STRATEGY',2,1 );
+insert into JEUX values ( 'Great Western Trail','Elen Brennan','2016-12-16',150,'SURVIVAL',4,1 );
+insert into JEUX values ( 'War of the Ring Second Edition','Enid Oakley','2012-12-6',180,'ARCADE',4,0 );
+insert into JEUX values ( 'War of the Ring','Enid Oakley','2012-12-6',180,'ARCADE',4,0 );
+insert into JEUX values ( 'Spirit Island','Ariyah Forster','2017-2-3',120,'CARD',4,1 );
+insert into JEUX values ( 'Scythe','Sheila Munro','2016-6-13',115,'SURVIVAL',5,1 );
+insert into JEUX values ( 'The Castles of Burgundy','Jaimee Greaves','2011-5-17',90,'SURVIVAL',4,1 );
+insert into JEUX values ( 'Terra Mystica','Emmanuel Harmon','2012-2-12',150,'PLATFORM',5,1 );
+insert into JEUX values ( '7 Wonders Duel','Aditi Alexander','2015-12-21',30,'COMPETITIVE',2,1 );
+insert into JEUX values ( 'Concordia','Mai Nicholson','2013-1-23',100,'ACTION',5,1 );
+insert into JEUX values ( 'Brass Lancashire','Timur Reese','2007-6-23',120,'PLATFORM',4,0 );
+insert into JEUX values ( 'Wingspan','Jacob Philip','2019-4-25',70,'CARD',5,1 );
+insert into JEUX values ( 'A Feast for Odin','Mysha Boyer','2016-1-18',120,'PUZZLE',4,1 );
+insert into JEUX values ( 'Arkham Horror The Card Game','Dion Leech','2016-4-10',120,'RPG',2,0 );
+insert into JEUX values ( 'Arkham Horror','Dion Leech','2016-4-10',120,'RPG',2,0 );
+insert into JEUX values ( 'Viticulture Essential Edition','Donnell Browne','2015-5-12',90,'ARCADE',6,1 );
+insert into JEUX values ( 'Nemesis','Emelia Strong','2018-2-11',180,'PUZZLE',5,1 );
+insert into JEUX values ( 'Orléans','Mercy Miranda','2014-2-23',90,'CARD',4,1 );
+insert into JEUX values ( 'Mage Knight Board Game','Kloe Peterson','2011-11-22',240,'ACTION',4,1 );
+insert into JEUX values ( 'Root','Farrah Byers','2018-8-13',90,'SURVIVAL',4,1 );
+insert into JEUX values ( 'Puerto Rico','Abdul Lucero','2002-9-10',150,'COMPETITIVE',5,1 );
+insert into JEUX values ( 'Food Chain Magnate','Ronaldo Cope','2015-6-1',240,'SURVIVAL',5,1 );
+insert into JEUX values ( 'Caverna The Cave Farmers','Kaitlyn Acosta','2013-6-23',210,'PUZZLE',7,0 );
+insert into JEUX values ( 'Caverna','Kaitlyn Acosta','2013-6-23',210,'PUZZLE',7,0 );
+insert into JEUX values ( 'Agricola','Kayleigh Barrett','2007-4-9',150,'ACTION',5,1 );
+insert into JEUX values ( 'Blood Rage','Ethan Noble','2015-1-3',90,'CARD',4,1 );
+insert into JEUX values ( 'Mansions of Madness Second Edition','Maiya Medina','2016-2-19',180,'COMPETITIVE',5,0 );
+insert into JEUX values ( 'Mansions of Madness','Maiya Medina','2016-2-19',180,'COMPETITIVE',5,0 );
+insert into JEUX values ( 'The 7th Continent','Matt Curry','2017-10-24',1000,'RPG',4,1 );
+insert into JEUX values ( 'Pandemic Legacy  2','Skye Whittaker','2017-5-13',60,'COOPERATION',4,0 );
+insert into JEUX values ( 'Pandemic Legacy','Skye Whittaker','2017-5-13',60,'COOPERATION',4,0 );
+insert into JEUX values ( 'Everdell','Levison Mann','2018-7-25',80,'COMPETITIVE',4,1 );
+insert into JEUX values ( 'Maracaibo','Gracie-Mae Juarez','2019-10-18',120,'CARD',4,1 );
+insert into JEUX values ( 'Kingdom Death Monster','Lacie-Mae Allen','2015-10-6',180,'COOPERATION',4,0 );
+insert into JEUX values ( 'Kingdom Death','Lacie-Mae Allen','2015-10-6',180,'COOPERATION',4,0 );
+insert into JEUX values ( 'Power Grid','Ursula Fox','2004-4-6',120,'RPG',6,1 );
+insert into JEUX values ( 'Tzolk The Mayan Calendar','Isis Gaines','2012-11-25',90,'RPG',4,0 );
+insert into JEUX values ( 'Tzolk','Isis Gaines','2012-12-25',90,'RPG',4,0 );
+insert into JEUX values ( 'The Crew The Quest for Planet Nine','Eilish Mclellan','2019-2-23',20,'ACTION',5,0 );
+insert into JEUX values ( 'The Crew','Eilish Mclellan','2019-5-30',20,'ACTION',5,0 );
+insert into JEUX values ( 'Mechs vs. Minions','Sally Silva','2016-12-26',120,'SURVIVAL',4,1 );
+insert into JEUX values ( 'Underwater Cities','Nour Humphries','2018-3-23',150,'ARCADE',4,1 );
+insert into JEUX values ( 'Star Wars Imperial Assault','Amos Mccullough','2014-1-13',120,'ACTION',5,0 );
+insert into JEUX values ( 'Clans of Caledonia','Zain Mcdaniel','2017-10-25',120,'PLATFORM',4,1 );
+insert into JEUX values ( 'Anachrony','Fiona Sweeney','2017-7-13',120,'ACTION',4,1 );
+insert into JEUX values ( 'Le Havre','Maci Woodward','2008-7-10',150,'ACTION',5,1 );
+insert into JEUX values ( 'Too Many Bones','Kathryn Reyna','2017-5-18',120,'SURVIVAL',4,1 );
+insert into JEUX values ( 'Through the Ages A Story of Civilization','Marlene Beech','2006-3-18',120,'ACTION',4,0 );
+insert into JEUX values ( 'Azul','Marlene','2012-5-28',120,'SURVIVAL',2,0 );
 
 -- ============================================================
 --    creation des donnees
@@ -125,9 +123,6 @@ insert into JOUEURS values ( '48arthur', 'EVANS', 'arthur', 'evans48@gmail.com')
 insert into JOUEURS values ( '49ryan', 'EDWARDS', 'ryan', 'edwards49@gmail.com') ;
 insert into JOUEURS values ( '50roger', 'COLLINS', 'roger', 'collins50@gmail.com') ;
 
-
-COMMIT;
-
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -173,68 +168,67 @@ insert into NOTES values ( 36, 'She wished she could speak Italian.', '2016-1-1'
 insert into NOTES values ( 37, 'I am having his baby.', '2004-2-6', 5, 17, 'Maracaibo', '18steven') ;
 insert into NOTES values ( 38, 'When I was young, I played the guitar.', '2008-9-16', 5, 5, 'Kingdom Death Monster', '10thomas') ;
 insert into NOTES values ( 39, 'She had never appreciated radio news shows.', '2015-3-15', 14, 27, 'Power Grid', '50roger') ;
-insert into NOTES values ( 40, 'Actions speak louder than words.', '2019-2-7', 18, 8, 'Tzolk The Mayan Calendar', '11christopher') ;
-insert into NOTES values ( 41, 'He was trained to do this.', '2017-12-3', 3, 10, 'The Crew The Quest for Planet Nine', '15donald') ;
-insert into NOTES values ( 42, 'He opens the door.', '2018-11-3', 13, 16, 'Mechs vs. Minions', '40dennis') ;
-insert into NOTES values ( 43, 'You can bring it back if you do not like it.', '2015-2-21', 15, 10, 'Underwater Cities', '4michael') ;
-insert into NOTES values ( 44, 'Tom is really tall.', '2001-9-19', 8, 22, 'Star Wars Imperial Assault', '43peter') ;
-insert into NOTES values ( 45, 'he is easily offended.', '2000-1-13', 6, 16, 'Clans of Caledonia', '28jose') ;
-insert into NOTES values ( 46, 'He drives more carefully than you do.', '2014-7-15', 19, 5, 'Anachrony', '42patrick') ;
-insert into NOTES values ( 47, 'Welcome to the big leagues.', '2011-4-12', 2, 11, 'Le Havre', '12daniel') ;
-insert into NOTES values ( 48, 'He said the telegram had arrived at noon.', '2002-10-14', 17, 13, 'Too Many Bones', '21ronald') ;
-insert into NOTES values ( 49, 'Rosa likes tea better than coffee.', '2004-8-3', 19, 5, 'Through the Ages A Story of Civilization', '29larry') ;
-insert into NOTES values ( 50, 'There are so many sandwiches on the table.', '2013-12-10', 2, 11, 'Pandemic Legacy  2', '31frank') ;
-insert into NOTES values ( 51, 'It is time to watch TV.', '2002-6-11', 8, 10, 'Gloomhaven', '33eric') ;
-insert into NOTES values ( 52, 'I do not like rain.', '2000-11-15', 20, 12, 'Pandemic Legacy  1', '5william') ;
-insert into NOTES values ( 53, 'Donuts with cream are nasty.', '2015-12-7', 8, 3, 'Brass Birmingham', '46henry') ;
-insert into NOTES values ( 54, 'I told Tom I would try to find a bigger vase.', '2019-9-19', 10, 6, 'Terraforming Mars', '34stephen') ;
-insert into NOTES values ( 55, 'He is the person to see.', '2002-8-16', 7, 10, 'Twilight Imperium Fourth Edition', '7richard') ;
-insert into NOTES values ( 56, 'She attended kindergarten in 2013.', '2017-4-10', 2, 25, 'Gloomhaven Jaws of the Lion', '26gary') ;
-insert into NOTES values ( 57, 'We took refuge behind a tree.', '2010-4-15', 8, 24, 'Through the Ages A New Story of Civilization', '41walter') ;
-insert into NOTES values ( 58, 'I made some eggs.', '2007-10-15', 3, 1, 'Gaia Project', '8charles') ;
-insert into NOTES values ( 59, 'The broken leg is not Tom is biggest problem.', '2002-6-2', 19, 19, 'Star Wars Rebellion', '36raymond') ;
-insert into NOTES values ( 60, 'Those apples are very red.', '2017-12-11', 16, 5, 'Twilight Struggle', '16george') ;
-insert into NOTES values ( 61, 'Taking chances can be risky.', '2010-10-21', 11, 11, 'Great Western Trail', '23kevin') ;
-insert into NOTES values ( 62, 'I do love my new pets.', '2001-7-9', 11, 21, 'War of the Ring Second Edition', '35andrew') ;
-insert into NOTES values ( 63, 'everything is so expensive.', '2005-2-8', 20, 5, 'Spirit Island', '38joshua') ;
-insert into NOTES values ( 64, 'The giant worm terrified him.', '2013-11-8', 5, 22, 'Scythe', '1james') ;
-insert into NOTES values ( 65, 'Tom has always had a big crush on you.', '2015-2-11', 11, 10, 'The Castles of Burgundy', '14mark') ;
-insert into NOTES values ( 66, 'I am one of his fiercest critics.', '2001-8-20', 2, 3, 'Terra Mystica', '20brian') ;
-insert into NOTES values ( 67, 'I do not think I liked the movie.', '2005-1-12', 2, 21, '7 Wonders Duel', '49ryan') ;
-insert into NOTES values ( 68, 'Hairless cats look demonic.', '2022-7-20', 1, 9, 'Concordia', '9joseph') ;
-insert into NOTES values ( 69, 'These sunglasses are too shiny.', '2002-8-17', 4, 26, 'Brass Lancashire', '48arthur') ;
-insert into NOTES values ( 70, 'I am dreaming of a better world.', '2006-7-19', 5, 19, 'Wingspan', '27timothy') ;
-insert into NOTES values ( 71, 'Italians eat a large meal twice a day.', '2013-4-5', 3, 22, 'A Feast for Odin', '32scott') ;
-insert into NOTES values ( 72, 'Plenty of sleep is healthful.', '2020-6-13', 5, 20, 'Arkham Horror The Card Game', '13paul') ;
-insert into NOTES values ( 73, 'These dogs are so sweet.', '2012-10-15', 19, 12, 'Viticulture Essential Edition', '19edward') ;
-insert into NOTES values ( 74, 'This should not be a big deal.', '2004-1-8', 10, 21, 'Nemesis', '17kenneth') ;
-insert into NOTES values ( 75, 'I want to plug my ears.', '2006-1-8', 19, 7, 'Root', '30jeffrey') ;
-insert into NOTES values ( 76, 'I want to have a pink bed this year.', '2020-5-11', 12, 30, 'Mage Knight Board Game', '37gregory') ;
-insert into NOTES values ( 77, 'I think I should shoot him.', '2007-8-17', 17, 16, 'Root', '25matthew') ;
-insert into NOTES values ( 78, 'The planet had not yet been discovered.', '2018-1-21', 8, 23, 'Puerto Rico', '22anthony') ;
-insert into NOTES values ( 79, 'A yardstick is 3 feet long.', '2016-8-4', 5, 11, 'Food Chain Magnate', '3robert') ;
-insert into NOTES values ( 80, 'The earth goes round the sun.', '2001-7-16', 14, 28, 'Caverna The Cave Farmers', '6david') ;
-insert into NOTES values ( 81, 'Bad news travels fast.', '2009-2-1', 8, 20, 'Agricola', '24jason') ;
-insert into NOTES values ( 82, 'I will see you tonight at eight.', '2007-8-8', 17, 1, 'Blood Rage', '47carl') ;
-insert into NOTES values ( 83, 'I like asparagus and brussel sprouts.', '2020-4-18', 3, 15, 'Mansions of Madness Second Edition', '44harold') ;
-insert into NOTES values ( 84, 'He is whistling at the car.', '2020-8-21', 4, 10, 'The 7th Continent', '39jerry') ;
-insert into NOTES values ( 85, 'There are so many sandwiches on the table.', '2013-12-10', 2, 11, 'Pandemic Legacy  2', '31frank') ;
-insert into NOTES values ( 86, 'She wished she could speak Italian.', '2016-1-1', 17, 26, 'Everdell', '2john') ;
-insert into NOTES values ( 87, 'I am having his baby.', '2004-2-6', 5, 17, 'Maracaibo', '18steven') ;
-insert into NOTES values ( 88, 'When I was young, I played the guitar.', '2008-9-16', 5, 5, 'Kingdom Death Monster', '10thomas') ;
-insert into NOTES values ( 89, 'She had never appreciated radio news shows.', '2015-3-15', 14, 27, 'Power Grid', '50roger') ;
-insert into NOTES values ( 90, 'Actions speak louder than words.', '2019-2-7', 18, 8, 'Tzolk The Mayan Calendar', '11christopher') ;
-insert into NOTES values ( 91, 'He was trained to do this.', '2017-12-3', 3, 10, 'The Crew The Quest for Planet Nine', '15donald') ;
-insert into NOTES values ( 92, 'He opens the door.', '2018-11-3', 13, 16, 'Mechs vs. Minions', '40dennis') ;
-insert into NOTES values ( 93, 'You can bring it back if you do not like it.', '2015-2-21', 15, 10, 'Underwater Cities', '4michael') ;
-insert into NOTES values ( 94, 'Tom is really tall.', '2001-9-19', 8, 22, 'Star Wars Imperial Assault', '43peter') ;
-insert into NOTES values ( 95, 'he is easily offended.', '2000-1-13', 6, 16, 'Clans of Caledonia', '28jose') ;
-insert into NOTES values ( 96, 'He drives more carefully than you do.', '2014-7-15', 19, 5, 'Anachrony', '42patrick') ;
-insert into NOTES values ( 97, 'Welcome to the big leagues.', '2011-4-12', 2, 11, 'Le Havre', '12daniel') ;
-insert into NOTES values ( 98, 'He said the telegram had arrived at noon.', '2002-10-14', 17, 13, 'Too Many Bones', '21ronald') ;
-insert into NOTES values ( 99, 'Rosa likes tea better than coffee.', '2004-8-3', 19, 5, 'Through the Ages A Story of Civilization', '29larry') ;
+insert into NOTES values ( 40, 'I am absolutely sure.', '2006-6-12', 6, 13, 'Kingdom Death Monster', '4michael') ;
+insert into NOTES values ( 41, 'I have been a big fan of yours for a long time.', '2014-4-13', 19, 26, 'Mage Knight Board Game', '45douglas') ;
+insert into NOTES values ( 42, 'Those apples are very red.', '2006-5-16', 0, 8, 'Puerto Rico', '42patrick') ;
+insert into NOTES values ( 43, 'Peter ate french fries.', '2002-1-15', 3, 7, 'Star Wars Imperial Assault', '37gregory') ;
+insert into NOTES values ( 44, 'Welcome to the big leagues.', '2008-6-8', 8, 11, 'Underwater Cities', '44harold') ;
+insert into NOTES values ( 45, 'Juice was something I never drank.', '2003-8-5', 7, 19, 'Too Many Bones', '41walter') ;
+insert into NOTES values ( 46, 'These dogs are so sweet.', '2004-5-17', 20, 1, 'Pandemic Legacy  2', '11christopher') ;
+insert into NOTES values ( 47, 'He is the person to see.', '2005-9-2', 11, 29, '7 Wonders Duel', '23kevin') ;
+insert into NOTES values ( 48, 'Bad news travels fast.', '2017-9-8', 7, 10, 'Terra Mystica', '40dennis') ;
+insert into NOTES values ( 49, 'Going to a bar is a fun thing to do.', '2013-11-18', 19, 17, 'Great Western Trail', '7richard') ;
+insert into NOTES values ( 50, 'These sunglasses are too shiny.', '2004-5-11', 1, 16, 'Nemesis', '38joshua') ;
+insert into NOTES values ( 51, 'There are so many sandwiches on the table.', '2020-6-9', 8, 8, 'Gloomhaven Jaws of the Lion', '3robert') ;
+insert into NOTES values ( 52, 'He drives to work.', '2004-9-13', 7, 12, 'Power Grid', '46henry') ;
+insert into NOTES values ( 53, 'I do not like rain.', '2007-9-4', 9, 1, 'Root', '16george') ;
+insert into NOTES values ( 54, 'Italians eat a large meal twice a day.', '2021-12-21', 16, 4, 'Spirit Island', '29larry') ;
+insert into NOTES values ( 55, 'I am dreaming of a better world.', '2015-10-8', 7, 7, 'Blood Rage', '34stephen') ;
+insert into NOTES values ( 56, 'I am one of his fiercest critics.', '2017-2-15', 12, 23, 'Gaia Project', '9joseph') ;
+insert into NOTES values ( 57, 'This vase is made of glass.', '2006-5-3', 11, 16, 'Mechs vs. Minions', '18steven') ;
+insert into NOTES values ( 58, 'There used to be big trees around my house.', '2016-10-15', 12, 11, 'Le Havre', '32scott') ;
+insert into NOTES values ( 59, 'My big sister washes her hair every morning.', '2000-11-9', 3, 4, 'Agricola', '26gary') ;
+insert into NOTES values ( 60, 'I do not care how long your socks are.', '2021-5-12', 0, 7, 'Maracaibo', '10thomas') ;
+insert into NOTES values ( 61, 'Everybody is expecting a bonus.', '2001-2-3', 1, 8, 'A Feast for Odin', '20brian') ;
+insert into NOTES values ( 62, 'She liked to wear a lot of rings.', '2021-6-13', 11, 10, 'The 7th Continent', '50roger') ;
+insert into NOTES values ( 63, 'Donuts with cream are nasty.', '2013-11-2', 0, 15, 'Clans of Caledonia', '12daniel') ;
+insert into NOTES values ( 64, 'I am taking a break from work.', '2022-5-15', 16, 3, 'Twilight Struggle', '31frank') ;
+insert into NOTES values ( 65, 'He found my lecture very interesting.', '2000-10-5', 8, 22, 'Brass Birmingham', '21ronald') ;
+insert into NOTES values ( 66, 'George works on a small farm.', '2003-12-4', 16, 22, 'Tzolk The Mayan Calendar', '6david') ;
+insert into NOTES values ( 67, 'He drives more carefully than you do.', '2017-10-4', 19, 26, 'Through the Ages A New Story of Civilization', '2john') ;
+insert into NOTES values ( 68, 'What we had was a total lie.', '2017-12-5', 8, 9, 'Everdell', '27timothy') ;
+insert into NOTES values ( 69, 'He said the telegram had arrived at noon.', '2007-11-1', 12, 20, 'Mansions of Madness Second Edition', '48arthur') ;
+insert into NOTES values ( 70, 'He was trained to do this.', '2020-4-14', 7, 13, 'Gloomhaven', '47carl') ;
+insert into NOTES values ( 71, 'You, as the maker, get to decide the design.', '2010-8-8', 4, 1, 'Great Western Trail', '44harold') ;
+insert into NOTES values ( 72, 'He drives to work.', '2018-7-3', 7, 5, 'Spirit Island', '5william') ;
+insert into NOTES values ( 73, 'My sister has a friend over.', '2011-5-13', 2, 26, 'Arkham Horror The Card Game', '29larry') ;
+insert into NOTES values ( 74, 'I am one of his fiercest critics.', '2000-12-10', 3, 19, 'Gaia Project', '49ryan') ;
+insert into NOTES values ( 75, 'More people have been to Russia than I have.', '2019-12-14', 17, 23, 'The 7th Continent', '23kevin') ;
+insert into NOTES values ( 76, 'These sunglasses are too shiny.', '2012-12-17', 1, 3, 'Azul', '11christopher') ;
+insert into NOTES values ( 77, 'I always overpack,.', '2008-11-5', 18, 27, 'Food Chain Magnate', '3robert') ;
+insert into NOTES values ( 78, 'Welcome to the big leagues.', '2022-6-18', 19, 22, 'Mansions of Madness Second Edition', '8charles') ;
+insert into NOTES values ( 79, 'You must have your passport to enter.', '2017-10-17', 10, 7, 'Mechs vs. Minions', '24jason') ;
+insert into NOTES values ( 80, 'He is whistling at the car.', '2020-6-7', 12, 17, 'Terra Mystica', '13paul') ;
+insert into NOTES values ( 81, 'My big sister washes her hair every morning.', '2018-11-1', 10, 1, 'Pandemic Legacy  1', '28jose') ;
+insert into NOTES values ( 82, 'I do not care how long your socks are.', '2012-4-9', 6, 14, 'Power Grid', '10thomas') ;
+insert into NOTES values ( 83, 'I am having his baby.', '2010-3-15', 11, 26, 'Viticulture Essential Edition', '14mark') ;
+insert into NOTES values ( 84, 'Donuts with cream are nasty.', '2013-9-14', 9, 30, 'Gloomhaven Jaws of the Lion', '26gary') ;
+insert into NOTES values ( 85, 'That is always been our biggest problem.', '2014-11-16', 0, 17, 'The Castles of Burgundy', '2john') ;
+insert into NOTES values ( 86, 'I would like to be catcalled.', '2013-7-13', 8, 20, 'Wingspan', '39jerry') ;
+insert into NOTES values ( 87, 'Utensils are useful.', '2014-9-12', 16, 28, 'Through the Ages A New Story of Civilization', '18steven') ;
+insert into NOTES values ( 88, 'It is time to watch TV.', '2015-10-17', 15, 1, 'Scythe', '9joseph') ;
+insert into NOTES values ( 89, 'I will see you tonight at eight.', '2008-1-12', 0, 1, 'Through the Ages A Story of Civilization', '1james') ;
+insert into NOTES values ( 90, 'You have some schoolwork to do.', '2018-10-2', 17, 11, 'Nemesis', '33eric') ;
+insert into NOTES values ( 91, 'Juice was something I never drank.', '2003-7-11', 18, 6, 'Terraforming Mars', '15donald') ;
+insert into NOTES values ( 92, 'There used to be big trees around my house.', '2004-4-15', 4, 12, 'Le Havre', '41walter') ;
+insert into NOTES values ( 93, 'he is easily offended.', '2010-10-20', 14, 11, 'Pandemic Legacy  2', '42patrick') ;
+insert into NOTES values ( 94, 'My boyfriend loves this song.', '2012-11-10', 5, 6, 'Too Many Bones', '30jeffrey') ;
+insert into NOTES values ( 95, 'It was especially rainy that night.', '2005-3-2', 2, 23, 'Kingdom Death Monster', '12daniel') ;
+insert into NOTES values ( 96, 'He stood no chance against her in a fight.', '2013-2-18', 3, 26, 'Puerto Rico', '7richard') ;
+insert into NOTES values ( 97, 'The job was bigger than I anticipated.', '2015-4-12', 9, 21, 'Orléans', '4michael') ;
+insert into NOTES values ( 98, 'Hairless cats look demonic.', '2002-12-3', 11, 27, 'Root', '19edward') ;
+insert into NOTES values ( 99, 'There are clothes everywhere.', '2002-2-14', 7, 21, 'Concordia', '46henry') ;
 
-COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -256,8 +250,6 @@ insert into THEMES values ( 'Merveilleux' ) ;
 insert into THEMES values ( 'Mytholoie' ) ;
 insert into THEMES values ( 'Survie' ) ;
 
-COMMIT;
-
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -277,7 +269,6 @@ insert into MECANIQUES values ( 'Draft' ) ;
 insert into MECANIQUES values ( 'Guess' ) ;
 insert into MECANIQUES values ( 'Enchères' ) ;
 
-COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -384,7 +375,6 @@ insert into CONTRIBUTEURS values ( 97, 'Aniya', 'Garcia' );
 insert into CONTRIBUTEURS values ( 98, 'Rui', 'Guzman' );
 insert into CONTRIBUTEURS values ( 99, 'Graeme', 'Bond' );
 
-COMMIT;
 
 insert into ROLES values ( 'Gloomhaven', 1, 'Illustrateur' );
 insert into ROLES values ( 'Gloomhaven', 51, 'Auteur' );
@@ -437,8 +427,6 @@ insert into ROLES values ( 'Nemesis', 97, 'Auteur' );
 insert into ROLES values ( 'Orléans', 49, 'Illustrateur' );
 insert into ROLES values ( 'Orléans', 99, 'Auteur' );
 
-COMMIT;
-
 -- EXTENSIONS
 insert into EXTENSIONS values ( 'Pandemic Legacy', 'Pandemic Legacy  1' );
 insert into EXTENSIONS values ( 'Brass', 'Brass Birmingham' );
@@ -457,8 +445,6 @@ insert into EXTENSIONS values ( 'Tzolk', 'Tzolk The Mayan Calendar' );
 insert into EXTENSIONS values ( 'The Crew', 'The Crew The Quest for Planet Nine' );
 insert into EXTENSIONS values ( 'Star Wars', 'Star Wars Imperial Assault' );
 insert into EXTENSIONS values ( 'Through the Ages', 'Through the Ages A Story of Civilization' );
-
-COMMIT;
 
 -- JUGEMENTS
 insert into JUGEMENTS values ( 35, '1james', 'PERTINENT' );
@@ -890,8 +876,6 @@ insert into JUGEMENTS values ( 28, '49ryan', 'PERTINENT' );
 insert into JUGEMENTS values ( 81, '49ryan', 'IMPERTINENT' );
 insert into JUGEMENTS values ( 53, '49ryan', 'IMPERTINENT' );
 
-COMMIT;
-
 -- PARTICIPATIONS
 insert into PARTICIPATIONS values ( 'Gloomhaven', '12daniel' );
 insert into PARTICIPATIONS values ( 'Gloomhaven', '29larry' );
@@ -1103,8 +1087,6 @@ insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', 
 insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', '45douglas' );
 insert into PARTICIPATIONS values ( 'Through the Ages A Story of Civilization', '28jose' );
 
-COMMIT;
-
 -- JEUX_THEMES
 
 
@@ -1158,8 +1140,6 @@ insert into JEUX_THEMES values ( 'Le Havre', 'Enfant') ;
 insert into JEUX_THEMES values ( 'Too Many Bones', 'Fantastique') ;
 insert into JEUX_THEMES values ( 'Through the Ages A Story of Civilization', 'Histoire') ;
 insert into JEUX_THEMES values ( 'Azul', 'Enquete') ;
-
-COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -1218,8 +1198,6 @@ insert into JEUX_MECANIQUES values ( 'Too Many Bones', 'Enchères') ;
 insert into JEUX_MECANIQUES values ( 'Through the Ages A Story of Civilization', 'Majorité ') ;
 insert into JEUX_MECANIQUES values ( 'Azul', 'Deck-building ') ;
 
-COMMIT;
-
 -- ============================================================
 --    creation des donnees
 -- ============================================================
@@ -1274,7 +1252,6 @@ insert into JOUEURS_THEMES values ( '5william', 'Espace') ;
 insert into JOUEURS_THEMES values ( '14mark', 'Antiquité ') ;
 insert into JOUEURS_THEMES values ( '15donald', 'Connaissances') ;
 
-COMMIT;
 
 -- ============================================================
 --    creation des donnees
@@ -1341,4 +1318,3 @@ insert into JOUEURS_MECANIQUES values ( '24jason','Pari') ;
 insert into JOUEURS_MECANIQUES values ( '25matthew','Déduction') ;
 insert into JOUEURS_MECANIQUES values ( '26gary','Connection') ;
 
-COMMIT;
