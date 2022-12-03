@@ -18,9 +18,6 @@
         $query="";
         function runQuery() {
             $query = $_POST["query"];
-            // echo "<div style='position: absolute; height: 10vh; width: 10vw; background-color: red; left: 10vw;'>";
-            // echo $query;
-            // echo "</pre>";
             $db = new PDO(
                 'mysql:host=localhost;dbname=mysql;charset=utf8',
                 'root',

@@ -72,7 +72,9 @@
                     <div class="content">
                         Les données que nous avons utilisées dans ce projet ont été principalement inspirées du site Kaggle.<br>
                         Les photos utilisées dans ce site ont été pris de FontAwesome.<br>
-                        Les données utilisées sont une œuvre de fiction. Les noms, Jeux, commentaires et contributeurs sont le fruit de l'imagination de l'auteur ou sont utilisés de manière fictive. Toute ressemblance avec des événements, des lieux ou des personnes réels, vivants ou morts, est entièrement fortuite.<br>                        
+                        Les données utilisées sont une œuvre de fiction. Les noms, Jeux, commentaires et contributeurs sont 
+                        le fruit de l'imagination de l'auteur ou sont utilisés de manière fictive. Toute ressemblance avec des événements,
+                        des lieux ou des personnes réels, vivants ou morts, est entièrement fortuite.<br>                        
                     </div>
 
                     <a class="title" href="statistics.php">Ressources</a>
