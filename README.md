@@ -1,25 +1,30 @@
 # project_SGBD
-This is a repo for SGBD project in 2nd year in Computer science, ENSEIRB-MATMECA, Bordeaux.
+Ceci est le code source du projet SGBD en 2ème année d'informatique, ENSEIRB-MATMECA, Bordeaux.
 
-Follow these instructions in order to run properly the website, and so consult and modify our database.
+Suivez ces instructions afin de faire fonctionner correctement le site web, et ainsi consulter et modifier notre base de données.
 
-Our website is PHP, JS, and SQL based, in order to run it you will need a localhost. 
+* Notre site Web est basé sur [PHP](https://www.php.net/), [JS](https://developer.mozilla.org/fr/docs/Web/JavaScript) et [SQL](https://www.mysql.com/fr/). Pour le faire fonctionner, vous aurez besoin d'un hôte local (localhost).
 
-you can either use WAMP (Windows) or XAMPP (Linux and MacOS).
-Or visit our website online here (link).
+* vous pouvez soit utiliser [WAMP](https://www.wampserver.com/) (Windows) ou [XAMPP](https://www.apachefriends.org/fr/index.html) (Linux et MacOS). Ou visitez notre site web en ligne [ici](http://jeuxproject.atwebpages.com).
 
-If you're using WAMP the website should work properly, and you should just copy this repo to the Wamp64/www/ directory and access to the index.php manually in your browser.
+* * vous utilisez **WAMP**, le site web devrait fonctionner correctement, et vous devriez juste copier ce repo dans le répertoire ```Wamp64/www/``` et accéder au _index.php_ manuellement dans votre navigateur.
 
-In case your using XAMPP, LaunchDB.php might not work properly, we highly suggest you import manually create.sql and insert.sql manually to your local
-PhpMyAdmin. click here to learn how to access your PhpMyAdmin.
-
-
-In this repo you will find two different directories, the src/ directory is specific for the interface (website) code, scripts and assets. 
-
-The sql/ directory contains all the sql code we use to manipulate, consult and analyze our database properly. You can run this code on Oracle, Mysql (our case) or MariaDB. 
-
-The gamegen/ directory contains Python scripts that helped us create our insert.sql files and put random comments, names, games and other in a specific link and added them in their proper table.
+* * Dans le cas où vous utilisez **XAMPP**, ```LaunchDB.php``` pourrait ne pas fonctionner correctement, nous vous suggérons fortement d'importer manuellement _create.sql_ et _insert.sql_ dans votre localhost.
+Cliquez ici pour savoir comment accéder à votre [PhpMyAdmin](http://localhost/phpmyadmin4.9.7/index.php). (login: 'root', pw: '', server: MySQL).
 
 
-Please contact us on : github , mail if you're finding any issues when running our web application. 
-Thank you for your comprehension.
+Après avoir accéder à PhpMyAdmin, choisissez la base de données ```mysql``` et importez puis executez ces deux fichiers.
+
+* Dans ce répertoire, vous trouverez trois répertoires différents, le répertoire ```src/``` est spécifique pour le code de l'interface (site web), les source code et les ressources. 
+
+* Le répertoire ```sql/``` contient tout le code sql que nous utilisons pour manipuler, consulter et analyser correctement notre base de données. Vous pouvez exécuter ce code sur _Oracle_, _Mysql_ (notre cas) ou _MariaDB_. 
+
+* Le répertoire ```gamegen/``` contient des scripts _Python_ qui nous ont aidés à créer nos fichiers _insert.sql_ et à mettre des commentaires, des noms, des jeux et autres aléatoires dans un lien spécifique et à les ajouter dans leur propre table.
+
+
+Si vous rencontrez des problèmes lors de l'exécution de notre application web.
+Veuillez nous contacter sur :
+* [github](https://github.com/daJster/project_SGBD) , 
+* e-mail : jelkarchi@enseirb-matmeca.fr 
+
+Merci de votre compréhension.
